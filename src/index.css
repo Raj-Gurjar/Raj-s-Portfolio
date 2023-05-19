@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans&display=swap');
+
+
+/*!----------------#### Global Declarations ####-----------------------  */
+
+/*?-------------------Body layout -s ---------------- */
+
+html {
+    scroll-behavior: smooth;
+
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root {
+
+    --main-color: #25c6c4;
+    --main1: #404bc7;
+
+    --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --black-900: #000000;
+    --black-400: #656f87;
+    --black-200: rgba(93, 72, 72, 0.166);
+    --black-100: #f7f7f7;
+    --white: #fff;
+    --black-alpha-100: rgba(0, 0, 0, 0.5);
 }
+
+body {
+
+    /* for dark theme */
+    /* background: linear-gradient(
+        144.39deg,
+        #ffffff -278.56%,
+        #6d6d6d -78.47%,
+        #11101d 91.61%
+      ); */
+    /* background: linear-gradient(to bottom, #0f0aa4, #3b67b9, #055175, #056ea7, #5209e3); */
+    background-color: var(--black-400);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--white);
+    overflow-x: hidden;
+    font-family: 'Rubik';
+
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+
+
+}
+
+/*? -------------------Body -e----------------------- */
+
+/*?------------------- Adjustments -s-------------------- */
+
+ul {
+    list-style: none;
+}
+
+
+.section_padding {
+    padding: 80px 60px;
+    /* height: 80vh; */
+    /* 
+    scroll-snap-align: start;
+    scroll-snap-stop: always; */
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify_content_cntr {
+    justify-content: center;
+}
+
+.space_btw {
+    justify-content: space-between;
+}
+
+.align_cntr {
+    align-items: center;
+}
+
+.txt_align {
+    text-align: center;
+}
+
+/*?------------------- Adjustments -e -------------------- */
+
+
+
+/*!----------------######## gd1:Global Declarations Ends #######------------------- */

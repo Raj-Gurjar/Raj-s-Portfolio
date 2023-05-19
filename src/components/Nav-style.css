@@ -1,0 +1,293 @@
+
+/*!----------------######## nav1: NavBar section starts #######------------------- */
+
+
+navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 15px 15px;
+    transition: all 1s ease;
+    margin: 0 auto;
+    background-color: blueviolet;
+}
+
+.sticky {
+    padding: 4px 25px;
+    background: rgb(55, 47, 208);
+    background: linear-gradient(90deg, rgb(6, 221, 149) 0%, rgba(83, 210, 191, 1) 17%, rgba(0, 212, 255, 1) 100%);
+    box-shadow: var(--shadow-black-100);
+    opacity: 1;
+}
+
+
+navbar ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    column-gap: 10px;
+    z-index: 34;
+    transition: all 1s ease;
+    /* background-color: #25c6c4; */
+
+}
+
+navbar ul li
+{
+    /* background-color: red; */
+}
+navbar ul li a {
+    font-size: 15px;
+    font-weight: 900;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    /* background-color:rgba(162, 255, 0, 0.706) ; */
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.823);
+
+
+}
+
+/* hh1 */
+navbar ul li a.active {
+
+    background-image: linear-gradient(hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%,
+            hsla(0, 0%, 0%, 0.3) 50%, hsla(0, 0%, 100%, 0.2));
+
+
+    font-family: sans-serif;
+    font-weight: bold;
+    color: var(--white);
+    padding: 10px 20px;
+    text-shadow:
+        0 0 15px hsla(0, 0%, 100%, 1),
+        /* bloom */
+        0 2px 4px hsla(0, 0%, 0%, 0.7);
+    /* drop shadow */
+    border: none;
+    border-radius: 50px;
+    box-shadow:
+        inset 0 -5px 20px hsla(0, 0%, 0%, 0.1),
+        /* top light */
+        inset 0 5px 20px hsla(0, 0%, 100%, 0.4),
+        /* bottom shadow */
+        /* multiple light sources yall */
+        -5px 8px 5px hsla(0, 0%, 0%, 0.15),
+        /* drop shadow 1 */
+        5px 18px 10px hsla(0, 0%, 0%, 0.2);
+    /* drop shadow 2 */
+
+
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.1s;
+    background: linear-gradient(hsla(0, 0%, 100%, 0.3), hsla(0, 0%, 100%, 0));
+
+}
+
+.sticky ul li a.active {
+    padding: 6px 20px;
+
+}
+
+.sticky ul li a:hover {
+    padding: 4px 16px;
+
+}
+
+navbar ul li a:hover {
+
+
+    box-shadow:
+        inset 0 -5px 20px hsla(0, 0%, 0%, 0.4),
+        /* top light */
+        inset 0 5px 20px hsla(0, 0%, 100%, 0.4),
+        /* bottom shadow */
+        /* multiple light sources yall */
+        -12px 12px 5px hsla(0, 0%, 0%, 0.15),
+        /* drop shadow 1 */
+        10px 25px 10px hsla(0, 0%, 0%, 0.2);
+    /* drop shadow 2 */
+
+    border-radius: 50px;
+
+}
+
+
+navbar .logo {
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+navbar .logo img {
+
+
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    /* margin-top: 5px; */
+
+    box-shadow:
+        0 0 15px hsla(0, 0%, 100%, 0.7),
+        /* bloom */
+        0 2px 4px hsla(0, 0%, 0%, 0.8);
+    /* drop shadow */
+
+
+}
+
+
+navbar .menu_btn {
+    /* height: 30px; */
+    /* width: 35px; */
+    box-shadow: var(--shadow-black-100);
+    padding: 6px;
+    border-radius: 5px;
+    /* line-height: 34px; */
+    text-align: center;
+    color: var(--white);
+    font-size: 17px;
+    top: 0;
+    display: none;
+    cursor: pointer;
+
+}
+
+
+
+.sticky .menu_btn {
+    color: var(--main-color);
+    background-color: var(--black-900);
+}
+
+/*!----------------######## nav1: NavBar section ends #######------------------- */
+
+
+
+/* ! -----------------++++++ re1: Responsive -s ++++++------------------- */
+
+
+
+/*TODO  re85  */
+
+@media(max-width:895px) {
+
+    .section_padding {
+        padding: 80px 0px;
+    }
+
+    /*?------------ Navbar ------------------ */
+    navbar {
+        /* background-color: red; */
+        padding: 12px 17px;
+    }
+
+    .sticky {
+        padding: 8px 20px;
+    }
+
+    navbar .menu_btn {
+        display: inline-block;
+        z-index: 999;
+        background-color: var(--main-color);
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+
+        width: 20px;
+        height: 3.5px;
+        background-color: #ffffff;
+        margin: 2px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 5.5px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: translate(0, -5.5px) rotate(45deg);
+    }
+
+    navbar .menu {
+        position: fixed;
+        padding: 6px;
+        right: -100%;
+        top: 40px;
+        flex-direction: column;
+        background-color: var(--main-color);
+
+        transform: scale(0.1);
+        width: 90%;
+        border-radius: 10px;
+        margin: 10px 10px;
+
+        text-align: center;
+        transition: all 0.5s ease;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.675);
+
+
+    }
+
+    .change i {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .sticky .menu {
+        background-color: var(--black-400);
+        top: 40px;
+    }
+
+
+    navbar .menu li {
+        display: block;
+        margin: 6px 0;
+    }
+
+    navbar ul li a.active {
+
+        font-size: 16px;
+        font-weight: 900;
+        padding: 4px 8px;
+        text-transform: capitalize;
+        cursor: pointer;
+        /* color: #2c3639; */
+    }
+
+
+    .sticky .menu li a.active {
+        color: var(--white);
+        /* color: red; */
+
+    }
+
+    .sticky .menu li a {
+        color: rgba(255, 255, 255, 0.77);
+
+    }
+
+    navbar .menu.active {
+        right: 0;
+        /* transform: scaleY(1); */
+        transform: scale(1);
+        color: red;
+
+    }
+
+    /*?------------ Navbar -e  ------------------ */
+
+}
+
+
+
+
+/* ! -----------------++++++ re1: Responsive -s ++++++------------------- */

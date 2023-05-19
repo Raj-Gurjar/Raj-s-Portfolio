@@ -1,0 +1,11 @@
+section
+{
+    z-index: 11;
+}
+
+.home-cls
+{
+    background-color: rgb(157, 90, 90);
+    padding-top: 90px;
+    min-height: 100vh;
+}
