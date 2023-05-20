@@ -1,8 +1,14 @@
 import React from 'react'
+import SkillCom from '../components/SkillCom'
+import Navbar from '../components/Navbar'
 
 const Skills = () => {
   return (
-    <div>Skills</div>
+
+    <>
+      <Navbar />
+      <SkillCom />
+    </>
   )
 }
 

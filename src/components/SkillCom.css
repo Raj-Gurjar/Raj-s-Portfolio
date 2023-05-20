@@ -1,0 +1,106 @@
+/*!----------------######## sk1: Skill section starts #######------------------- */
+
+.skill_cls {
+    /* min-height: 100vh; */
+    /* background-color: red; */
+}
+
+
+
+.skill_type {
+    /* background-color: #08dabb; */
+    display: flex;
+    flex: 0 0 30.33%;
+    flex-wrap: wrap;
+
+    max-width: 33.33%;
+
+}
+
+
+.skill_items {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: red; */
+
+    /* transform: scale(0.1); */
+    /* transition: all .2s ease; */
+
+}
+
+.skill_item_inner {
+    transition: height 0.66s ease-out;
+
+}
+
+.skill_item_inner:hover .skill_items {
+    padding-top: 20px;
+    transform: scale(1.2);
+}
+
+/* 
+.ani1 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-in-out;
+}
+
+.ani2 {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-in-out;
+}
+
+.ani3 {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+
+} */
+
+
+.skill_item {
+    /* display: grid; */
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    /* background-color: rgb(190, 139, 194); */
+
+
+}
+
+
+.skill_item .skill_img img {
+    /* background-color: cornflowerblue; */
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+
+}
+
+.skill_item .skill_img img:hover {
+    box-shadow: 0 0 50px #ffffff,
+        0 0 25px #ffffff,
+        0 0 50px #ffffff,
+        0 0 200px #ffffff;
+
+}
+
+.si {
+    /* background-color: rgba(0, 255, 208, 1); */
+}
+
+/*? ------------ Skill animations -s --------------- */
+
+
+/*? ------------ Skill animations -e --------------- */
+
+
+/*----------------######## Skill section ends #######------------------- */

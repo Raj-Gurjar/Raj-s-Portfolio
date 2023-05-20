@@ -1,11 +1,254 @@
-section
-{
-    z-index: 11;
+
+
+/*!----------------######## Ho1: Home section starts #######------------------- */
+
+
+
+.home_cls {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-top: 80px;
+    background-color: rgb(18, 72, 72);
+
 }
 
-.home-cls
-{
-    background-color: rgb(157, 90, 90);
-    padding-top: 90px;
-    min-height: 100vh;
+.home_cls .home_txt,
+.home_cls .home_img {
+    flex: 0 0 45%;
+    max-width: 50%;
+    padding: 0 5px;
 }
+
+.home_cls .row {
+    margin-left: 40px;
+    /* background-color: pink; */
+}
+
+.home_txt {
+    /* background-color: red; */
+    line-height: 25px;
+}
+
+
+
+
+.home_cls .home_txt .greetings {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: var(--main-color);
+    /* font-size: 2vw; */
+    text-shadow: 2px 2px 2 px #3F7FBF;
+    mix-blend-mode: screen;
+    animation: fadeIn 1.5s linear forwards;
+
+    display: inline-block;
+
+
+}
+
+.home_cls .home_txt h2 {
+    display: inline-block;
+    font-size: 40px;
+    z-index: 1;
+
+    animation: wave_hand 2s ease-in-out infinite;
+
+    transform-origin: 90% 90%;
+    /* Pivot around the bottom-left palm */
+}
+
+.home_cls .home_txt .hand img {
+    height: 35px;
+    width: 40px;
+}
+
+
+.home_cls .home_txt .name {
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+    font-size: 35px;
+    text-shadow: 2px 4px 2px #3F7FBF;
+    mix-blend-mode: screen;
+    animation: fadeIn 1.5s linear forwards;
+
+}
+
+
+
+
+.home_cls .home_txt .prof {
+    color: var(--main-color);
+    font-size: 17px;
+
+}
+
+.home_cls .home_txt span {
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 10px;
+    display: inline;
+    color: var(--main-color);
+    /* font-family: 'Poppins', sans-serif; */
+    /* color: var(--black-900); */
+    font-family: 'Fira Sans';
+}
+
+.home_cls .home_txt p {
+    font-size: 16px;
+    /* color: var(--black-900); */
+    font-weight: 500;
+    margin-top: 15px;
+    font-family: 'Fira Sans';
+}
+
+
+.home_cls .home_txt .btn1 {
+    display: inline-block;
+    margin-top: 10px;
+    line-height: 15px;
+
+}
+
+/*? ------------ Home img -s ---------------*/
+
+
+.home_img {
+    /* background-color: #00ff11; */
+}
+
+.home_img .img_box {
+    position: relative;
+    width: 10px;
+    z-index: 1;
+
+}
+
+.home_img {
+    background: url('/src/assets/ReadyPlayerMe-Avatar.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-top: 40px;
+    height: 400px;
+    width: 20px;
+
+
+    background-color: rgb(14, 113, 220);
+    border-radius: 23% 23% 16% 4% / 8% 1% 2% 4%;
+
+
+
+    /* border: 5px white solid; */
+
+
+    box-shadow: var(--shadow-black-100);
+    animation: hover_anim 5s ease-in-out infinite, jiggle 4s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+    z-index: 2;
+
+
+}
+
+.home_img:hover {
+    animation: jiggle 1s ease-in-out infinite;
+}
+
+/*? ------------ Home img -e ---------------*/
+
+
+
+
+/* ? ----------- social media -s ----------- */
+.social_icon {
+    position: fixed;
+    top: 53%;
+    left: 20px;
+    transform: translateY(-53%);
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+
+}
+
+.home_cls .card {
+    padding: 2px 2px;
+}
+
+.social_icon a {
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    padding: 6px;
+    margin: 3px;
+    color: rgb(10, 21, 18);
+
+
+
+}
+
+.social_icon .s1 {
+
+
+    background-color: rgb(14, 113, 220);
+    border-radius: 23% 23% 16% 54% / 8% 16% 24% 42%;
+
+    animation: jiggle 4s ease-in-out infinite;
+
+}
+
+.social_icon .s2 {
+
+
+    background-color: rgb(97, 75, 45);
+
+    animation: jiggle 4s ease-in-out infinite;
+}
+
+.social_icon .s3 {
+
+
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+
+    animation: jiggle 4s ease-in-out infinite;
+}
+
+.social_icon .s4 {
+
+
+    background-color: rgb(10, 161, 243);
+    animation: jiggle 4s ease-in-out infinite;
+}
+
+.social_icon>a:hover {
+    animation: jiggle 1s ease-in-out infinite;
+    background-color: #08dabb;
+    background: #08dabb;
+
+}
+
+.social_icon>a:active {
+    background-color: #0000ff;
+    font-size: 13px;
+
+}
+
+.social_icon>a:hover i {
+
+    /* margin-left: 3px; */
+    color: #000000;
+}
+
+/*? --------------   social media -e ---------------*/
+
+
+
+/* !----------------######## ho1: Home section ends #######------------------- */

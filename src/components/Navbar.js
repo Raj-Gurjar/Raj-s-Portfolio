@@ -1,87 +1,100 @@
 // import { Link } from "react-router-dom"
 import "./Nav-style.css"
 
-import React from 'react'
+import logo from "../assets/mylogo2.png";
+import React, { useState } from 'react';
+
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+     
+    //!-------------------- Sticky Navbar -s --------------------
 
-    // !-------------------------- Resize Navbar on Scroll -s-----------------*/
+    const [color, setColor] = useState(false);
+    const changeColor = () => {
 
-    var navbar = document.querySelector("navbar");
-
-    // when the scroll is >29vp height, add sticky class to the tag with class navbar
-    window.onscroll = () => {
-        this.scrollY > 40
-            ? navbar.classList.add("sticky")
-            : navbar.classList.remove("sticky");
-    };
-
-    // !---------------------------- Resize Navbar on Scroll -e -----------------*/
-
-    //!-------------------- Current Nav Item Highlighting -s --------------------
-    const navLi = document.querySelectorAll('nav ul li a');
-    const sections = document.querySelectorAll('section');
-
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            let sectionTop = section.offsetTop;
-            // eslint-disable-next-line no-restricted-globals
-            if (scrollY >= sectionTop - 65) {
-                current = section.getAttribute('id');
-            }
-        });
-        navLi.forEach(li => {
-            li.classList.remove('active');
-            document.querySelector('nav ul li a[href*= ' + current + ']').classList.add('active');
-        });
-    });
-
-    //!-------------------- Current Nav Item Highlighting -e --------------------
-
-    //! -------------------------- Responsive Nav Toogler -s  -------------------------------*/
-
-
-    const navMenu = document.querySelector(".menu"),
-        navToggle = document.querySelector(".menu_btn");
-
-    if (navToggle) {
-        navToggle.addEventListener("click", () => {
-            navMenu.classList.toggle("active");
-        });
+        if (window.scrollY >= 29) {
+            setColor(true);
+        }
+        else {
+            setColor(false);
+        }
     }
 
-    // close menu when link is clicked automaticaly
+    window.addEventListener('scroll', changeColor);
 
-    const navLink = document.querySelectorAll(".menu li");
+    //!-------------------- Sticky Navbar -e --------------------
+   
 
-    function linkAction() {
-        const navMenu = document.querySelector(".menu");
-        navMenu.classList.remove("active");
-        navToggle.classList.remove("change");
-    }
+    // //!-------------------- Current Nav Item Highlighting -s --------------------
+    // const navLi = document.querySelectorAll('nav ul li a');
+    // const sections = document.querySelectorAll('section');
 
-    navLink.forEach((n) => n.addEventListener("click", linkAction));
+    // window.addEventListener('scroll', () => {
+    //     let current = '';
+    //     sections.forEach(section => {
+    //         let sectionTop = section.offsetTop;
+    //         // eslint-disable-next-line no-restricted-globals
+    //         if (scrollY >= sectionTop - 65) {
+    //             current = section.getAttribute('id');
+    //         }
+    //     });
+    //     navLi.forEach(li => {
+    //         li.classList.remove('active');
+    //         document.querySelector('nav ul li a[href*= ' + current + ']').classList.add('active');
+    //     });
+    // });
 
-    //! -------------------------- Responsive Nav Toogler -e   -------------------------------*/
+    // //!-------------------- Current Nav Item Highlighting -e --------------------
+
+    // //! -------------------------- Responsive Nav Toogler -s  -------------------------------*/
 
 
-    //!-------------------- Menu Crossbar -s --------------------
+    // const navMenu = document.querySelector(".menu"),
+    //     navToggle = document.querySelector(".menu_btn");
 
-
-    // function changeX(x) {
-        // x.classList.toggle("change");
+    // if (navToggle) {
+    //     navToggle.addEventListener("click", () => {
+    //         navMenu.classList.toggle("active");
+    //     });
     // }
 
-    //!-------------------- Menu Crossbar -e --------------------
+    // // close menu when link is clicked automaticaly
+
+    // const navLink = document.querySelectorAll(".menu li");
+
+    // function linkAction() {
+    //     const navMenu = document.querySelector(".menu");
+    //     navMenu.classList.remove("active");
+    //     navToggle.classList.remove("change");
+    // }
+
+    // navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+    // //! -------------------------- Responsive Nav Toogler -e   -------------------------------*/
+
+
+    // //!-------------------- Menu Crossbar -s --------------------
+
+
+    // // function changeX(x) {
+    // // x.classList.toggle("change");
+    // // }
+
+    // //!-------------------- Menu Crossbar -e --------------------
 
 
     return (
 
-        <navbar> 
-    
+        <div className={color ? "navbar sticky" : "navbar"}>
+
             <div className="row space_btw">
-                <div className="logo"><img src="mediaaa/mylogo2.png"></img></div>
+                <div className="logo">
+                    <Link to="/">
+                        <img src={logo}></img>
+                    </Link>
+
+                </div>
 
                 <ul className="menu">
 
@@ -110,7 +123,7 @@ const Navbar = () => {
 
 
                 <div className="menu_btn">
-                    
+
                     <div className="bar1"></div>
                     <div className="bar2"></div>
                     <div className="bar3"></div>
@@ -118,7 +131,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-        </navbar>
+        </div>
     )
 }
 

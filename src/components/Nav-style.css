@@ -1,48 +1,47 @@
 
-/*!----------------######## nav1: NavBar section starts #######------------------- */
+/*!----------------######## nav1: .navbar section starts #######------------------- */
 
-
-navbar {
+.navbar {
     position: fixed;
     z-index: 999;
     width: 100%;
     padding: 15px 15px;
     transition: all 1s ease;
     margin: 0 auto;
-    background-color: blueviolet;
 }
 
 .sticky {
-    padding: 4px 25px;
+    padding: 1px 25px;
+    border-radius: 10px;
     background: rgb(55, 47, 208);
-    background: linear-gradient(90deg, rgb(6, 221, 149) 0%, rgba(83, 210, 191, 1) 17%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, rgb(32, 192, 138) 0%, rgb(40, 154, 137) 17%, rgb(40, 140, 160) 100%);
     box-shadow: var(--shadow-black-100);
     opacity: 1;
+  
+    /* left: 50%;
+    transform: translateX(-50%); */
+    
 }
 
 
-navbar ul {
+.navbar ul {
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
     column-gap: 10px;
     z-index: 34;
     transition: all 1s ease;
-    /* background-color: #25c6c4; */
+
 
 }
 
-navbar ul li
-{
-    /* background-color: red; */
-}
-navbar ul li a {
+.navbar ul li a {
     font-size: 15px;
     font-weight: 900;
     padding: 8px 16px;
     text-transform: capitalize;
     font-family: sans-serif;
-    /* background-color:rgba(162, 255, 0, 0.706) ; */
+
     cursor: pointer;
     color: rgba(255, 255, 255, 0.823);
 
@@ -50,7 +49,7 @@ navbar ul li a {
 }
 
 /* hh1 */
-navbar ul li a.active {
+.navbar ul li a.active {
 
     background-image: linear-gradient(hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%,
             hsla(0, 0%, 0%, 0.3) 50%, hsla(0, 0%, 100%, 0.2));
@@ -58,7 +57,7 @@ navbar ul li a.active {
 
     font-family: sans-serif;
     font-weight: bold;
-    color: var(--white);
+    /* color: var(--white); */
     padding: 10px 20px;
     text-shadow:
         0 0 15px hsla(0, 0%, 100%, 1),
@@ -95,7 +94,7 @@ navbar ul li a.active {
 
 }
 
-navbar ul li a:hover {
+.navbar ul li a:hover {
 
 
     box-shadow:
@@ -114,7 +113,7 @@ navbar ul li a:hover {
 }
 
 
-navbar .logo {
+.navbar .logo {
     display: flex;
     align-items: center;
 
@@ -122,7 +121,7 @@ navbar .logo {
 }
 
 
-navbar .logo img {
+.navbar .logo img {
 
 
     height: 30px;
@@ -140,7 +139,7 @@ navbar .logo img {
 }
 
 
-navbar .menu_btn {
+.navbar .menu_btn {
     /* height: 30px; */
     /* width: 35px; */
     box-shadow: var(--shadow-black-100);
@@ -148,7 +147,7 @@ navbar .menu_btn {
     border-radius: 5px;
     /* line-height: 34px; */
     text-align: center;
-    color: var(--white);
+    /* color: var(--white); */
     font-size: 17px;
     top: 0;
     display: none;
@@ -163,7 +162,7 @@ navbar .menu_btn {
     background-color: var(--black-900);
 }
 
-/*!----------------######## nav1: NavBar section ends #######------------------- */
+/*!----------------######## nav1: .navbar section ends #######------------------- */
 
 
 
@@ -179,8 +178,8 @@ navbar .menu_btn {
         padding: 80px 0px;
     }
 
-    /*?------------ Navbar ------------------ */
-    navbar {
+    /*?------------ .navbar ------------------ */
+    .navbar {
         /* background-color: red; */
         padding: 12px 17px;
     }
@@ -189,7 +188,7 @@ navbar .menu_btn {
         padding: 8px 20px;
     }
 
-    navbar .menu_btn {
+    .navbar .menu_btn {
         display: inline-block;
         z-index: 999;
         background-color: var(--main-color);
@@ -218,7 +217,7 @@ navbar .menu_btn {
         transform: translate(0, -5.5px) rotate(45deg);
     }
 
-    navbar .menu {
+    .navbar .menu {
         position: fixed;
         padding: 6px;
         right: -100%;
@@ -248,12 +247,12 @@ navbar .menu_btn {
     }
 
 
-    navbar .menu li {
+    .navbar .menu li {
         display: block;
         margin: 6px 0;
     }
 
-    navbar ul li a.active {
+    .navbar ul li a.active {
 
         font-size: 16px;
         font-weight: 900;
@@ -275,7 +274,7 @@ navbar .menu_btn {
 
     }
 
-    navbar .menu.active {
+    .navbar .menu.active {
         right: 0;
         /* transform: scaleY(1); */
         transform: scale(1);
@@ -283,7 +282,7 @@ navbar .menu_btn {
 
     }
 
-    /*?------------ Navbar -e  ------------------ */
+    /*?------------ .navbar -e  ------------------ */
 
 }
 

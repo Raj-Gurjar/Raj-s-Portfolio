@@ -1,0 +1,163 @@
+/*!----------------######## ab1: About section starts #######------------------- */
+
+.about_cls {
+    /* min-height: 100vh; */
+    /* background-color: var(--black-400); */
+    padding-top: 60px;
+
+}
+
+.about_img,
+.about_box {
+    flex: 0 0 50%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.about_box {
+    /* background-color:blue; */
+    z-index: 1;
+}
+
+.about_cls .card
+{
+    padding: 15px;
+}
+
+.about_content {
+    /* background-color: green; */
+}
+
+
+
+.about_txt {
+    font-size: 16px;
+}
+
+.about_content .about_txt h3 {
+    margin-bottom: 10px;
+}
+
+.about_content .about_txt p {
+
+    line-height: 20px;
+}
+
+.about_content .about_txt p span {
+    color: var(--black-900);
+    font-weight: 900;
+}
+
+
+/* ? -------------- about titles -s ------------ */
+
+
+.about_content .titles {
+    display: flex;
+
+
+    margin: 10px 0;
+    /* margin-bottom: 15px; */
+}
+
+.tab_links {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    margin-top: 15px;
+
+
+}
+
+.tab_links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--main1);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s;
+
+
+}
+
+.tab_links.active_link::after {
+    width: 60%;
+    border-radius: 30px;
+}
+
+
+
+
+
+.about_content .tab_contents {
+    flex: 60%;
+    padding-top: 10px;
+    font-size: 14px;
+    /* background-color: #03e9f4; */
+}
+
+
+.tab_contents ul li {
+    margin: 10px 0;
+}
+
+.tab_contents ul li a {
+    color: #0000ff;
+    font-size: 12px;
+}
+
+.tab_contents ul li span {
+    color: var(--black-900);
+    font-weight: 600;
+    margin-right: 10px;
+
+}
+
+
+.tab_contents {
+    display: none;
+
+}
+
+.tab_contents.active_tab {
+    display: flex;
+
+}
+
+/* ? ------------ about titles -e ----------- */
+
+
+
+
+
+
+
+/*? ------------About_img -s --------------- */
+
+
+.about_img {
+
+    /* background-color: red; */
+    z-index: 1;
+}
+
+.about_img .img_box {
+    position: relative;
+}
+
+.about_img .img_box img {
+    max-width: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+/*? ------------About_img -e --------------- */
+
+
+/*!----------------######## ab1: About section ends #######------------------- */
