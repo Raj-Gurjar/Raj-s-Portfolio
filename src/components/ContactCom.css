@@ -1,0 +1,138 @@
+/*!----------------######## Contact section starts #######------------------- */
+
+.contact_cls {
+    /* min-height: 50vh; */
+    /* background: #1f1f47; */
+}
+
+
+.contact_cls div.row:nth-child(4) .card{
+    /* styles for the third div.row element */
+    padding: 10px;
+  }
+
+
+.contact_item {
+    /* flex: 33.33%; */
+    /* max-width: 33.33%; */
+    flex: 0 0 20.33%;
+    max-width: 40.33%;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.contact_item_inner {
+    text-align: center;
+    box-shadow: var(--shadow-black-100);
+    width: 100%;
+}
+
+
+/* ?-----------------fORM -s ----------------- */
+
+.contact_form {
+    flex: 0 0 70%;
+    max-width: 70%;
+    /* width: 72%; */
+    margin-top: 20px;
+    justify-content: center;
+}
+
+
+
+.contact_form h2 {
+    /* font-size: 30px; */
+    font-weight: 700;
+    color: var(--black-100);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.contact_cls .w_50 {
+    padding: 0 5px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    z-index: 1;
+}
+
+.input_group {
+    /* width: ; */
+    margin: 0 0 10px;
+    border-radius: 30px;
+    background-color: var(--black-100);
+    box-shadow: var(--shadow-black-100);
+}
+
+.input_group .input_control {
+    height: 35px;
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+    color: var(--black-400);
+}
+
+.input_group textarea.input_control {
+    height: 90px;
+    padding-top: 15px;
+    resize: none;
+}
+
+.input_group .input_control:focus {
+    border: 2.5px solid var(--main-color);
+}
+
+.contact_cls .submit_btn {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: right;
+    padding: 0 15px;
+    margin-top: -30px;
+}
+
+/* ?-----------------fORM -e ----------------- */
+
+
+/*? ------------ Contact  animations -s --------------- */
+
+
+/*? ------------ Cont animations -e --------------- */
+
+
+
+/*!----------------######## Contact section ends #######------------------- */
+
+
+
+
+/*!----------------######## Footer starts #######-------------------------- */
+
+footer {
+    /* bottom: 10px; */
+    background-color: black;
+}
+
+
+footer .footer_txt {
+    padding: 10px 0;
+    font-size: 22px;
+    color: var(--black-100);
+    font-weight: 900;
+    margin: 10px 0 0;
+    z-index: 2;
+
+    font-family: 'Caveat';
+
+}
+
+/*!---------------------######## Footer ends #######------------------- */

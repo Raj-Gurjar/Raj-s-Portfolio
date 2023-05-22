@@ -8,6 +8,8 @@
 
 html {
     scroll-behavior: smooth;
+    /* scroll-snap-type: y mandatory; */
+    text-rendering: optimizeLegibility;
 
 
 }
@@ -36,8 +38,7 @@ body {
         #6d6d6d -78.47%,
         #11101d 91.61%
       ); */
-    /* background: linear-gradient(to bottom, #0f0aa4, #3b67b9, #055175, #056ea7, #5209e3); */
-    background-color: var(--black-400);
+    background-color: #0e5e62;
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -49,6 +50,17 @@ body {
 
 
 }
+
+body::before {
+    /* content: ''; */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(to right bottom, rgba(146, 22, 22, 0.2), #21D4FD 75%);
+}
+
 
 
 
@@ -107,9 +119,10 @@ ul {
 
 /*?------------------- Adjustments -e -------------------- */
 
+
 /*?-------------------   Buttons -s   -------------------- */
 
-.btn {
+.all_btns {
 
     text-align: center;
 
@@ -133,7 +146,7 @@ ul {
 
 }
 
-.btn:hover {
+.all_btns:hover {
 
     background: #03e9f4;
     border: solid #ffffff;
@@ -149,7 +162,7 @@ ul {
 
 }
 
-.btn:active {
+.all_btns:active {
     background-color: #0000ff;
     box-shadow: 0 3px 5px #070606;
     top: 3px;
@@ -162,7 +175,297 @@ ul {
 /*?-------------------   Buttons -e   -------------------- */
 
 
+
+/*?-------------------   popup -s   -------------------- */
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+
+    visibility: hidden;
+    font-size: 10px;
+    display: flex;
+    width: 100%;
+
+    text-align: center;
+    justify-content: center;
+
+    background-color: #555;
+    color: #fff;
+    border-radius: 6px;
+    padding: 3px;
+
+    position: absolute;
+
+    z-index: 11;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -20px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup:hover .popuptext {
+    visibility: visible;
+    animation: fadeIn 0.5s;
+
+}
+
+/*?-------------------   popup -e   -------------------- */
+
+
+
+/*?------------------- Section Title -s -------------------- */
+
+
+
+.section_title {
+
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.section_title .sub_title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.section_title .main_title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.section_title .line {
+    padding-top: 0px;
+
+}
+
+.section_title .line li {
+    display: inline-block;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    height: 3px;
+}
+
+.section_title .line li:nth-of-type(1) {
+    width: 63px;
+}
+
+.section_title .line li:nth-of-type(2) {
+    width: 10px;
+}
+
+.section_title .line li:nth-of-type(3) {
+    width: 7px;
+}
+
+/*?------------------- Section Title -s -------------------- */
+
+
+
+
+
+/* ?---------------  Scroll Bar -s    ------------------- */
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 212, 255, 1);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(26, 17, 1);
+    border-radius: 0.6rem;
+    border: 0.2rem solid transparent;
+    background-clip: content-box;
+
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: var(--black-400);
+}
+
+
+/*? ---------------- Scroll Bar -e------------------- */
+
+
+
+/*? ------------ GLobal card box -s ---------------*/
+
+.card {
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(6, 22, 244, 0.37);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1rem;
+    padding: auto;
+    /* color: rgb(165, 23, 23); */
+    z-index: 1;
+
+    transition: all 0.3s ease;
+
+}
+
+.card_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    /* z-index: 1; */
+    transition: all 0.3s ease;
+
+}
+
+.card_item {
+
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* color: var(--white); */
+    transition: all 1s ease;
+}
+
+.card_item:hover {
+
+
+    padding: 0px;
+    /* margin: -2px; */
+    color: var(--white);
+    transition: all 0.3s ease;
+
+
+}
+
+
+
+.card_item_inner {
+    box-shadow: var(--shadow-black-100);
+    padding: 14px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+
+
+.card_item_inner .icon {
+    height: 44px;
+    width: 44px;
+    background-color: var(--main-color);
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+    transition: all .3s ease;
+
+    border-radius: 23% 23% 16% 54% / 8% 16% 24% 42%;
+
+    animation: jiggle 4s ease-in-out infinite;
+
+}
+
+.card_item_inner:hover {
+    padding: 15px;
+    transition: all 0.3s ease;
+    background-color: var(--main-color);
+    transition: all 0.6s ease;
+
+}
+
+.card_item_inner:hover .icon {
+
+    background-color: var(--white);
+    font-size: 30px;
+    color: var(--black-900);
+
+    border-radius: 23% 23% 16% 54% / 8% 16% 24% 42%;
+    animation: jiggle 1s ease-in-out infinite;
+    transition: all 0.3s ease;
+
+}
+
+.card_item_inner .icon i {
+
+    line-height: 44px;
+}
+
+.card_item_inner:hover .icon i {
+
+    color: var(--main-color);
+    transition: all 0.3s ease;
+
+
+}
+
+.card_item_inner h3 {
+    font-size: 18px;
+    font-weight: 800;
+    /* color: var(--white); */
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+
+}
+
+.card_item_inner:hover h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--black-900);
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+
+}
+
+.card_item_inner p {
+    font-size: 14px;
+    /* color: var(--white); */
+    line-height: 20px;
+    transition: all 0.3s ease;
+}
+
+.card_item_inner:hover p {
+    font-size: 15px;
+    color: var(--black-900);
+    line-height: 20px;
+    transition: all 0.3s ease;
+}
+
+
+
+/*? ------------ GLobal card box -e ---------------*/
+
+
 /*!----------------######## gd1:Global Declarations Ends #######------------------- */
+
 
 
 /* TODO --------------- <<<< An1: Animations -s >>>> --------------------- */

@@ -1,4 +1,4 @@
-import "./Front-style.css";
+import "./HomeCom.css";
 
 // import frnt_hero from "../assets/ReadyPlayerMe-Avatar.png";
 import resume from "../assets/Resume (Raj).pdf";
