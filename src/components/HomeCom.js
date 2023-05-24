@@ -10,23 +10,27 @@ import { Link } from 'react-router-dom';
 const Front = () => {
 
 
-  // // !---------------------------- Greetings on Home -s -----------------------*/
+  // !---------------------------- Greetings on Home -s -----------------------*/
 
+  const Greetings = () => {
+    let myDate = new Date();
+    let hours = myDate.getHours();
+    let greet;
 
-  // var myDate = new Date();
-  // var hrs = myDate.getHours();
+    if (hours < 12)
+      greet = "morning";
+    else if (hours >= 12 && hours <= 17)
+      greet = "afternoon";
+    else if (hours >= 17 && hours <= 24)
+      greet = "evening";
 
-  // var greet;
+    return greet;
+  }
 
-  // if (hrs < 12) greet = "Good Morning,";
-  // else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon,";
-  // else if (hrs >= 17 && hrs <= 24) greet = "Good Evening,";
+  // !---------------------------- Greetings on Home -e -----------------------*/
 
-  // document.querySelector(".greetings").innerHTML = greet;
+  // !---------------------------- Profession multi-text in Home -s -----------------------*/
 
-  // // !---------------------------- Greetings on Home -e -----------------------*/
-
-  // // !---------------------------- Profession multi-text in Home -s -----------------------*/
 
 
   // var typeEffect = new Typed(".prof", {
@@ -37,7 +41,7 @@ const Front = () => {
   //   backDelay: 1400,
   // });
 
-  // // !---------------------------- Profession multi-text in Home -e -----------------------*/
+  // !---------------------------- Profession multi-text in Home -e -----------------------*/
 
 
   return (
@@ -50,17 +54,27 @@ const Front = () => {
 
           <div className="home_txt">
 
-            <h3 className="greetings">Hii</h3>
+            <h3 className="greetings">Good <Greetings />,</h3>
             <p>To Digital Voyagers ! from</p>
             <h1 className="name">Raj Chhalotre</h1>
 
             <p>Welcome to my portfolio website!<br />
               Here, you'll find a showcase of my skills and expertise
-              <br />as Coder
-              <span className="prof"></span>
+              <br />as
+              <span className="prof">Coder</span>
             </p>
 
-            <a href={resume} target="_blank" className="btn" rel="noreferrer" > View CV</a>
+            {/* <a href={resume} target="_blank" className="btn" rel="noreferrer" > View CV</a> */}
+
+            <btn className="btn1">
+              <a href={resume} target="_blank" rel="noreferrer">
+                View CV
+                <svg viewBox="0 0 70 36">
+                  <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                </svg>
+              </a>
+            </btn>
+
 
           </div>
 

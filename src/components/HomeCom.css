@@ -9,8 +9,10 @@
     z-index: 1;
     min-height: 100vh;
     overflow-x: hidden;
-    padding-top: 80px;
-    background-color: rgb(18, 72, 72);
+    /* padding-top: 80px; */
+    /* background-color: #202020; */
+    background-image: url('/src/assets/raj1.jpg');
+
 
 }
 
@@ -45,9 +47,9 @@
     animation: fadeIn 1.5s linear forwards;
 
     display: inline-block;
-
-
 }
+
+
 
 .home_cls .home_txt h2 {
     display: inline-block;
@@ -73,6 +75,7 @@
 
 
     font-size: 35px;
+    
     text-shadow: 2px 4px 2px #3F7FBF;
     mix-blend-mode: screen;
     animation: fadeIn 1.5s linear forwards;
@@ -110,8 +113,9 @@
 
 .home_cls .home_txt .btn1 {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
     line-height: 15px;
+    
 
 }
 
@@ -130,7 +134,7 @@
 }
 
 .home_img {
-    background: url('/src/assets/ReadyPlayerMe-Avatar.png');
+    background: url('/src/assets/raj1.jpg');
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
@@ -142,7 +146,7 @@
 
 
     background-color: rgb(14, 113, 220);
-    border-radius: 23% 23% 16% 4% / 8% 1% 2% 4%;
+    /* border-radius: 23% 23% 16% 4% / 8% 1% 2% 4%; */
 
 
 
@@ -150,7 +154,7 @@
 
 
     box-shadow: var(--shadow-black-100);
-    animation: hover_anim 5s ease-in-out infinite, jiggle 4s ease-in-out infinite;
+    /* animation: hover_anim 5s ease-in-out infinite, jiggle 4s ease-in-out infinite; */
     transition: all 1s ease-in-out;
     z-index: 2;
 

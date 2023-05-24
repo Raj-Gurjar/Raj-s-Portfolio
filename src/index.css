@@ -27,18 +27,22 @@ html {
     --black-100: #f7f7f7;
     --white: #fff;
     --black-alpha-100: rgba(0, 0, 0, 0.5);
+
+    --text: #2B3044;
+    --line: #BBC1E1;
+    --line-active: #275EFE;
 }
 
 body {
 
     /* for dark theme */
     /* background: linear-gradient(
-        144.39deg,
+        144.39deg, 
         #ffffff -278.56%,
         #6d6d6d -78.47%,
         #11101d 91.61%
       ); */
-    background-color: #0e5e62;
+    background-color: #202020;
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -121,8 +125,8 @@ ul {
 
 
 /*?-------------------   Buttons -s   -------------------- */
-
-.all_btns {
+/* 
+.btn {
 
     text-align: center;
 
@@ -146,7 +150,7 @@ ul {
 
 }
 
-.all_btns:hover {
+.btn:hover {
 
     background: #03e9f4;
     border: solid #ffffff;
@@ -162,15 +166,63 @@ ul {
 
 }
 
-.all_btns:active {
+.btn:active {
     background-color: #0000ff;
     box-shadow: 0 3px 5px #070606;
     top: 3px;
     transform: translateY(2px);
     position: relative;
     /* transition: all 0.3s ease-in-out; */
-}
+/* }  */
 
+ btn
+ {
+    margin-top: 210px;
+    font-size: 1rem;
+ }
+ btn a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 var(--spacing, 0px);
+    transition: margin .25s;
+ }
+ 
+ btn a svg {
+    width: 76px;
+    /* height: 40px; */
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 7px) translateZ(0);
+    fill: none;
+    stroke: var(--stroke, var(--line));
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke-dasharray: var(--offset, 69px) 278px;
+    stroke-dashoffset: 361px;
+    transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+    /* animation: btn_bouncy 2s infinite linear; */
+
+ }
+ 
+ btn a:hover {
+    --spacing: 4px;
+    --stroke: var(--line-active);
+    --stroke-delay: .1s;
+    --offset: 180px;
+ }
+ 
+
+
+ 
+
+
+ 
+
+
+ 
 
 /*?-------------------   Buttons -e   -------------------- */
 
@@ -931,3 +983,4 @@ ul {
 
 
 /* ! -----------------++++++ re1: Responsive -s ++++++------------------- */
+

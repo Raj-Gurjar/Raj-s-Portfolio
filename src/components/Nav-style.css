@@ -51,8 +51,7 @@
 /* hh1 */
 .navbar ul li a.active {
 
-    background-image: linear-gradient(hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%,
-            hsla(0, 0%, 0%, 0.3) 50%, hsla(0, 0%, 100%, 0.2));
+
 
 
     font-family: sans-serif;
