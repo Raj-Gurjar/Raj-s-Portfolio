@@ -1,7 +1,9 @@
 import "./HomeCom.css";
 
+
 // import frnt_hero from "../assets/ReadyPlayerMe-Avatar.png";
 import resume from "../assets/Resume (Raj).pdf";
+import home_img from "../assets/PicsArt_05-24-06.05.09.png";
 
 import React from 'react';
 
@@ -54,15 +56,24 @@ const Front = () => {
 
           <div className="home_txt">
 
-            <h3 className="greetings">Good <Greetings />,</h3>
-            <p>To Digital Voyagers ! from</p>
-            <h1 className="name">Raj Chhalotre</h1>
+            <div className="greet_box">
+              <p1 className="greetings">Good <Greetings />,</p1>
+              <p>To Digital Voyagers!</p>
+            </div>
 
-            <p>Welcome to my portfolio website!<br />
-              Here, you'll find a showcase of my skills and expertise
-              <br />as
-              <span className="prof">Coder</span>
-            </p>
+            <div className="name_box">
+              <p>This is,</p>
+              <div className="name">
+                <h1>Raj <span>Chhalotre</span></h1>
+              </div>
+
+              <p className="prof_box">a <span className="prof"> Coder</span></p>
+
+            </div>
+
+
+
+
 
             {/* <a href={resume} target="_blank" className="btn" rel="noreferrer" > View CV</a> */}
 
@@ -78,11 +89,7 @@ const Front = () => {
 
           </div>
 
-          <div class="home_img">
-            <div class="img_box">
-            </div>
 
-          </div>
 
         </div>
 

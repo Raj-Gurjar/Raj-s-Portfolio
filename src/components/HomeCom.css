@@ -1,258 +1,140 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
 
-/*!----------------######## Ho1: Home section starts #######------------------- */
+  .home_cls {
 
+      font-family: "Nunito Sans";
+      position: relative;
+      z-index: 1;
+      overflow-x: hidden;
+      /* padding-top: 80px; */
+      background-color: rgb(51, 46, 46);
+      min-height: 100vh;
 
 
-.home_cls {
-    position: relative;
-    z-index: 1;
-    min-height: 100vh;
-    overflow-x: hidden;
-    /* padding-top: 80px; */
-    /* background-color: #202020; */
-    background-image: url('/src/assets/raj1.jpg');
 
+      background: url("/src/assets/bg1.png");
 
-}
+      height: 100%;
 
-.home_cls .home_txt,
-.home_cls .home_img {
-    flex: 0 0 45%;
-    max-width: 50%;
-    padding: 0 5px;
-}
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 
-.home_cls .row {
-    margin-left: 40px;
-    /* background-color: pink; */
-}
 
-.home_txt {
-    /* background-color: red; */
-    line-height: 25px;
-}
+  }
 
+  .home_txt {
+      /* background-color: rgba(74, 83, 83, 0.452); */
+      position: absolute;
+      /* width: 1708px; */
+      /* height: 658px; */
+      left: 78px;
+      top: 150px;
 
 
 
-.home_cls .home_txt .greetings {
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 0px;
-    color: var(--main-color);
-    /* font-size: 2vw; */
-    text-shadow: 2px 2px 2 px #3F7FBF;
-    mix-blend-mode: screen;
-    animation: fadeIn 1.5s linear forwards;
 
-    display: inline-block;
-}
+  }
 
+  /*! -----------greeting---------------- */
 
+  .home_txt .greet_box {
+      /* background-color: rgba(250, 235, 215, 0.37); */
+      margin-bottom: 40px;
+  }
 
-.home_cls .home_txt h2 {
-    display: inline-block;
-    font-size: 40px;
-    z-index: 1;
+  .greet_box .greetings {
+      font-style: italic;
+      font-weight: 200;
+      font-size: 2.5rem;
+      /* line-height: 98px; */
+      /* or 131% */
 
-    animation: wave_hand 2s ease-in-out infinite;
+      letter-spacing: 0.08em;
 
-    transform-origin: 90% 90%;
-    /* Pivot around the bottom-left palm */
-}
 
-.home_cls .home_txt .hand img {
-    height: 35px;
-    width: 40px;
-}
+      mix-blend-mode: hard-light;
+  }
 
+  .greet_box p {
 
-.home_cls .home_txt .name {
+      font-weight: 400;
+      margin-left: 40px;
+      font-size: 1.5rem;
+      /* line-height: 98px; */
+      /* identical to box height, or 218% */
 
-    margin-top: 15px;
-    margin-bottom: 15px;
+      letter-spacing: 0.08em;
 
+  }
 
-    font-size: 35px;
-    
-    text-shadow: 2px 4px 2px #3F7FBF;
-    mix-blend-mode: screen;
-    animation: fadeIn 1.5s linear forwards;
+  /*! -----------greeting---------------- */
 
-}
+  /*!--------------- name----------------------- */
 
+  .name_box {
+      background-color: rgba(65, 133, 143, 0.37);
 
 
+  }
 
-.home_cls .home_txt .prof {
-    color: var(--main-color);
-    font-size: 17px;
+  .name_box p {
+      font-style: italic;
+      font-weight: 200;
+      font-size: 1.2rem;
+      /* line-height: 98px; */
+      /* or 218% */
 
-}
+      letter-spacing: 0.08em;
 
-.home_cls .home_txt span {
-    font-size: 18px;
-    font-weight: 900;
-    margin-left: 10px;
-    display: inline;
-    color: var(--main-color);
-    /* font-family: 'Poppins', sans-serif; */
-    /* color: var(--black-900); */
-    font-family: 'Fira Sans';
-}
+      color: #FFFFFF;
+  }
 
-.home_cls .home_txt p {
-    font-size: 16px;
-    /* color: var(--black-900); */
-    font-weight: 500;
-    margin-top: 15px;
-    font-family: 'Fira Sans';
-}
+  .name_box .name {
+      /* background-color: rgba(250, 235, 215, 0.501); */
 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
 
-.home_cls .home_txt .btn1 {
-    display: inline-block;
-    margin-top: 15px;
-    line-height: 15px;
-    
 
-}
 
-/*? ------------ Home img -s ---------------*/
+  }
 
+  .name_box .name h1 {
+      /* text-align:center; */
+      /* justify-content: end; */
 
-.home_img {
-    /* background-color: #00ff11; */
-}
+      font-family: 'Nunito Sans';
+      font-style: italic;
+      font-weight: 800;
+      font-size: 4rem;
+      line-height: 98px;
 
-.home_img .img_box {
-    position: relative;
-    width: 10px;
-    z-index: 1;
+      letter-spacing: 0.08em;
+  }
+  .name_box .name h1 span
+  {
+    font-weight: 100;
+    color: red;
+  }
 
-}
 
-.home_img {
-    background: url('/src/assets/raj1.jpg');
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  .name_box .prof_box {
+      /* display: block; */
+      margin-left: 700px;
 
-    margin-top: 40px;
-    height: 400px;
-    width: 20px;
+  }
 
+  .name_box .prof_box .prof {
+      font-weight: 600;
+      font-size: 1.5rem;
+  }
 
-    background-color: rgb(14, 113, 220);
-    /* border-radius: 23% 23% 16% 4% / 8% 1% 2% 4%; */
 
 
-
-    /* border: 5px white solid; */
-
-
-    box-shadow: var(--shadow-black-100);
-    /* animation: hover_anim 5s ease-in-out infinite, jiggle 4s ease-in-out infinite; */
-    transition: all 1s ease-in-out;
-    z-index: 2;
-
-
-}
-
-.home_img:hover {
-    animation: jiggle 1s ease-in-out infinite;
-}
-
-/*? ------------ Home img -e ---------------*/
-
-
-
-
-/* ? ----------- social media -s ----------- */
-.social_icon {
-    position: fixed;
-    top: 53%;
-    left: 20px;
-    transform: translateY(-53%);
-    border: 1px solid rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    z-index: 999;
-
-}
-
-.home_cls .card {
-    padding: 2px 2px;
-}
-
-.social_icon a {
-    font-size: 18px;
-    display: flex;
-    text-align: center;
-    padding: 6px;
-    margin: 3px;
-    color: rgb(10, 21, 18);
-
-
-
-}
-
-.social_icon .s1 {
-
-
-    background-color: rgb(14, 113, 220);
-    border-radius: 23% 23% 16% 54% / 8% 16% 24% 42%;
-
-    animation: jiggle 4s ease-in-out infinite;
-
-}
-
-.social_icon .s2 {
-
-
-    background-color: rgb(97, 75, 45);
-
-    animation: jiggle 4s ease-in-out infinite;
-}
-
-.social_icon .s3 {
-
-
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-
-    animation: jiggle 4s ease-in-out infinite;
-}
-
-.social_icon .s4 {
-
-
-    background-color: rgb(10, 161, 243);
-    animation: jiggle 4s ease-in-out infinite;
-}
-
-.social_icon>a:hover {
-    animation: jiggle 1s ease-in-out infinite;
-    background-color: #08dabb;
-    background: #08dabb;
-
-}
-
-.social_icon>a:active {
-    background-color: #0000ff;
-    font-size: 13px;
-
-}
-
-.social_icon>a:hover i {
-
-    /* margin-left: 3px; */
-    color: #000000;
-}
-
-/*? --------------   social media -e ---------------*/
-
-
-
-/* !----------------######## ho1: Home section ends #######------------------- */
+  /*!--------------- name----------------------- */
