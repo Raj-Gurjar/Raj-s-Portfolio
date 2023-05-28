@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
 
 
 /*!----------------#### Global Declarations ####-----------------------  */
@@ -31,6 +32,7 @@ html {
     --text: #2B3044;
     --line: #BBC1E1;
     --line-active: #275EFE;
+    --text-high:#DC965A;
 }
 
 body {
@@ -50,7 +52,7 @@ body {
     font-weight: 400;
     color: var(--white);
     overflow-x: hidden;
-    font-family: 'Rubik';
+    font-family: 'Nunito Sans';
 
 
 }
@@ -296,7 +298,7 @@ ul {
 .section_title .sub_title {
     font-size: 20px;
     font-weight: 600;
-    color: var(--main-color);
+    color: var(--text-high);
 }
 
 .section_title .main_title {
@@ -312,7 +314,7 @@ ul {
 
 .section_title .line li {
     display: inline-block;
-    background-color: var(--main-color);
+    background-color: var(--text-high);
     border-radius: 50px;
     height: 3px;
 }
@@ -675,7 +677,7 @@ ul {
 @media(max-width:1160px) {
 
     .social_icon {
-        left: 10px;
+        right: 10px;
         position: fixed;
     }
 
@@ -688,6 +690,8 @@ ul {
         flex: 0 0 38%;
         max-width: 38%;
     }
+
+    
 }
 
 
@@ -807,15 +811,16 @@ ul {
 
     .social_icon {
         display: block;
-        left: 90%;
+        right: 90%;
         position: absolute;
+        z-index: 999;
 
     }
    
     .home_cls .home_img,
     .home_cls .home_txt {
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 70%;
+        max-width: 70%;
     }
 
     .home_cls .home_img {
@@ -864,7 +869,7 @@ ul {
 @media (max-width : 767px) {
 
     .social_icon {
-        left: 85%;
+        right: 85%;
     }
 
     .about_cls .about_content,

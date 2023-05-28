@@ -2,20 +2,21 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
 
+  
+
   .home_cls {
 
       font-family: "Nunito Sans";
       position: relative;
-      z-index: 1;
+      z-index: 2;
       overflow-x: hidden;
       /* padding-top: 80px; */
-      background-color: rgb(51, 46, 46);
+      background-color: rgb(0, 0, 0);
       min-height: 100vh;
 
 
 
-      background: url("/src/assets/bg1.png");
-
+      /* background:  hsla(0, 0%, 0%, 0.823) url("/src/assets/bg3-bw.jpg") ; */
       height: 100%;
 
       /* Center and scale the image nicely */
@@ -33,6 +34,7 @@
       /* height: 658px; */
       left: 78px;
       top: 150px;
+      z-index: 22;
 
 
 
@@ -48,7 +50,7 @@
 
   .greet_box .greetings {
       font-style: italic;
-      font-weight: 200;
+      font-weight: 400;
       font-size: 2.5rem;
       /* line-height: 98px; */
       /* or 131% */
@@ -138,3 +140,57 @@
 
 
   /*!--------------- name----------------------- */
+
+
+  /* ? ----------- social media -s ----------- */
+
+.social_icon {
+    position: fixed;
+    top: 53%;
+    right: 20px;
+    transform: translateY(-53%);
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    border-radius: 10px;
+
+}
+
+
+.social_icon a {
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    padding: 6px;
+    margin: 3px;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease;
+
+
+
+}
+
+
+
+.social_icon>a:hover {
+    animation: jiggle 1s ease-in-out infinite;
+    /* background-color: #08dabb; */
+    /* background: #08dabb; */
+    transform: scale(1.2);
+
+}
+
+.social_icon>a:active {
+    background-color: #0000ff;
+    font-size: 13px;
+
+}
+
+.social_icon>a:hover i {
+
+    /* margin-left: 3px; */
+    color: #000000;
+}
+
+/*? --------------   social media -e ---------------*/
