@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./SkillCom.css";
+import "./SkillCom.scss";
 
 import { FaLinkedin, FaGit } from 'react-icons/fa';
 
@@ -37,11 +37,57 @@ const SkillCom = () => {
                     <div className="skill_card">
 
                         <div className="skill_type">
-                            <div className="skill-type-icon"><FaLinkedin /></div>
+
+                            <div className="heading">
+                                <h2 className="skill-type-icon"><FaLinkedin /></h2>
+                                <h3 className='line'>Frontend <span></span></h3>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officiis?</p>
+
+                            <h4>Skills for it</h4>
+                            
+                            <div className="skill-icons-box">
+
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkssfsfsfsfsf</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqqeq</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Link</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Link</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Link</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Link</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Link</h5>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div className="skill_type">
+                            {/* <div className="skill-type-icon"> <FaLinkedin /> </div> */}
                             <h3>Frontend</h3>
 
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officiis?</p>
-                            
+
                             <h4>Skills for it</h4>
                             <div className="skill-icons-box">
 
@@ -81,55 +127,11 @@ const SkillCom = () => {
 
                         </div>
                         <div className="skill_type">
-                            <div className="skill-type-icon"> <FaLinkedin /> </div>
+                            {/* <div className="skill-type-icon"> <FaLinkedin /> </div> */}
                             <h3>Frontend</h3>
 
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officiis?</p>
-                            
-                            <h4>Skills for it</h4>
-                            <div className="skill-icons-box">
 
-
-
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        <div className="skill_type">
-                            <div className="skill-type-icon"> <FaLinkedin /> </div>
-                            <h3>Frontend</h3>
-
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officiis?</p>
-                            
                             <h4>Skills for it</h4>
                             <div className="skill-icons-box">
 
@@ -169,7 +171,7 @@ const SkillCom = () => {
 
                         </div>
 
-                        
+
 
                     </div>
 
