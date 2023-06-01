@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import about_img from "../assets/bg1.png";
+import about_img from "../../assets/Background-imgs/bg1.png";
 import "./AboutCom.css";
 
 const AboutCom = () => {
@@ -24,8 +24,6 @@ const AboutCom = () => {
                             <h5 className="sub_title">About</h5>
                             <h3 className="main_title">Let's Know Me</h3>
                             <ul className="line">
-                                <li></li>
-                                <li></li>
                                 <li></li>
                             </ul>
                         </div>

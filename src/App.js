@@ -1,24 +1,34 @@
 import React from "react";
 import "./index.css";
-import Home from "./routes/Home";
-import About from "./routes/About";
-import Skills from "./routes/Skills";
-import Projects from "./routes/Projects";
-import Contact from "./routes/Contact";
 
 import { Route, Routes } from "react-router-dom";
 
 
+import Navbar from './components/Navbar/Navbar';
+import HomeCom from './components/Home/HomeCom';
+import AboutCom from './components/About/AboutCom';
+import SkillCom from './components/Skills/SkillCom';
+import ProjectCom from './components/Projects/ProjectCom';
+import ContactCom from './components/Contact/ContactCom';
+
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      
+        <Navbar />
+
+        <main className="mainCom">
+
+        <HomeCom />
+        <AboutCom />
+
+        <SkillCom />
+
+        <ProjectCom />
+        <ContactCom />
+
+        </main>
+   
     </>
   );
 }

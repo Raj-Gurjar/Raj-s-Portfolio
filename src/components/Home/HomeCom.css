@@ -1,7 +1,14 @@
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
 
+  :root
+{
+    --bg-light:#232323;
+    --bg-main:#131416;
+    --text-high:#d88135;
+    --text-low:rgba(255, 255, 255, 0.721);
+    --white:#fff;
+
+}
   
 
   .home_cls {
@@ -164,33 +171,22 @@
     text-align: center;
     padding: 6px;
     margin: 3px;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     transition: all 0.2s ease;
-
-
-
 }
-
 
 
 .social_icon>a:hover {
     animation: jiggle 1s ease-in-out infinite;
-    /* background-color: #08dabb; */
-    /* background: #08dabb; */
+    color:var(--text-high);
     transform: scale(1.2);
 
 }
 
 .social_icon>a:active {
-    background-color: #0000ff;
-    font-size: 13px;
+    color: var(--text-low);
+    transform: scale(0.7);
 
-}
-
-.social_icon>a:hover i {
-
-    /* margin-left: 3px; */
-    color: #000000;
 }
 
 /*? --------------   social media -e ---------------*/

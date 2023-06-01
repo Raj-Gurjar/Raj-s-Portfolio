@@ -21,9 +21,6 @@ const SkillCom = () => {
                         <h3 className="main_title">Why you Hire me?</h3>
                         <ul type="none" className="line">
                             <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
                         </ul>
                     </div>
                 </div>
@@ -186,4 +183,4 @@ const SkillCom = () => {
     )
 }
 
-export default SkillCom
+export default SkillCom;

@@ -1,18 +1,17 @@
 import "./HomeCom.css";
-
+import Social from "./Social";
 
 // import frnt_hero from "../assets/ReadyPlayerMe-Avatar.png";
-import resume from "../assets/Resume (Raj).pdf";
-import home_img from "../assets/PicsArt_05-24-06.05.09.png";
+import resume from "../../assets/Other/Resume (Raj).pdf";
+import home_img from "../../assets/My-imgs/PicsArt_05-24-06.05.09.png";
 
-import { FaLinkedinIn,FaGithub,FaInstagram } from "react-icons/fa";
 
 
 import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-const Front = () => {
+const HomeCom = () => {
 
 
   // !---------------------------- Greetings on Home -s -----------------------*/
@@ -101,14 +100,8 @@ const Front = () => {
 
       {/* <!--! ---------- ---- social media -------------------------> */}
 
-      <div className="social_icon card">
-
-        <a href="https://www.linkedin.com/in/raj-chhalotre-29jul01/" target="_blank" rel="noreferrer"> <FaLinkedinIn /></a>
-        <a href="https://github.com/Raj-Gurjar" target="_blank" rel="noreferrer"> <FaGithub /></a>
-        <a href="https://www.linkedin.com/in/raj-chhalotre-29jul01/" target="_blank" rel="noreferrer"> <FaInstagram /></a>
-
-      </div>
-
+   
+      <Social/>
 
 
 
@@ -117,4 +110,4 @@ const Front = () => {
   )
 };
 
-export default Front;
+export default HomeCom;
