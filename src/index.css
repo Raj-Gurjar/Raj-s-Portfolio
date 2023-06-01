@@ -362,7 +362,32 @@ ul {
 
 /*? ------------ GLobal card box -s ---------------*/
 
-
+.flex-card-box {
+    background-color: rgb(54, 217, 70);
+    display: flex;
+    flex-wrap: wrap;
+  
+    justify-content: center;
+    /* text-align: center; */
+    /* align-items: center; */
+  
+    padding: 10px; 
+  }
+  
+  .card {
+    background-color: rgba(216, 161, 170, 0.679);
+    /* padding: 10px; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 0 0 30.33%;
+    max-width: 30.33%;
+  
+    padding: 10px;
+    margin: 10px;
+  }
+  
 
 /*? ------------ GLobal card box -e ---------------*/
 

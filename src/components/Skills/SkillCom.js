@@ -31,9 +31,9 @@ const SkillCom = () => {
 
                 <div className="row justify_content_cntr">
 
-                    <div className="skill_card">
+                    <div className="skill_card flex-card-box">
 
-                        <div className="skill_type">
+                        <div className="skill_type card">
 
                             <div className="heading">
                                 <h2 className="skill-type-icon"><FaLinkedin /></h2>
@@ -79,7 +79,7 @@ const SkillCom = () => {
 
 
                         </div>
-                        <div className="skill_type">
+                        <div className="skill_type card">
                             {/* <div className="skill-type-icon"> <FaLinkedin /> </div> */}
                             <h3>Frontend</h3>
 
@@ -123,7 +123,7 @@ const SkillCom = () => {
 
 
                         </div>
-                        <div className="skill_type">
+                        <div className="skill_type card">
                             {/* <div className="skill-type-icon"> <FaLinkedin /> </div> */}
                             <h3>Frontend</h3>
 

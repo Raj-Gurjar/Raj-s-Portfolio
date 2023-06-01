@@ -13,31 +13,6 @@
   background-color: #3d4053;
 }
 
-.skill_card {
-  background-color: rgb(54, 217, 70);
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: center;
-  /* text-align: center; */
-  /* align-items: center; */
-
-  padding: 10px;
-}
-
-.skill_card .skill_type {
-  background-color: rgba(216, 161, 170, 0.679);
-  /* padding: 10px; */
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex: 0 0 30.33%;
-  max-width: 30.33%;
-
-  padding: 15px;
-  margin: 10px;
-}
 
 .skill_type .heading {
   display: flex;

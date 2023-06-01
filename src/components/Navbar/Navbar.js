@@ -1,13 +1,13 @@
 // import { Link } from "react-router-dom"
 import "./Nav-style.css"
-import { NavLink } from 'react-router-dom';
+
 import logo from "../../assets/mylogo2.png";
 import React, { useState } from 'react';
 
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-
+     
     //!-------------------- Sticky Navbar -s --------------------
 
     const [color, setColor] = useState(false);
@@ -24,7 +24,7 @@ const Navbar = () => {
     window.addEventListener('scroll', changeColor);
 
     //!-------------------- Sticky Navbar -e --------------------
-
+   
 
     // //!-------------------- Current Nav Item Highlighting -s --------------------
     // const navLi = document.querySelectorAll('nav ul li a');
@@ -86,54 +86,54 @@ const Navbar = () => {
 
     return (
 
-        <div className={color ? 'navbar sticky' : 'navbar'}>
+        <div className={color ? "navbar sticky" : "navbar"}>
+
             <div className="row space_btw">
+                
                 <div className="logo">
-                    <NavLink exact to="/">
-                        <img src={logo} alt="Logo" />
-                    </NavLink>
+                    <Link to="/">
+                        <img src={logo}></img>
+                    </Link>
+
                 </div>
 
-                <ul className="menu">
+                <ul className="menu ">
+
                     <li>
-                        <NavLink exact to="/" activeClassName="active" className="nav_item">
-                            Home
-                        </NavLink>
+                        <a href="/" className="nav_item active" >Home</a>
                     </li>
 
                     <li>
-                        <NavLink to="/about" activeClassName="active" className="nav_item">
-                            About
-                        </NavLink>
+                        <a href="/about" className="nav_item">About</a>
                     </li>
 
                     <li>
-                        <NavLink to="/skills" activeClassName="active" className="nav_item">
-                            Skills
-                        </NavLink>
+                        <a href="/skills" className="nav_item">Skills</a>
                     </li>
 
                     <li>
-                        <NavLink to="/projects" activeClassName="active" className="nav_item">
-                            Projects
-                        </NavLink>
+                        <a href="/projects" className="nav_item">Projects</a>
                     </li>
 
                     <li>
-                        <NavLink to="/contact" activeClassName="active" className="nav_item">
-                            Contact
-                        </NavLink>
+                        <a href="/contact" className="nav_item">Contact</a>
                     </li>
+
+
                 </ul>
 
+
                 <div className="menu_btn">
+
                     <div className="bar1"></div>
                     <div className="bar2"></div>
                     <div className="bar3"></div>
+
                 </div>
             </div>
-        </div>
-    );
-};
 
-export default Navbar;
+        </div>
+    )
+}
+
+export default Navbar
