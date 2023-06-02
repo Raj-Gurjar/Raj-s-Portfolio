@@ -11,44 +11,44 @@ const ProjectCom = () => {
     // !-------------------- Port- Item Filter -s --------------------
 
 
-    const FilterContainer = document.querySelector(".port_filter"),
-        filterBtns = FilterContainer.children,
-        totalFilterBtn = filterBtns.length,
-        PortItems = document.querySelectorAll(".port_item"),
-        totalPortItems = PortItems.length;
+    // const FilterContainer = document.querySelector(".port_filter"),
+    //     filterBtns = FilterContainer.children,
+    //     totalFilterBtn = filterBtns.length,
+    //     PortItems = document.querySelectorAll(".port_item"),
+    //     totalPortItems = PortItems.length;
 
-    // console.log(totalPortItems);
+    // // console.log(totalPortItems);
 
-    for (let i = 0; i < totalFilterBtn; i++) {
-        //   console.log(filterBtns[i]);
-        filterBtns[i].addEventListener("click", function () {
-            // console.log(this);
-            // console.log(this.innerHTML);
+    // for (let i = 0; i < totalFilterBtn; i++) {
+    //     //   console.log(filterBtns[i]);
+    //     filterBtns[i].addEventListener("click", function () {
+    //         // console.log(this);
+    //         // console.log(this.innerHTML);
 
-            FilterContainer.querySelector(".active").classList.remove("active");
-            this.classList.add("active");
+    //         FilterContainer.querySelector(".active").classList.remove("active");
+    //         this.classList.add("active");
 
-            const filterValue = this.getAttribute("data_filter");
+    //         const filterValue = this.getAttribute("data_filter");
 
-            // console.log(filterValue);
+    //         // console.log(filterValue);
 
-            for (let k = 0; k < totalPortItems; k++) {
-                if (filterValue == PortItems[k].getAttribute("data_category")) {
-                    PortItems[k].classList.remove("hide");
-                    PortItems[k].classList.add("show");
-                }
-                else {
-                    PortItems[k].classList.remove("show");
-                    PortItems[k].classList.add("hide");
-                }
+    //         for (let k = 0; k < totalPortItems; k++) {
+    //             if (filterValue == PortItems[k].getAttribute("data_category")) {
+    //                 PortItems[k].classList.remove("hide");
+    //                 PortItems[k].classList.add("show");
+    //             }
+    //             else {
+    //                 PortItems[k].classList.remove("show");
+    //                 PortItems[k].classList.add("hide");
+    //             }
 
-                if (filterValue == "all") {
-                    PortItems[k].classList.remove("hide");
-                    PortItems[k].classList.add("show");
-                }
-            }
-        });
-    }
+    //             if (filterValue == "all") {
+    //                 PortItems[k].classList.remove("hide");
+    //                 PortItems[k].classList.add("show");
+    //             }
+    //         }
+    //     });
+    // }
     //! -------------------- Port- Item Filter -e --------------------
 
 
@@ -69,7 +69,7 @@ const ProjectCom = () => {
 
 
 
-                <div class="row justify_content_cntr">
+                {/* <div class="row justify_content_cntr">
 
                     <div class="port_filter ">
                         <button type="button" class="all_btns active" onclick="audio.play();" data_filter="all">All</button>
@@ -80,44 +80,126 @@ const ProjectCom = () => {
                         <button type="button" class="all_btns" onclick="audio.play();" data_filter="Others">Others</button>
                     </div>
 
-                </div>
+                </div> */}
 
 
 
                 <div className="row justify_content_cntr">
 
-                    <div className="proj_card_box flex-card-box">
 
-                        <div className="proj_item card" data_category="DSA">
+                    <div className="proj_item card" data_category="DSA">
 
-                            <div className="heading">
-                                <h1>Project title</h1>
+                        <input type="checkbox" className="my_checkbox" name="" />
+                        <div className="toggle">+</div>
 
-                                <h3>Frontend</h3>
-                                <input type="checkbox" class="my_checkbox" name="" />
-                                <div class="toggle">+</div>
+                        <div className="heading">
+                            <h1>Project title</h1>
 
-                            </div>
-
-                            <div className="proj_img">
-                                <img src={projimg} alt="proj img" />
-
-                                <div className="proj_desc hide">
-                                    <p>Lorem ipsum dolor sit amet consectetur adsa ipsum consequatur et quia repellat veritatis assumenda natus quis consectetur labore, porro quidem.</p>
-                                    <p>Made with <span>React, Css, HTML</span></p>
-                                </div>
-                            </div>
-                            <div className="proj_btn">
-                                <button> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
-                                <button> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
-                            </div>
-
-
-
-
-
+                            <h3>Frontend</h3>
 
                         </div>
+
+                        <div className="proj_img">
+                            <img src={projimg} alt="proj img" />
+                        </div>
+
+                        <div className="proj_btn_box">
+                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
+                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
+                        </div>
+
+                        <div className="proj_desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adsa ipsum consequatur et quia repellat veritatis assumenda natus quis consectetur labore, porro quidem.</p>
+                            <p className="tech">Made with <span><h4>React, Css, HTML</h4></span></p>
+                        </div>
+
+
+
+                    </div>
+                    <div className="proj_item card" data_category="DSA">
+
+                        <input type="checkbox" className="my_checkbox" name="" />
+                        <div className="toggle">+</div>
+
+                        <div className="heading">
+                            <h1>Project title</h1>
+
+                            <h3>Frontend</h3>
+
+                        </div>
+
+                        <div className="proj_img">
+                            <img src={projimg} alt="proj img" />
+                        </div>
+
+                        <div className="proj_btn_box">
+                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
+                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
+                        </div>
+
+                        <div className="proj_desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adsa ipsum consequatur et quia repellat veritatis assumenda natus quis consectetur labore, porro quidem.</p>
+                            <p className="tech">Made with <span><h4>React, Css, HTML</h4></span></p>
+                        </div>
+
+
+
+                    </div>
+                    <div className="proj_item card" data_category="DSA">
+
+                        <input type="checkbox" className="my_checkbox" name="" />
+                        <div className="toggle">+</div>
+
+                        <div className="heading">
+                            <h1>Project title</h1>
+
+                            <h3>Frontend</h3>
+
+                        </div>
+
+                        <div className="proj_img">
+                            <img src={projimg} alt="proj img" />
+                        </div>
+
+                        <div className="proj_btn_box">
+                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
+                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
+                        </div>
+
+                        <div className="proj_desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adsa ipsum consequatur et quia repellat veritatis assumenda natus quis consectetur labore, porro quidem.</p>
+                            <p className="tech">Made with <span><h4>React, Css, HTML</h4></span></p>
+                        </div>
+
+
+
+                    </div>
+                    <div className="proj_item card" data_category="DSA">
+
+                        <input type="checkbox" className="my_checkbox" name="" />
+                        <div className="toggle">+</div>
+
+                        <div className="heading">
+                            <h1>Project title</h1>
+
+                            <h3>Frontend</h3>
+
+                        </div>
+
+                        <div className="proj_img">
+                            <img src={projimg} alt="proj img" />
+                        </div>
+
+                        <div className="proj_btn_box">
+                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
+                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
+                        </div>
+
+                        <div className="proj_desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adsa ipsum consequatur et quia repellat veritatis assumenda natus quis consectetur labore, porro quidem.</p>
+                            <p className="tech">Made with <span><h4>React, Css, HTML</h4></span></p>
+                        </div>
+
 
 
                     </div>
