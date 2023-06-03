@@ -152,7 +152,7 @@
   /* ? ----------- social media -s ----------- */
 
 .social_icon {
-    position: fixed;
+    /* position: fixed; */
     top: 53%;
     right: 20px;
     transform: translateY(-53%);

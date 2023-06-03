@@ -17,11 +17,10 @@ const SkillCom = () => {
                 <div className="row justify_content_cntr">
 
                     <div className="section_title txt_align">
-                        <h5 className="sub_title">Skills</h5>
-                        <h3 className="main_title">Why you Hire me?</h3>
-                        <ul type="none" className="line">
-                            <li></li>
-                        </ul>
+                        <h3 className="main_title">Skills</h3>
+                        <h5 className="sub_title">Why you Hire me?</h5>
+                        <div className="line" />
+
                     </div>
                 </div>
 
@@ -29,21 +28,25 @@ const SkillCom = () => {
                 {/* <!-- skill Item -s --> */}
 
 
-                <div className="row justify_content_cntr">
+                <div class="row justify_content_cntr">
 
-                    <div className="skill_card flex-card-box">
+                    <div class="skill_card card">
 
-                        <div className="skill_type card">
+                        <div className="content">
 
                             <div className="heading">
                                 <h2 className="skill-type-icon"><FaLinkedin /></h2>
                                 <h3 className='line'>Frontend <span></span></h3>
                             </div>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officiis?</p>
+
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloribus excepturi minima.
+                                Neque repellendus dolorem magni qui.
+
+                            </p>
 
                             <h4>Skills for it</h4>
-                            
+
                             <div className="skill-icons-box">
 
                                 <div className="skill-icon">
@@ -52,132 +55,164 @@ const SkillCom = () => {
                                 </div>
                                 <div className="skill-icon">
                                     <FaLinkedin />
-                                    <h5>Linkqqeq</h5>
+                                    <h5>Linkqq</h5>
                                 </div>
                                 <div className="skill-icon">
                                     <FaLinkedin />
-                                    <h5>Link</h5>
+                                    <h5>Linkqq</h5>
                                 </div>
                                 <div className="skill-icon">
                                     <FaLinkedin />
-                                    <h5>Link</h5>
+                                    <h5>Linkqq</h5>
                                 </div>
                                 <div className="skill-icon">
                                     <FaLinkedin />
-                                    <h5>Link</h5>
+                                    <h5>Linkqq</h5>
                                 </div>
                                 <div className="skill-icon">
                                     <FaLinkedin />
-                                    <h5>Link</h5>
+                                    <h5>Linkqq</h5>
                                 </div>
                                 <div className="skill-icon">
                                     <FaLinkedin />
-                                    <h5>Link</h5>
+                                    <h5>Linkqq</h5>
                                 </div>
+
 
                             </div>
-
-
-                        </div>
-                        <div className="skill_type card">
-                            {/* <div className="skill-type-icon"> <FaLinkedin /> </div> */}
-                            <h3>Frontend</h3>
-
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officiis?</p>
-
-                            <h4>Skills for it</h4>
-                            <div className="skill-icons-box">
-
-
-
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        <div className="skill_type card">
-                            {/* <div className="skill-type-icon"> <FaLinkedin /> </div> */}
-                            <h3>Frontend</h3>
-
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officiis?</p>
-
-                            <h4>Skills for it</h4>
-                            <div className="skill-icons-box">
-
-
-
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-                                <div className="skill-icon">
-                                    <FaLinkedin />
-                                    <h5>Link</h5>
-                                </div>
-
-                            </div>
-
-
                         </div>
 
-
+                        <div className="layer"></div>
 
                     </div>
+                    
+                    <div class="skill_card card">
+
+                        <div className="content">
+
+                            <div className="heading">
+                                <h2 className="skill-type-icon"><FaLinkedin /></h2>
+                                <h3 className='line'>Frontend <span></span></h3>
+                            </div>
+
+
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloribus excepturi minima.
+                                Neque repellendus dolorem magni qui.
+
+                            </p>
+
+                            <h4>Skills for it</h4>
+
+                            <div className="skill-icons-box">
+
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkssfsfsfsfsf</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div className="layer"></div>
+
+                    </div>
+                    <div class="skill_card card">
+
+                        <div className="content">
+
+                            <div className="heading">
+                                <h2 className="skill-type-icon"><FaLinkedin /></h2>
+                                <h3 className='line'>Frontend <span></span></h3>
+                            </div>
+
+
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloribus excepturi minima.
+                                Neque repellendus dolorem magni qui.
+
+                            </p>
+
+                            <h4>Skills for it</h4>
+
+                            <div className="skill-icons-box">
+
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkssfsfsfsfsf</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+                                <div className="skill-icon">
+                                    <FaLinkedin />
+                                    <h5>Linkqq</h5>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div className="layer"></div>
+
+                    </div>
+                   
 
                 </div>
 
 
+
             </div>
 
-        </section>
+
+
+
+
+            
+
+
+
+        </section >
 
 
     )

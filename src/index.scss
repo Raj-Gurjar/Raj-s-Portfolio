@@ -1,6 +1,8 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+// /* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 /*!----------------#### Global Declarations ####-----------------------  */
 
@@ -24,10 +26,11 @@ html {
   --white: #fff;
   --black-alpha-100: rgba(0, 0, 0, 0.5);
 
-  --text: #2b3044;
-  --line: #bbc1e1;
-  --line-active: #275efe;
-  --text-high: #dc965a;
+  --bg-light: #232323;
+  --bg-main: #131416;
+  --text-high: #d88135;
+  --text-low: rgba(255, 255, 255, 0.721);
+  --white: #fff;
 }
 
 body {
@@ -46,7 +49,7 @@ body {
   font-weight: 400;
   color: var(--white);
   overflow-x: hidden;
-  font-family: "Nunito Sans";
+  font-family: "Nunito", serif;
 }
 
 body::before {
@@ -80,15 +83,11 @@ ul {
 
 .section_padding {
   padding: 80px 60px;
-  /* height: 80vh; */
-  /* 
-    scroll-snap-align: start;
-    scroll-snap-stop: always; */
 }
 
 .container {
   max-width: 1140px;
-  margin: auto;
+  margin: 40px;
 }
 
 .row {
@@ -195,34 +194,33 @@ button:hover {
 
 .section_title {
   margin-bottom: 20px;
-  z-index: 1;
-}
 
-.section_title .sub_title {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text-high);
-}
+  .main_title {
+    // font-family: 'Nunito', serif;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 5px;
+    line-height: 54px;
+    letter-spacing: 3px;
 
-.section_title .main_title {
-  font-size: 25px;
-  font-weight: 600;
-  margin-top: 5px;
-}
+    text-shadow: 0px 0px 4px rgba(202, 228, 225, 0.492),
+      0 0 4px rgba(202, 228, 225, 0.209);
+  }
 
-.section_title .line {
-  padding-top: 0px;
-}
+  .sub_title {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-low);
+  }
 
-.section_title .line li {
-  display: inline-block;
-  background-color: var(--text-high);
-  border-radius: 50px;
-  height: 3px;
-}
-
-.section_title .line li:nth-of-type(1) {
-  width: 63px;
+  .line {
+    display: inline-block;
+    background-color: var(--text-high);
+    border-radius: 50px;
+    width: 33px;
+    height: 3px;
+  }
 }
 
 /*?------------------- Section Title -s -------------------- */
@@ -251,33 +249,46 @@ button:hover {
 /*? ---------------- Scroll Bar -e------------------- */
 
 /*? ------------ GLobal card box -s ---------------*/
-
-.flex-card-box {
-  // background-color: rgb(54, 217, 70);
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: center;
-  /* text-align: center; */
-  /* align-items: center; */
-
-  padding: 10px;
-}
-
 .card {
-  background-color: rgba(216, 161, 170, 0.679);
-  /* padding: 10px; */
+  background-color: var(--card-bg);
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-
-  flex: 0 0 30.33%;
-  max-width: 30.33%;
-
-  overflow: hidden;
-  padding: 10px;
+  flex: 1;
+  max-width: auto;
+  // height: 200px;
+  padding: auto;
   margin: 10px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+
+  width: 350px;
+  background: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 10px rgba(111, 108, 108, 0.5);
+
+  .content {
+    z-index: 2;
+    position: relative;
+  }
+  .layer {
+    z-index: 1;
+    position: absolute;
+    top: calc(100% - 2px);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(to left, orange, tomato);
+    transition: 0.5s;
+  }
 }
+
+.card:hover .layer {
+  top: 0;
+}
+
+
+
+
 
 /*? ------------ GLobal card box -e ---------------*/
 
@@ -434,7 +445,7 @@ button:hover {
 
 @media (max-width: 895px) {
   .section_padding {
-    padding: 80px 0px;
+    padding: 80px 40px;
   }
 
   /*?------------ Navbar ------------------ */
@@ -535,7 +546,7 @@ button:hover {
   /*?------------ Navbar -e  ------------------ */
 
   .social_icon {
-    display: block;
+    display: none;
     right: 90%;
     position: absolute;
     z-index: 999;
@@ -584,6 +595,7 @@ button:hover {
 
 @media (max-width: 767px) {
   .social_icon {
+    display: none;
     right: 85%;
   }
 

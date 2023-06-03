@@ -21,8 +21,8 @@ const AboutCom = () => {
 
                     <div className="about_box" id="text">
                         <div className="section_title">
-                            <h5 className="sub_title">About</h5>
-                            <h3 className="main_title">Let's Know Me</h3>
+                            <h3 className="main_title">About</h3>
+                            <h5 className="sub_title">Let's Know Me</h5>
                             <ul className="line">
                                 <li></li>
                             </ul>

@@ -55,163 +55,234 @@ const ProjectCom = () => {
 
     return (
 
-        <section className="port_cls section_padding">
-            <div className="container">
-                <div className="row justify_content_cntr">
-                    <div className="section_title txt_align">
-                        <h5 className="sub_title">Projects</h5>
-                        <h3 className="main_title">Works I Did</h3>
-                        <ul className="line">
-                            <li></li>
-                        </ul>
-                    </div>
+        <section class="port_cls section_padding" id="Portfolio">
+        <div class="container">
+            <div class="row justify_content_cntr">
+                <div class="section_title txt_align">
+                    <h5 class="sub_title">Portfolio</h5>
+                    <h3 class="main_title">Works I Did</h3>
+                    <ul class="line">
+                        <li></li>
+                     
+                    </ul>
+                </div>
+            </div>
+
+            {/* <div class="row justify_content_cntr">
+
+                <div class="port_filte ">
+                    <button type="button" class="all_btns active" onclick="audio.play();" data_filter="all">All</button>
+                    <button type="button" class="all_btns" onclick="audio.play();" data_filter="DSA">DSA</button>
+                    <button type="button" class="all_btns" onclick="audio.play();" data_filter="Web_Dev">Web
+                        Dev</button>
+                    <button type="button" class="all_btns" onclick="audio.play();" data_filter="AI">AI</button>
+                    <button type="button" class="all_btns" onclick="audio.play();" data_filter="Others">Others</button>
                 </div>
 
-
-
-                {/* <div class="row justify_content_cntr">
-
-                    <div class="port_filter ">
-                        <button type="button" class="all_btns active" onclick="audio.play();" data_filter="all">All</button>
-                        <button type="button" class="all_btns" onclick="audio.play();" data_filter="DSA">DSA</button>
-                        <button type="button" class="all_btns" onclick="audio.play();" data_filter="Web_Dev">Web
-                            Dev</button>
-                        <button type="button" class="all_btns" onclick="audio.play();" data_filter="AI">AI</button>
-                        <button type="button" class="all_btns" onclick="audio.play();" data_filter="Others">Others</button>
-                    </div>
-
-                </div> */}
+            </div>  */}
 
 
 
-                <div className="row justify_content_cntr">
+            <div class="row justify_content_cntr">
+
+                {/* <!--? Item1 -s --> */}
+
+                <div class="p1 port_item" data_category="DSA">
+                    <div class="card">
+                        <input type="checkbox" class="my_checkbox"  name=""/>
+                        <div class="toggle">+</div>
+
+                        <div class="imgBx">
+
+                            <img class="p_img" src={projimg} alt=""/>
+
+                            <div class="img_subt">
+
+                                <div class="subt change">
 
 
-                    <div className="proj_item card" data_category="DSA">
+                                    <p>Coding Profiles </p>
 
-                        <input type="checkbox" className="my_checkbox" name="" />
-                        <div className="toggle">+</div>
 
-                        <div className="heading">
-                            <h1>Project title</h1>
+                                    <a href="https://leetcode.com/Raj_Gurjar/" class="popup" onclick="popup()"
+                                        target="_blank"><i class="fa fa-link"></i>
 
-                            <h3>Frontend</h3>
+                                        <span class="popuptext">View leetcode</span>
 
+                                    </a>
+
+                                    <a href="https://auth.geeksforgeeks.org/user/raj_gurjar/" class="popup"
+                                        onclick="popup()" target="_blank"><i class="fa fa-link"></i>
+
+                                        <span class="popuptext">View GFG</span>
+
+                                    </a>
+
+
+
+                                </div>
+
+
+
+                            </div>
                         </div>
 
-                        <div className="proj_img">
-                            <img src={projimg} alt="proj img" />
-                        </div>
+                        <div class="details">
+                            <h2>DSA</h2>
+                            <h3>Coding Profiles</h3>
 
-                        <div className="proj_btn_box">
-                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
-                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
-                        </div>
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatum rem qui sapiente corporis necessitatibus?
 
-                        <div className="proj_desc">
-                            <p>Lorem ipsum dolor sit amet consectetur adsa ipsum consequatur et quia repellat veritatis assumenda natus quis consectetur labore, porro quidem.</p>
-                            <p className="tech">Made with <span><h4>React, Css, HTML</h4></span></p>
-                        </div>
+                            </p>
 
-
-
-                    </div>
-                    <div className="proj_item card" data_category="DSA">
-
-                        <input type="checkbox" className="my_checkbox" name="" />
-                        <div className="toggle">+</div>
-
-                        <div className="heading">
-                            <h1>Project title</h1>
-
-                            <h3>Frontend</h3>
 
                         </div>
-
-                        <div className="proj_img">
-                            <img src={projimg} alt="proj img" />
-                        </div>
-
-                        <div className="proj_btn_box">
-                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
-                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
-                        </div>
-
-                        <div className="proj_desc">
-                            <p>Lorem ipsum dolor sit amet consectetur adsa ipsum consequatur et quia repellat veritatis assumenda natus quis consectetur labore, porro quidem.</p>
-                            <p className="tech">Made with <span><h4>React, Css, HTML</h4></span></p>
-                        </div>
-
 
 
                     </div>
-                    <div className="proj_item card" data_category="DSA">
-
-                        <input type="checkbox" className="my_checkbox" name="" />
-                        <div className="toggle">+</div>
-
-                        <div className="heading">
-                            <h1>Project title</h1>
-
-                            <h3>Frontend</h3>
-
-                        </div>
-
-                        <div className="proj_img">
-                            <img src={projimg} alt="proj img" />
-                        </div>
-
-                        <div className="proj_btn_box">
-                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
-                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
-                        </div>
-
-                        <div className="proj_desc">
-                            <p>Lorem ipsum dolor sit amet consectetur adsa ipsum consequatur et quia repellat veritatis assumenda natus quis consectetur labore, porro quidem.</p>
-                            <p className="tech">Made with <span><h4>React, Css, HTML</h4></span></p>
-                        </div>
-
-
-
-                    </div>
-                    <div className="proj_item card" data_category="DSA">
-
-                        <input type="checkbox" className="my_checkbox" name="" />
-                        <div className="toggle">+</div>
-
-                        <div className="heading">
-                            <h1>Project title</h1>
-
-                            <h3>Frontend</h3>
-
-                        </div>
-
-                        <div className="proj_img">
-                            <img src={projimg} alt="proj img" />
-                        </div>
-
-                        <div className="proj_btn_box">
-                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
-                            <button className="proj_btn"> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
-                        </div>
-
-                        <div className="proj_desc">
-                            <p>Lorem ipsum dolor sit amet consectetur adsa ipsum consequatur et quia repellat veritatis assumenda natus quis consectetur labore, porro quidem.</p>
-                            <p className="tech">Made with <span><h4>React, Css, HTML</h4></span></p>
-                        </div>
-
-
-
-                    </div>
-
-
 
                 </div>
+
+                {/* <!--? item1 --> */}
+
+                {/* <!--? Item2 -s --> */}
+
+                <div class="p1 port_item" data_category="DSA">
+                    <div class="card">
+                        <input type="checkbox" name=""/>
+                        <div class="toggle">+</div>
+
+                        <div class="imgBx">
+
+                            <img class="p_img" src={projimg} alt=""/>
+
+                            <div class="img_subt">
+
+                                <div class="subt">
+
+
+                                    <p>Coding Profiles </p>
+
+
+                                    <a href="https://leetcode.com/Raj_Gurjar/" class="popup" onclick="popup()"
+                                        target="_blank"><i class="fa fa-link"></i>
+
+                                        <span class="popuptext">View leetcode</span>
+
+                                    </a>
+
+                                    <a href="https://auth.geeksforgeeks.org/user/raj_gurjar/" class="popup"
+                                        onclick="popup()" target="_blank"><i class="fa fa-link"></i>
+
+                                        <span class="popuptext">View GFG</span>
+
+                                    </a>
+
+
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <h2>DSA</h2>
+                            <h3>Coding Profiles</h3>
+
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatum rem qui sapiente corporis necessitatibus?
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                {/* <!--? item2 --> */}
+
+                {/* <!--? Item3 -s --> */}
+
+                <div class="p1 port_item" data_category="DSA">
+                    <div class="card">
+                        <input type="checkbox" name=""/>
+                        <div class="toggle">+</div>
+
+                        <div class="imgBx">
+
+                            <img class="p_img" src={projimg} alt=""/>
+
+                            <div class="img_subt">
+
+                                <div class="subt">
+
+
+                                    <p>Coding Profiles </p>
+
+
+                                    <a href="https://leetcode.com/Raj_Gurjar/" class="popup" onclick="popup()"
+                                        target="_blank"><i class="fa fa-link"></i>
+
+                                        <span class="popuptext">View leetcode</span>
+
+                                    </a>
+
+                                    <a href="https://auth.geeksforgeeks.org/user/raj_gurjar/" class="popup"
+                                        onclick="popup()" target="_blank"><i class="fa fa-link"></i>
+
+                                        <span class="popuptext">View GFG</span>
+
+                                    </a>
+
+
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <h2>DSA</h2>
+                            <h3>Coding Profiles</h3>
+
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatum rem qui sapiente corporis necessitatibus?
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                {/* <!--? item3 --> */}
+
+
+
+                {/* <!--? port Item -e --> */}
+
+
+
+
+
+
 
             </div>
 
 
-        </section>
+        </div>
+    </section>
 
     )
 }
