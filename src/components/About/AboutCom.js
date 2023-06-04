@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import about_img from "../../assets/Background-imgs/bg1.png";
-import "./AboutCom.css";
+import "./AboutCom.scss";
 
 const AboutCom = () => {
     const [activeTab, setActiveTab] = useState('skillss');
@@ -23,9 +23,8 @@ const AboutCom = () => {
                         <div className="section_title">
                             <h3 className="main_title">About</h3>
                             <h5 className="sub_title">Let's Know Me</h5>
-                            <ul className="line">
-                                <li></li>
-                            </ul>
+                            <div className="line"/>
+                            
                         </div>
 
                         <div className="about_content">

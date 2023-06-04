@@ -3,6 +3,7 @@
 // @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import 'variables';
 
 /*!----------------#### Global Declarations ####-----------------------  */
 
@@ -14,24 +15,7 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-:root {
-  --main-color: #25c6c4;
-  --main1: #404bc7;
 
-  --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --black-900: #000000;
-  --black-400: #656f87;
-  --black-200: rgba(93, 72, 72, 0.166);
-  --black-100: #f7f7f7;
-  --white: #fff;
-  --black-alpha-100: rgba(0, 0, 0, 0.5);
-
-  --bg-light: #232323;
-  --bg-main: #131416;
-  --text-high: #d88135;
-  --text-low: rgba(255, 255, 255, 0.721);
-  --white: #fff;
-}
 
 body {
   /* for dark theme */
@@ -47,24 +31,11 @@ body {
 
   font-size: 13px;
   font-weight: 400;
-  color: var(--white);
+  color: $white-1000;
   overflow-x: hidden;
   font-family: "Nunito", serif;
 }
 
-body::before {
-  /* content: ''; */
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: -1;
-  background: linear-gradient(
-    to right bottom,
-    rgba(146, 22, 22, 0.2),
-    #21d4fd 75%
-  );
-}
 
 * {
   margin: 0;
@@ -75,6 +46,10 @@ body::before {
 
 /*? -------------------Body -e----------------------- */
 
+@mixin flex-prop
+{
+  display: flex;
+}
 /*?------------------- Adjustments -s-------------------- */
 
 ul {
@@ -94,6 +69,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
+// .row > *
+// {
+//   flex: 1 1 33%;
+// }
 
 .justify_content_cntr {
   justify-content: center;
@@ -116,9 +95,9 @@ ul {
 /*?-------------------   Buttons -s   -------------------- */
 
 button {
-  background-color: var(--text-high);
+  background-color: $accent-color;
   border: none;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: $box-shadow-low;
   cursor: pointer !important;
   display: inline-block;
   font-size: 13px;
@@ -129,12 +108,12 @@ button {
   transition: all 0.25s ease;
 
   a {
-    color: var(--white);
+    color: $white-1000;
   }
 }
 button:hover {
-  background-color: var(--bg-light);
-  color: var(--text-high);
+  background-color: $bg-light;
+  color: $accent-color;
 }
 
 /*?-------------------   Buttons -e   -------------------- */
@@ -197,7 +176,7 @@ button:hover {
 
   .main_title {
     // font-family: 'Nunito', serif;
-    color: var(--white);
+    color: $white-1000;
     font-size: 40px;
     font-weight: 800;
     margin-top: 5px;
@@ -211,12 +190,12 @@ button:hover {
   .sub_title {
     font-size: 15px;
     font-weight: 400;
-    color: var(--text-low);
+    color: $text-low;
   }
 
   .line {
     display: inline-block;
-    background-color: var(--text-high);
+    background-color: $accent-color;
     border-radius: 50px;
     width: 33px;
     height: 3px;
@@ -243,28 +222,26 @@ button:hover {
 }
 
 ::-webkit-scrollbar-track:hover {
-  background-color: var(--black-400);
+  background-color: $black-400;
 }
 
 /*? ---------------- Scroll Bar -e------------------- */
 
 /*? ------------ GLobal card box -s ---------------*/
-.card {
-  background-color: var(--card-bg);
-  position: relative;
-  flex: 1;
-  max-width: auto;
-  // height: 200px;
-  padding: auto;
-  margin: 10px;
-  overflow: hidden;
-  transition: all 0.4s ease-in-out;
 
-  width: 350px;
-  background: #333;
+.card{
+  position: relative;
+  flex: 0 0 29%;
+  // max-width: 29%;
+  // height: 200px;
   padding: 20px;
+  margin: 20px;
+  overflow:hidden;
+  transition: all 0.4s ease-in-out;
+ 
+  background:$black-900;
   box-sizing: border-box;
-  box-shadow: 0 10px 10px rgba(111, 108, 108, 0.5);
+  box-shadow: $box-shadow-high;
 
   .content {
     z-index: 2;
@@ -280,11 +257,35 @@ button:hover {
     background: linear-gradient(to left, orange, tomato);
     transition: 0.5s;
   }
+
+  &:hover .layer {
+    top: 0;
+  }
 }
 
-.card:hover .layer {
-  top: 0;
+/* Responsive card */
+@media (max-width: 1122px) {
+  .card {
+    flex: 0 0 40%;
+    // max-width: 40%;
+  }
 }
+
+
+@media (max-width: 800px) {
+  .card {
+    flex: 0 0 70%;
+    // max-width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .card {
+    flex: 0 0 100%;
+    // max-width: 100%;
+  }
+}
+
+
 
 
 
@@ -461,7 +462,7 @@ button:hover {
   navbar .menu_btn {
     display: inline-block;
     z-index: 999;
-    background-color: var(--main-color);
+    background-color: $accent-color;
   }
 
   .bar1,
@@ -469,7 +470,7 @@ button:hover {
   .bar3 {
     width: 20px;
     height: 3.5px;
-    background-color: #ffffff;
+    background-color: $white-1000;
     margin: 2px 0;
     transition: 0.4s;
   }
@@ -492,7 +493,7 @@ button:hover {
     right: -100%;
     top: 40px;
     flex-direction: column;
-    background-color: var(--main-color);
+    background-color: $accent-color;
 
     transform: scale(0.1);
     width: 90%;
@@ -501,7 +502,7 @@ button:hover {
 
     text-align: center;
     transition: all 0.5s ease;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.675);
+    box-shadow: $box-shadow-high;
   }
 
   .change i {
@@ -509,7 +510,7 @@ button:hover {
   }
 
   .sticky .menu {
-    background-color: var(--black-400);
+    background-color: $black-400;
     top: 40px;
   }
 
@@ -528,12 +529,12 @@ button:hover {
   }
 
   .sticky .menu li a.active {
-    /* color: var(--white); */
+    /* color: $white-1000; */
     /* color: red; */
   }
 
   .sticky .menu li a {
-    color: rgba(255, 255, 255, 0.77);
+    color: $white-700;
   }
 
   navbar .menu.active {

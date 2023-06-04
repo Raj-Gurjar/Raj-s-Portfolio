@@ -30,7 +30,7 @@ const SkillCom = () => {
 
                 <div class="row justify_content_cntr">
 
-                    <div class="skill_card card">
+                    <div class="card">
 
                         <div className="content">
 
@@ -86,7 +86,7 @@ const SkillCom = () => {
 
                     </div>
                     
-                    <div class="skill_card card">
+                    <div class="card">
 
                         <div className="content">
 
@@ -141,7 +141,7 @@ const SkillCom = () => {
                         <div className="layer"></div>
 
                     </div>
-                    <div class="skill_card card">
+                    <div class="card">
 
                         <div className="content">
 
