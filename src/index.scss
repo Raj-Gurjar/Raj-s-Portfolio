@@ -3,7 +3,7 @@
 // @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-@import 'variables';
+@import "variables";
 
 /*!----------------#### Global Declarations ####-----------------------  */
 
@@ -14,8 +14,6 @@ html {
   /* scroll-snap-type: y mandatory; */
   text-rendering: optimizeLegibility;
 }
-
-
 
 body {
   /* for dark theme */
@@ -36,7 +34,6 @@ body {
   font-family: "Nunito", serif;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -46,8 +43,7 @@ body {
 
 /*? -------------------Body -e----------------------- */
 
-@mixin flex-prop
-{
+@mixin flex-prop {
   display: flex;
 }
 /*?------------------- Adjustments -s-------------------- */
@@ -173,33 +169,32 @@ button:hover {
 
 .section_title {
   margin-bottom: 20px;
+}
+.main_title {
+  // font-family: 'Nunito', serif;
+  color: $white-1000;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 5px;
+  line-height: 54px;
+  letter-spacing: 3px;
 
-  .main_title {
-    // font-family: 'Nunito', serif;
-    color: $white-1000;
-    font-size: 40px;
-    font-weight: 800;
-    margin-top: 5px;
-    line-height: 54px;
-    letter-spacing: 3px;
+  text-shadow: 0px 0px 4px rgba(202, 228, 225, 0.492),
+    0 0 4px rgba(202, 228, 225, 0.209);
+}
 
-    text-shadow: 0px 0px 4px rgba(202, 228, 225, 0.492),
-      0 0 4px rgba(202, 228, 225, 0.209);
-  }
+.sub_title {
+  font-size: 15px;
+  font-weight: 400;
+  color: $text-low;
+}
 
-  .sub_title {
-    font-size: 15px;
-    font-weight: 400;
-    color: $text-low;
-  }
-
-  .line {
-    display: inline-block;
-    background-color: $accent-color;
-    border-radius: 50px;
-    width: 33px;
-    height: 3px;
-  }
+.line {
+  display: inline-block;
+  background-color: $accent-color;
+  border-radius: 50px;
+  width: 33px;
+  height: 3px;
 }
 
 /*?------------------- Section Title -s -------------------- */
@@ -229,17 +224,17 @@ button:hover {
 
 /*? ------------ GLobal card box -s ---------------*/
 
-.card{
+.card {
   position: relative;
   flex: 0 0 29%;
   // max-width: 29%;
   // height: 200px;
   padding: 20px;
   margin: 20px;
-  overflow:hidden;
+  overflow: hidden;
   transition: all 0.4s ease-in-out;
- 
-  background:$black-900;
+
+  background: $black-900;
   box-sizing: border-box;
   box-shadow: $box-shadow-high;
 
@@ -271,7 +266,6 @@ button:hover {
   }
 }
 
-
 @media (max-width: 800px) {
   .card {
     flex: 0 0 70%;
@@ -284,12 +278,6 @@ button:hover {
     // max-width: 100%;
   }
 }
-
-
-
-
-
-
 
 /*? ------------ GLobal card box -e ---------------*/
 

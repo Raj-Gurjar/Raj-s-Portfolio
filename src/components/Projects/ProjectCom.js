@@ -25,7 +25,7 @@ const ProjectCom = () => {
                 <div class="row justify_content_cntr">
 
                     {/* <!--? Item1 -s --> */}
-                    <div class="card">
+                    <div class="card1">
 
                         <div className="content">
 

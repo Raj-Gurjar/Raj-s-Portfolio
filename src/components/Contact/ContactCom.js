@@ -1,6 +1,9 @@
-import "./ContactCom.css";
+import "./ContactCom.scss";
 
-import React from 'react'
+import React from 'react';
+
+import { FaLinkedin, FaGit, FaMailBulk, FaPhone, FaMap } from 'react-icons/fa';
+
 
 const contactCom = () => {
     return (
@@ -12,94 +15,110 @@ const contactCom = () => {
 
                 <div className="row justify_content_cntr">
 
-                    <div className="section_title txt_align">
-                        <h3 className="main_title">Contact</h3>
-                        <h5 className="sub_title">Get in Touch</h5>
-                        <ul className="line">
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
+                    <div className="col-cont-form my-3">
+                        <div class="contact-form">
 
-
-                {/* <!-- Contact item -s --> */}
-                <div class="row justify_content_cntr">
-
-                    <div class="contact_item card_item card">
-
-                        <div class="contact_item_inner card_item_inner">
-                            <div class="icon">
-                                <i class="fas fa-phone"></i>
+                            <div class="section_title">
+                                <h4 class="main_title">Contact Me</h4>
+                                <div class="line" />
                             </div>
-                            <h3>Phone</h3>
-                            <p><span style={{ opacity: 0.5 }}>+91</span>&nbsp; 9174510107</p>
+
+                            <form>
+                                <div class="row">
+
+                                    <div class="col1">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name" name="name" />
+                                            <label class="form-label">Name</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col1">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email" name="email" />
+                                            {/* <label class="form-label">Email</label> */}
+                                        </div>
+                                    </div>
+
+                                    <div class="col12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Subject" name="subject" />
+                                            {/* <label class="form-label">Subject</label> */}
+                                        </div>
+                                    </div>
+
+                                    <div class="col12">
+                                        <div class="form-group">
+                                            <textarea rows="4" class="form-control" placeholder="Type comment" name="comment"></textarea>
+                                            {/* <label class="form-label">Comment</label> */}
+                                        </div>
+                                    </div>
+
+                                    <div class="col12">
+                                        <div class="btn-bar">
+                                            <button class="btn2">Send Message</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div className="col-cont-info ml-auto my-3">
+
+                        <div class="contact-info">
+
+                            <div class="section_title">
+                                <h4 class="main_title">Get in Touch</h4>
+                                <div class="line" />
+                                <p>Always available for freelancing if the right project comes along, Feel free to contact me.</p>
+                            </div>
+
+                            <div class="media">
+
+                                <div class="icon">
+                                    <FaMap />
+                                </div>
+                                <span class="media-txt">
+                                    <span1>Address</span1>
+                                    <br />United States Of America <br />NY 750065.
+                                </span>
+
+                            </div>
+
+                            <div class="media">
+                                <div class="icon">
+                                    <FaMailBulk />
+                                </div>
+                                <span class="media-txt" style={{marginTop:"10px"}}>
+                                    <span1>Email</span1>
+                                    <br />info@domain.com
+                                </span>
+                            </div>
+
+                            <div class="media">
+                                <div class="icon">
+                                    <FaPhone />
+                                </div>
+                                <span class="media-txt" style={{marginTop:"10px"}}>
+                                    <span1>Contact No.</span1>
+                                    <br />+044 966 9696 636
+                                </span>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div class="contact_item card_item card">
-                        <div class="contact_item_inner card_item_inner">
-                            <div class="icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <h3>Email</h3>
-                            <p>rajchhalotre14<span style={{ opacity: 0.8 }}>@gmail.com</span></p>
-                        </div>
-                    </div>
-
-                    <div class="contact_item card_item card">
-                        <div class="contact_item_inner card_item_inner">
-                            <div class="contact_icon icon">
-                                <i class="fas fa-map-location"></i>
-                            </div>
-                            <h3>Address</h3>
-                            <p>Indore<span style={{ opacity: 0.5 }} />, M.P., India</p>
-                        </div>
-                    </div>
-                    {/* <!-- Contact item -e --> */}
                 </div>
 
-                {/* <!--? ------- Contact Form -------------- --> */}
 
-                <div class="row justify_content_cntr">
-
-                    <div class="contact_form card">
-                        <h2>
-                            <i class="fas fa-comment"></i>
-                            Feedback
-                        </h2>
-                        <form action="">
-
-                            <div class="row justify_content_cntr">
-                                <div class="w_50">
-                                    <div class="input_group">
-                                        <input type="text" placeholder="Name" class="input_control" />
-                                    </div>
-                                    <div class="input_group">
-                                        <input type="email" placeholder="Email" class="input_control" />
-                                    </div>
-                                    <div class="input_group">
-                                        <input type="text" placeholder="Subject" class="input_control" />
-                                    </div>
-                                </div>
-                                <div class="w_50">
-                                    <div class="input_group">
-                                        <textarea name="" class="input_control" placeholder="Message" id="" cols="20"
-                                            rows="10"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row justify_content_cntr">
-                                <div class="submit_btn">
-                                    <button type="submit" onclick="audio.play();" class="btn4 all_btns">
-                                        Send Message
-                                    </button>
-                                </div>
-                            </div>
-
-
-                        </form>
-                    </div>
-                </div>
             </div>
 
         </section>
