@@ -36,7 +36,7 @@ const SkillCom = () => {
 
                             <div className="heading">
                                 <h2 className="skill-type-icon"><FaLinkedin /></h2>
-                                <h3 className='line'>Frontend <span></span></h3>
+                                <h3>Frontend</h3>
                             </div>
 
 
@@ -92,7 +92,7 @@ const SkillCom = () => {
 
                             <div className="heading">
                                 <h2 className="skill-type-icon"><FaLinkedin /></h2>
-                                <h3 className='line'>Frontend <span></span></h3>
+                                <h3>Frontend <span></span></h3>
                             </div>
 
 
@@ -147,7 +147,7 @@ const SkillCom = () => {
 
                             <div className="heading">
                                 <h2 className="skill-type-icon"><FaLinkedin /></h2>
-                                <h3 className='line'>Frontend <span></span></h3>
+                                <h3>Frontend <span></span></h3>
                             </div>
 
 

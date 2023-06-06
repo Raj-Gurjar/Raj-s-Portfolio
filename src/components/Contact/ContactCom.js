@@ -26,35 +26,35 @@ const contactCom = () => {
                             <form>
                                 <div class="row">
 
-                                    <div class="col1">
+                                    <div class="col-1">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Name" name="name" />
-                                            <label class="form-label">Name</label>
+                                            {/* <label class="form-label">Name</label> */}
                                         </div>
                                     </div>
 
-                                    <div class="col1">
+                                    <div class="col-1">
                                         <div class="form-group">
                                             <input type="email" class="form-control" placeholder="Email" name="email" />
                                             {/* <label class="form-label">Email</label> */}
                                         </div>
                                     </div>
 
-                                    <div class="col12">
+                                    <div class="col-2">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Subject" name="subject" />
                                             {/* <label class="form-label">Subject</label> */}
                                         </div>
                                     </div>
 
-                                    <div class="col12">
+                                    <div class="col-2">
                                         <div class="form-group">
-                                            <textarea rows="4" class="form-control" placeholder="Type comment" name="comment"></textarea>
+                                            <textarea class="form-control" placeholder="Type comment" name="comment"></textarea>
                                             {/* <label class="form-label">Comment</label> */}
                                         </div>
                                     </div>
 
-                                    <div class="col12">
+                                    <div class="col-2">
                                         <div class="btn-bar">
                                             <button class="btn2">Send Message</button>
                                         </div>
@@ -65,11 +65,6 @@ const contactCom = () => {
                         </div>
 
                     </div>
-
-
-
-
-
 
                     <div className="col-cont-info ml-auto my-3">
 

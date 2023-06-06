@@ -12,6 +12,7 @@ const ProjectCom = () => {
 
         <section class="port_cls section_padding" id="Portfolio">
             <div class="container">
+
                 <div class="row justify_content_cntr">
                     <div class="section_title txt_align">
                         <h3 class="main_title">Projects</h3>
@@ -25,81 +26,26 @@ const ProjectCom = () => {
                 <div class="row justify_content_cntr">
 
                     {/* <!--? Item1 -s --> */}
-                    <div class="card1">
+                    <div class="col-11">
 
-                        <div className="content">
+                        <div className="proj-box-1">
+                            <div className="port-img">
 
-                            <div className="heading1">
-                                <h3 className='line'>Portfolio</h3>
-                                <h4>Frontend</h4>
-                            </div>
+                                <div className="proj-info">
+                                    <h5>
+                                        <a href="https://github.com/Raj-Gurjar">Portfolio Website</a>
+                                    </h5>
+                                    <span>Reactjs</span>
+                                </div>
 
-                            <div className="proj_imgBox">
                                 <img src={projimg} alt="" />
-                            </div>
 
-                            <div className="btn_box">
-                                <button> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
-                                <button> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
                             </div>
 
                         </div>
-
-
-
-                        <div className="layer"></div>
-
                     </div>
-                    <div class="card1">
-
-                        <div className="content">
-
-                            <div className="heading1">
-                                <h3 className='line'>Portfolio</h3>
-                                <h4>Frontend</h4>
-                            </div>
-
-                            <div className="proj_imgBox">
-                                <img src={projimg} alt="" />
-                            </div>
-
-                            <div className="btn_box">
-                                <button> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
-                                <button> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
-                            </div>
-
-                        </div>
 
 
-
-                        <div className="layer"></div>
-
-                    </div>
-                    <div class="card1">
-
-                        <div className="content">
-
-                            <div className="heading1">
-                                <h3 className='line'>Portfolio</h3>
-                                <h4>Frontend</h4>
-                            </div>
-
-                            <div className="proj_imgBox">
-                                <img src={projimg} alt="" />
-                            </div>
-
-                            <div className="btn_box">
-                                <button> <a href="https://github.com/Raj-Gurjar" target="_blank">Live Demo</a>  </button>
-                                <button> <a href="https://github.com/Raj-Gurjar" target="_blank">View Code</a>  </button>
-                            </div>
-
-                        </div>
-
-
-
-                        <div className="layer"></div>
-
-                    </div>
 
 
                     {/* <!--? item1 --> */}
@@ -119,7 +65,7 @@ const ProjectCom = () => {
 
 
             </div>
-        </section>
+        </section >
 
     )
 }
