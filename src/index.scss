@@ -104,11 +104,19 @@ button {
   transition: all 0.25s ease;
 
   a {
-    color: $white-1000;
+    color: $bg-light;
   }
+
 }
-button:hover {
+
+button:hover
+{
+  box-shadow: $box-shadow-high;
   background-color: $bg-light;
+  color: $accent-color;
+}
+button:hover a
+{
   color: $accent-color;
 }
 
@@ -245,7 +253,7 @@ button:hover {
   .layer {
     z-index: 1;
     position: absolute;
-    top: calc(100% - 2px);
+    top: calc(100% - 3px);
     height: 100%;
     width: 100%;
     left: 0;
@@ -434,7 +442,7 @@ button:hover {
 
 @media (max-width: 895px) {
   .section_padding {
-    padding: 80px 40px;
+    padding: 30px 40px;
   }
 
   /*?------------ Navbar ------------------ */
