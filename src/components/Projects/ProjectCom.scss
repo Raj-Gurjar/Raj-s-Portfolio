@@ -19,7 +19,7 @@
   button {
     text-transform: uppercase;
     padding: 3px 6px;
-    margin: 5px;
+    margin:6px;
     // transition: all 0.3s ease;
   }
 
@@ -84,7 +84,7 @@
   display: block;
   position: absolute;
   padding: 10px;
-  background: linear-gradient(to left, rgb(255, 166, 0), rgb(255, 99, 71));
+  background: $grad-main;
   margin-top: 10px;
   top: calc(100% - 13px);
 

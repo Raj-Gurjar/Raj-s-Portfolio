@@ -257,7 +257,7 @@ button:hover a
     height: 100%;
     width: 100%;
     left: 0;
-    background: linear-gradient(to left, orange, tomato);
+    background: $grad-main;
     transition: 0.5s;
   }
 
@@ -423,10 +423,10 @@ button:hover a
 
 /*TODO  re1160  */
 @media (max-width: 1160px) {
-  .social_icon {
-    right: 10px;
-    position: fixed;
-  }
+  // .social_icon {
+  //   right: 10px;
+  //   position: fixed;
+  // }
 
   .port_cls {
     padding: 80px 10px;
@@ -542,27 +542,13 @@ button:hover a
 
   /*?------------ Navbar -e  ------------------ */
 
-  .social_icon {
-    display: none;
-    right: 90%;
-    position: absolute;
-    z-index: 999;
-  }
+  // .social_icon {
+  //   display: none;
+  //   right: 90%;
+  //   position: absolute;
+  //   z-index: 999;
+  // }
 
-  .home_cls .home_img,
-  .home_cls .home_txt {
-    flex: 0 0 70%;
-    max-width: 70%;
-  }
-
-  .home_cls .home_img {
-    display: flex;
-    justify-content: center;
-  }
-
-  .home_cls .img_box {
-    margin-top: 30px;
-  }
 
   /*? -------------------------------------- */
 
@@ -581,35 +567,18 @@ button:hover a
 
   /*?------------------------------- */
 
-  .skill_cls .skill_type,
-  .port_cls .port_item {
-    flex: 0 0 45%;
-    max-width: 45%;
-  }
+  
+
 }
 
 /*?  re76  */
 
 @media (max-width: 767px) {
-  .social_icon {
-    display: none;
-    right: 85%;
-  }
+  // .social_icon {
+  //   display: none;
+  //   right: 85%;
+  // }
 
-  .about_cls .about_content,
-  .contact_cls .w_50 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .contact_cls .contact_item {
-    flex: 0 0 40%;
-    max-width: 40%;
-  }
-
-  .contact_cls .submit_btn {
-    margin-top: 10px;
-  }
 
   /* ?---------- blob -------------- */
 
@@ -640,40 +609,13 @@ button:hover a
 
 /*? re60 */
 @media (max-width: 655px) {
-  .home_cls.section_padding {
-    padding-top: 130px;
-  }
+  
 
-  .home_cls .home_img {
-    flex: 0 0 60%;
-    max-width: 60%;
-  }
-
-  .home_img {
-    margin-top: 40px;
-    height: 200px;
-    width: 200px;
-    width: 20%;
-  }
-
-  .skill_cls .skill_type,
-  .port_cls .port_item,
-  .contact_cls .contact_item {
-    flex: 0 0 70%;
-    max-width: 70%;
-  }
-
-  .contact_cls .submit_btn {
-    margin-top: 10px;
-  }
+ 
 }
 
 @media (max-width: 480px) {
-  .skill_cls .skill_type,
-  .port_cls .port_item {
-    flex: 0 0 85%;
-    max-width: 85%;
-  }
+ 
 }
 
 /* ? re3  */

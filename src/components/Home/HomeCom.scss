@@ -1,0 +1,80 @@
+@import "../../variables";
+
+.home_cls {
+    // background-color: rgb(164, 48, 48);
+    // background-image: url("imgs/bg3-bw.jpg");
+
+    .container {
+        padding: 10px;
+
+        .row {
+            min-height: 100vh;
+            padding-bottom: 90px;
+        }
+    }
+}
+
+.home-banner {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay:before {
+    background-color: rgba(0, 0, 0, 0.3);
+    // opacity: 0.1;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    // z-index: 3;
+}
+.overlay > div {
+    position: relative;
+    z-index: 5;
+}
+.col-lg-12 {
+    background-color: rgb(145, 76, 76);
+    opacity: 1;
+    .hb-typo {
+        line-height: 5rem;
+
+        h6 {
+            font-size: 1.2rem;
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            // margin-bottom: 15px;
+
+            // span
+            // {
+            //     color: $accent-color;
+            //     font-weight: 100;
+            // }
+        }
+        h3 {
+            font-size: 2.3rem;
+            font-weight: 500;
+            .prof {
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .hb-typo h1 {
+        // font-size: 60px;
+    }
+}
+
+

@@ -10,14 +10,17 @@ import AboutCom from './components/About/AboutCom';
 import SkillCom from './components/Skills/SkillCom';
 import ProjectCom from './components/Projects/ProjectCom';
 import ContactCom from './components/Contact/ContactCom';
+import SocialCom from './components/Social-icon/SocialCom';
 
 function App() {
   return (
     <>
-      
-        <Navbar />
 
-        <main className="mainCom">
+      <Navbar />
+
+      <main className="mainCom">
+
+        {/* <SocialCom /> */}
 
         <HomeCom />
         <AboutCom />
@@ -27,8 +30,8 @@ function App() {
         <ProjectCom />
         <ContactCom />
 
-        </main>
-   
+      </main>
+
     </>
   );
 }
