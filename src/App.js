@@ -20,7 +20,7 @@ function App() {
 
       <main className="mainCom">
 
-        {/* <SocialCom /> */}
+        <SocialCom />
 
         <HomeCom />
         <AboutCom />

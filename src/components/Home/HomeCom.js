@@ -51,33 +51,29 @@ const HomeCom = () => {
 
   return (
 
-    <section className="home_cls home-banner overlay" style={{backgroundImage:"url(Images/bg3-bw.jpg)"}}>
+    <section className="home_cls">
 
-      <div className="container">
+      <div className="home-banner overlay">
 
-        <div className="row align_cntr justify_content_cntr">
+        <div className="hb-typo txt_align">
 
-          <div className="col-lg-12">
-
-            <div className="hb-typo txt_align">
-
-              <h6>Hii there, i'm</h6>
-              <h1>Raj <span>Chhalotre</span></h1>
-              <h3>
-                <div className="prof">
-                  Web Developer
-                </div>
-              </h3>
+          <h6>Hii there, i'm</h6>
+          <h1>Raj <span>Chhalotre</span></h1>
+          <h3>
+            <div className="prof">
+              Web Developer
             </div>
-
-          </div>
-
+          </h3>
         </div>
 
+
+
       </div>
-
-      <Social />
-
+      <div className="quote_box">
+        <p>
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, quos."
+        </p>
+      </div>
 
 
     </section>

@@ -24,8 +24,6 @@ body {
         #11101d 91.61%
       ); */
   background-color: #202020;
-  background-size: 100%;
-  background-repeat: no-repeat;
 
   font-size: 13px;
   font-weight: 400;
@@ -39,6 +37,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  outline: none;
 }
 
 /*? -------------------Body -e----------------------- */
@@ -52,6 +51,10 @@ ul {
   list-style: none;
 }
 
+section
+{
+  display: block;
+}
 .section_padding {
   padding: 80px 60px;
 }
