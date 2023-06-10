@@ -2,27 +2,64 @@
 
 // !/* ----------- social media -s ----------- */
 
+
 .social-icons {
     position: fixed;
     top: 50%;
-    right: 10px;
+    right: -50px;
     transform: translateY(-50%);
     z-index: 100;
-    // background-color: red;
+    transition: all .3s ease-in-out;
+  
+    &.show {
+      right: 10px;
+  
+      .social-toggle::before {
+        content: '\f054'; /* Change the content to the new arrow icon */
+        
+      }
+    }
+  
+    .social-toggle {
+      position: absolute;
+      z-index: 999;
+      top: 50%;
+      right: 50px;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.782);
+      border: 1.5px solid white;
+      border-radius: 50%;
+      display: flex;
+      color: $accent-color;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      animation: glowing 1s infinite;
 
-    .social_box {
-        background-color: rgba(255, 255, 255, 0.5);
-        // backdrop-filter: blur(10px);
-        // -webkit-backdrop-filter: blur(10px);
 
-        // background: radial-gradient(circle, rgba(255, 166, 0, 0.8) 20%, rgba(255, 99, 71, 0.8) 80%);
 
-        // display: flex;
-        // justify-content: center;
+  
+      &::before {
+        content: '\f086';
+        font-family: 'fontAwesome';
+        font-weight: 900;
+        font-size: 1.3rem;
 
-        // flex-direction: column;
 
-        border: 1px solid white;
+      }
+    }
+  
+    
+  
+
+
+    .social-box {
+        background-color: rgba(178, 36, 36, 0.801);
+  
+        width: 100%;
+        border: 1.5px solid white;
         padding: 4px;
         border-radius: 10px;
         gap: 5px;
@@ -32,36 +69,35 @@
         display: flex;
         justify-content: center;
 
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: $white-1000;
-        padding: 5px;
-
+        padding: 4px;
+        margin:3px;
+        border-radius: 100%;
         transition: all 0.3s ease-in-out;
         
+        &:hover {
+            transform: scale(1.2);
+            border-radius: 100%;
+        }
         
         &:nth-child(1):hover {
             //linkedin
-            color: #0a66c2;
-            transform: scale(1.1);
+            background-color: $linkedin;
         }
         &:nth-child(2):hover {
             //github
-            color: #171515;
-            transform: scale(1.1);
+            background-color:$github;
         }
 
         &:nth-child(3):hover {
             //instagram
-
-            background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-
-            transform: scale(1.1);
+            background:$instagram;
         }
      
         &:nth-child(4):hover {
             //whatsapp
-            color: rgb(4, 239, 4);
-            transform: scale(1.1);
+            background-color: $whatsapp;
         }
 
 
@@ -70,6 +106,14 @@
             transform: scale(0.8);
         }
      
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .social-icons {
+        // display: none;
+        // position: absolute;
     }
 }
 

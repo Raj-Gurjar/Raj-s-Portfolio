@@ -3,18 +3,6 @@
 .home_cls {
     // max-height: 100vh;
     // background-image: url("../../assets/Background-imgs/bg3-bw.jpg");
-
-    .container {
-        background-color: green;
-        // padding: 10px;
-
-        .row {
-            background-color: red;
-            // height: 10vh;
-            // padding-top: 25vh;
-            // padding-bottom: 90px;
-        }
-    }
 }
 
 .home-banner {
@@ -51,17 +39,22 @@
 }
 
 .hb-typo {
-    
-    background-color: green;
-    // line-height: 5rem;
+    padding: 10px;
+    // background-color: green;
+    margin-bottom: 10px;
    
 
     h6 {
         font-size: 1.2rem;
     }
     h1 {
-        font-size: 4rem;
-        font-weight: 900;
+         font-size: 4rem;
+         font-weight: 900;
+               color: transparent;
+               background-image: $grad-main;
+               background-clip: text;
+                -webkit-background-clip: text;
+
         // margin-bottom: 15px;
 
         // span
@@ -82,7 +75,8 @@
 
     position: absolute;
     bottom: 18px;
-    right: 16px;
+    right: 10px;
+    padding: 10px;
 
     p {
         font-size: 0.9rem;
@@ -93,13 +87,10 @@
 
 
 
-@media (min-width: 992px) {
-    .col-lg-12 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-
-    .hb-typo h1 {
-        // font-size: 60px;
+@media (max-width: 500px) {
+  
+    .hb-typo{
+        // font-size: 20px;
+        margin-top: -110px;
     }
 }
