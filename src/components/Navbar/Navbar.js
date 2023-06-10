@@ -1,139 +1,126 @@
-// import { Link } from "react-router-dom"
-import "./Nav-style.css"
-
-import logo from "../../assets/mylogo2.png";
 import React, { useState } from 'react';
-
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import logo from "../../assets/mylogo2.png";
+import "./Navbar.scss";
 
 const Navbar = () => {
-     
-    //!-------------------- Sticky Navbar -s --------------------
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    const [color, setColor] = useState(false);
-    const changeColor = () => {
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
 
-        if (window.scrollY >= 29) {
-            setColor(true);
-        }
-        else {
-            setColor(false);
-        }
-    }
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
 
-    window.addEventListener('scroll', changeColor);
-
-    //!-------------------- Sticky Navbar -e --------------------
-   
-
-    // //!-------------------- Current Nav Item Highlighting -s --------------------
-    // const navLi = document.querySelectorAll('nav ul li a');
-    // const sections = document.querySelectorAll('section');
-
-    // window.addEventListener('scroll', () => {
-    //     let current = '';
-    //     sections.forEach(section => {
-    //         let sectionTop = section.offsetTop;
-    //         // eslint-disable-next-line no-restricted-globals
-    //         if (scrollY >= sectionTop - 65) {
-    //             current = section.getAttribute('id');
-    //         }
-    //     });
-    //     navLi.forEach(li => {
-    //         li.classList.remove('active');
-    //         document.querySelector('nav ul li a[href*= ' + current + ']').classList.add('active');
-    //     });
-    // });
-
-    // //!-------------------- Current Nav Item Highlighting -e --------------------
-
-    // //! -------------------------- Responsive Nav Toogler -s  -------------------------------*/
-
-
-    // const navMenu = document.querySelector(".menu"),
-    //     navToggle = document.querySelector(".menu_btn");
-
-    // if (navToggle) {
-    //     navToggle.addEventListener("click", () => {
-    //         navMenu.classList.toggle("active");
-    //     });
-    // }
-
-    // // close menu when link is clicked automaticaly
-
-    // const navLink = document.querySelectorAll(".menu li");
-
-    // function linkAction() {
-    //     const navMenu = document.querySelector(".menu");
-    //     navMenu.classList.remove("active");
-    //     navToggle.classList.remove("change");
-    // }
-
-    // navLink.forEach((n) => n.addEventListener("click", linkAction));
-
-    // //! -------------------------- Responsive Nav Toogler -e   -------------------------------*/
-
-
-    // //!-------------------- Menu Crossbar -s --------------------
-
-
-    // // function changeX(x) {
-    // // x.classList.toggle("change");
-    // // }
-
-    // //!-------------------- Menu Crossbar -e --------------------
-
+    const handleLinkClick = () => {
+        closeMenu();
+        // You can add additional logic here if needed
+    };
 
     return (
 
-        <div className={color ? "navbar sticky" : "navbar"}>
+        <navbar className="navbar">
 
             <div className="row space_btw">
-                
+
                 <div className="logo">
-                    <Link to="/">
-                        <img src={logo}></img>
-                    </Link>
+
+                    <h2>Raj..</h2>
+
+                    {/* <Link to="home" smooth={true} duration={500}>
+                     <img src={logo} alt="Logo" />
+                    </Link> */}
 
                 </div>
 
-                <ul className="menu ">
+                <ul className={`menu ${menuOpen ? 'active' : ''}`}>
 
                     <li>
-                        <a href="/" className="nav_item active" >Home</a>
+
+                        <Link
+                            to="home"
+                            className="nav_item"
+                            smooth={true}
+                            duration={0}
+                            onClick={handleLinkClick}
+                        >
+                            Home
+                        </Link>
+
                     </li>
 
-                    <li>
-                        <a href="/about" className="nav_item">About</a>
-                    </li>
 
                     <li>
-                        <a href="/skills" className="nav_item">Skills</a>
+                        <Link
+                            to="about"
+                            className="nav_item"
+                            smooth={true}
+                            duration={0}
+                            onClick={handleLinkClick}
+                        >
+                            About
+                        </Link>
+
                     </li>
 
-                    <li>
-                        <a href="/projects" className="nav_item">Projects</a>
-                    </li>
 
                     <li>
-                        <a href="/contact" className="nav_item">Contact</a>
+                        <Link
+                            to="skills"
+                            className="nav_item"
+                            smooth={true}
+                            duration={0}
+                            onClick={handleLinkClick}
+                        >
+                            Skills
+                        </Link>
+                    </li>
+
+
+                    <li>
+                        <Link
+                            to="projects"
+                            className="nav_item"
+                            smooth={true}
+                            duration={0}
+                            onClick={handleLinkClick}
+                        >
+                            Projects
+                        </Link>
+                    </li>
+
+
+                    <li>
+                        <Link
+                            to="contact"
+                            className="nav_item"
+                            smooth={true}
+                            duration={0}
+                            onClick={handleLinkClick}
+                        >
+                            Contact
+                        </Link>
                     </li>
 
 
                 </ul>
 
 
-                <div className="menu_btn">
+                <div className={`menu_btn ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
 
                     <div className="bar1"></div>
                     <div className="bar2"></div>
                     <div className="bar3"></div>
 
                 </div>
+
+
             </div>
 
-        </div>
-    )
-}
+        </navbar>
+    );
+};
 
-export default Navbar
+export default Navbar;

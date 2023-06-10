@@ -1,9 +1,7 @@
 import React from "react";
 import "./index.scss";
 
-import { Route, Routes } from "react-router-dom";
-
-
+// import React from "react";
 import Navbar from './components/Navbar/Navbar';
 import HomeCom from './components/Home/HomeCom';
 import AboutCom from './components/About/AboutCom';
@@ -15,23 +13,25 @@ import SocialCom from './components/Social-icon/SocialCom';
 function App() {
   return (
     <>
-
       <Navbar />
-
       <main className="mainCom">
-
         <SocialCom />
-
-        <HomeCom />
-        <AboutCom />
-
-        <SkillCom />
-
-        <ProjectCom />
-        <ContactCom />
-
+        <div id="home">
+          <HomeCom />
+        </div>
+        <div id="about">
+          <AboutCom />
+        </div>
+        <div id="skills">
+          <SkillCom />
+        </div>
+        <div id="projects">
+          <ProjectCom />
+        </div>
+        <div id="contact">
+          <ContactCom />
+        </div>
       </main>
-
     </>
   );
 }

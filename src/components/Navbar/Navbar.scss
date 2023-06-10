@@ -1,0 +1,116 @@
+@import "../../variables";
+
+
+.navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 15px 25px;
+    transition: all 1s ease;
+    margin: 0 auto;
+    background-color: blue;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-size: 1.7rem;
+            font-family: "Times New Roman", Times, serif;
+        }
+    }
+    ul {
+        display: flex;
+        // margin-top: 10px;
+        // margin-bottom: 10px;
+        column-gap: 10px;
+        z-index: 34;
+        transition: all 1s ease;
+
+        li {
+            background-color: pink;
+            font-size: 15px;
+            font-weight: 900;
+            padding: 8px 16px;
+            text-transform: capitalize;
+            font-family: sans-serif;
+
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.823);
+
+            .nav_item {
+                background-color: rgb(24, 234, 66);
+            }
+        }
+    }
+}
+
+.sticky {
+    padding: 1px 25px;
+    border-radius: 10px;
+    // background: rgb(55, 47, 208);
+    background: linear-gradient(90deg, rgb(32, 192, 138) 0%, rgb(40, 154, 137) 17%, rgb(40, 140, 160) 100%);
+    box-shadow: var(--shadow-black-100);
+    opacity: 1;
+
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+.navbar .menu_btn {
+    /* height: 30px; */
+    /* width: 35px; */
+    background-color: red;
+    box-shadow: $box-shadow-low;
+    padding: 6px;
+    border-radius: 5px;
+    /* line-height: 34px; */
+    text-align: center;
+    /* color: var(--white); */
+    font-size: 17px;
+    top: 0;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/*TODO  re85  */
+
+@media (max-width: 895px) {
+    .navbar {
+        // background-color: red;
+        padding: 12px 17px;
+    }
+
+    // .sticky {
+    //     padding: 8px 20px;
+    // }
+
+    .navbar .menu_btn {
+        display: inline-block;
+        z-index: 999;
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 20px;
+            height: 3.5px;
+            background-color: #ffffff;
+            margin: 2px 0;
+            transition: 0.4s;
+        }
+
+        &.open .bar1 {
+            transform: translate(0, 5.5px) rotate(-45deg);
+        }
+
+        &.open .bar2 {
+            opacity: 0;
+        }
+
+        &.open .bar3 {
+            transform: translate(0, -5.5px) rotate(45deg);
+        }
+    }
+}
