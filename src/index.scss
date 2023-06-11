@@ -458,90 +458,14 @@ button:hover a
     padding: 8px 20px;
   }
 
-  navbar .menu_btn {
-    display: inline-block;
-    z-index: 999;
-    background-color: $accent-color;
-  }
 
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 20px;
-    height: 3.5px;
-    background-color: $white-1000;
-    margin: 2px 0;
-    transition: 0.4s;
-  }
 
-  .change .bar1 {
-    transform: translate(0, 5.5px) rotate(-45deg);
-  }
+  
 
-  .change .bar2 {
-    opacity: 0;
-  }
+ 
 
-  .change .bar3 {
-    transform: translate(0, -5.5px) rotate(45deg);
-  }
 
-  navbar .menu {
-    position: fixed;
-    padding: 6px;
-    right: -100%;
-    top: 40px;
-    flex-direction: column;
-    background-color: $accent-color;
 
-    transform: scale(0.1);
-    width: 90%;
-    border-radius: 10px;
-    margin: 10px 10px;
-
-    text-align: center;
-    transition: all 0.5s ease;
-    box-shadow: $box-shadow-high;
-  }
-
-  .change i {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .sticky .menu {
-    background-color: $black-400;
-    top: 40px;
-  }
-
-  navbar .menu li {
-    display: block;
-    margin: 6px 0;
-  }
-
-  navbar ul li a.active {
-    font-size: 16px;
-    font-weight: 900;
-    padding: 4px 8px;
-    text-transform: capitalize;
-    cursor: pointer;
-    /* color: #2c3639; */
-  }
-
-  .sticky .menu li a.active {
-    /* color: $white-1000; */
-    /* color: red; */
-  }
-
-  .sticky .menu li a {
-    color: $white-700;
-  }
-
-  navbar .menu.active {
-    right: 0;
-    /* transform: scaleY(1); */
-    transform: scale(1);
-    color: red;
-  }
 
   /*?------------ Navbar -e  ------------------ */
 

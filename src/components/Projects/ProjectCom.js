@@ -33,7 +33,7 @@ const ProjectCom = () => {
                         {['All', 'DSA', 'WebDev', 'AI', 'Others'].map((category) => (
                             <button
                                 key={category}
-                                className={activeFilter === category ? 'active' : ''}
+                                className={activeFilter === category ? 'activeTab' : ''}
                                 onClick={() => filterItem(category)}
                             >
                                 {category}
