@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import about_img from "../../assets/Background-imgs/bg1.png";
 import "./AboutCom.scss";
 
 const AboutCom = () => {
     const [activeTab, setActiveTab] = useState('skillss');
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Set the animation duration to 1200ms (1.2 seconds)
+        });
+    }, []);
 
     function opentab(tabname) {
         setActiveTab(tabname);
@@ -13,18 +21,18 @@ const AboutCom = () => {
         <section className="about_cls section_padding">
             <div className="container">
                 <div className="row justify_content_cntr">
-                    <div className="about_img">
+                    <div className="about_img" data-aos="fade-right"> {/* Apply fade-right animation */}
                         <div className="img_box frame">
                             <img src={about_img} alt="" />
                         </div>
                     </div>
 
-                    <div className="about_box" id="text">
+                    <div className="about_box" id="text" data-aos="fade-left">
                         <div className="section_title">
                             <h3 className="main_title">About</h3>
                             <h5 className="sub_title">Let's Know Me</h5>
-                            <div className="line"/>
-                            
+                            <div className="line" />
+
                         </div>
 
                         <div className="about_content">
@@ -138,5 +146,7 @@ const AboutCom = () => {
         </section>
     );
 };
+
+
 
 export default AboutCom;

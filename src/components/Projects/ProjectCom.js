@@ -29,7 +29,7 @@ const ProjectCom = () => {
                 </div>
 
                 <div className="row justify_content_cntr">
-                    <div className="port_filter">
+                    <div className="port_filter" data-aos="fade-up">
                         {['All', 'DSA', 'WebDev', 'AI', 'Others'].map((category) => (
                             <button
                                 key={category}
@@ -58,7 +58,7 @@ const ProjectCom = () => {
                         const isExpanded = expandedCardId === id;
 
                         return (
-                            <div className="card" key={id}>
+                            <div className="card" key={id} data-aos="fade-right">
                                 <div className="imgBox">
                                     <div className="proj-title">
                                         <h4>{title}</h4>

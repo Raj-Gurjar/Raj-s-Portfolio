@@ -1,13 +1,21 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
 import "./SkillCom.scss";
-
 import { FaLinkedin, FaGit } from 'react-icons/fa';
+import AOS from 'aos';
 
 
 
 
 const SkillCom = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Set the animation duration to 1200ms (1.2 seconds)
+        });
+    }, []);
+
+
+
     return (
 
         <section className="skill_cls section_padding">
@@ -30,7 +38,7 @@ const SkillCom = () => {
 
                 <div class="row justify_content_cntr">
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-right" data-aos-delay="0" >
 
                         <div className="content">
 
@@ -85,8 +93,8 @@ const SkillCom = () => {
                         <div className="layer"></div>
 
                     </div>
-                    
-                    <div class="card">
+
+                    <div class="card" data-aos="fade-right" data-aos-delay="100">
 
                         <div className="content">
 
@@ -141,7 +149,7 @@ const SkillCom = () => {
                         <div className="layer"></div>
 
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-right" data-aos-delay="200">
 
                         <div className="content">
 
@@ -196,7 +204,7 @@ const SkillCom = () => {
                         <div className="layer"></div>
 
                     </div>
-                   
+
 
                 </div>
 
@@ -208,7 +216,7 @@ const SkillCom = () => {
 
 
 
-            
+
 
 
 

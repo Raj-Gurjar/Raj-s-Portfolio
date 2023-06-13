@@ -6,7 +6,6 @@
 }
 
 .home-banner {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,22 +37,22 @@
     z-index: 5;
 }
 
+
 .hb-typo {
     padding: 10px;
     // background-color: green;
     margin-bottom: 10px;
-   
 
     h6 {
         font-size: 1.2rem;
     }
     h1 {
-         font-size: 4rem;
-         font-weight: 900;
-               color: transparent;
-               background-image: $grad-main;
-               background-clip: text;
-                -webkit-background-clip: text;
+        font-size: 4rem;
+        font-weight: 900;
+        color: transparent;
+        background-image: $grad-main;
+        background-clip: text;
+        -webkit-background-clip: text;
 
         // margin-bottom: 15px;
 
@@ -72,7 +71,6 @@
 }
 
 .quote_box {
-
     position: absolute;
     bottom: 18px;
     right: 10px;
@@ -84,12 +82,8 @@
     }
 }
 
-
-
-
 @media (max-width: 500px) {
-  
-    .hb-typo{
+    .hb-typo {
         // font-size: 20px;
         margin-top: -110px;
     }

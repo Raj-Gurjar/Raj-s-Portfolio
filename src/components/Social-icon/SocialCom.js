@@ -12,7 +12,7 @@ const SocialCom = () => {
 
     return (
         <div className={`social-icons ${showIcons ? 'show' : ''}`}>
-            <div className="social-toggle" onClick={handleToggle}>
+            <div className="social-toggle" onClick={handleToggle} >
             </div>
 
             <div className="social-box">

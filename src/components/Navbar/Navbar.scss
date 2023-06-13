@@ -2,13 +2,10 @@
 
 .navbar {
     position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translate(-50%);
+
     z-index: 999;
-    width: 98%;
+    width: 100%;
     padding: 10px 25px;
-    border-radius: $br-15;
     transition: all 0.5s ease;
     margin: 0 auto;
     background: $navbar-bg;
@@ -45,6 +42,7 @@
             }
             .active_Sec {
                 color: $accent-color;
+                transform: scale(11.1);
             }
         }
     }
