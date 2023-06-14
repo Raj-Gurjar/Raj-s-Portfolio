@@ -7,11 +7,7 @@ import "./AboutCom.scss";
 const AboutCom = () => {
     const [activeTab, setActiveTab] = useState('skillss');
 
-    useEffect(() => {
-        AOS.init({
-            duration: 1200, // Set the animation duration to 1200ms (1.2 seconds)
-        });
-    }, []);
+ 
 
     function opentab(tabname) {
         setActiveTab(tabname);
@@ -21,13 +17,13 @@ const AboutCom = () => {
         <section className="about_cls section_padding">
             <div className="container">
                 <div className="row justify_content_cntr">
-                    <div className="about_img" data-aos="fade-right"> {/* Apply fade-right animation */}
+                    <div className="about_img"> {/* Apply fade-right animation */}
                         <div className="img_box frame">
                             <img src={about_img} alt="" />
                         </div>
                     </div>
 
-                    <div className="about_box" id="text" data-aos="fade-left">
+                    <div className="about_box" id="text">
                         <div className="section_title">
                             <h3 className="main_title">About</h3>
                             <h5 className="sub_title">Let's Know Me</h5>
