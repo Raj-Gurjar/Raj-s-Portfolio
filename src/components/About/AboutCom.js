@@ -7,7 +7,7 @@ import "./AboutCom.scss";
 const AboutCom = () => {
     const [activeTab, setActiveTab] = useState('skillss');
 
- 
+
 
     function opentab(tabname) {
         setActiveTab(tabname);
@@ -19,8 +19,17 @@ const AboutCom = () => {
                 <div className="row justify_content_cntr">
                     <div className="about_img"> {/* Apply fade-right animation */}
                         <div className="img_box frame">
-                            <img src={about_img} alt="" />
+                            <div className="frame">
+                                <img src={about_img} alt="" />
+                            </div>
+                            <div className="abt_btn_box">
+                                <button className='res_btn'>View Resume</button>
+                                <button className='res_btn'>LinkedIn</button>
+                            </div>
                         </div>
+
+
+
                     </div>
 
                     <div className="about_box" id="text">
@@ -135,8 +144,14 @@ const AboutCom = () => {
                                     </li>
                                 </ul>
                             </div>
+
+                            {/* <button>ff</button> */}
+
                         </div>
+                        {/* <button>ff</button> */}
+
                     </div>
+
                 </div>
             </div>
         </section>

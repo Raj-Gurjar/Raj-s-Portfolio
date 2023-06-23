@@ -1,6 +1,3 @@
-// /* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
-// @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import "variables";
@@ -33,8 +30,8 @@ body {
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
   box-sizing: border-box;
   text-decoration: none;
   outline: none;
@@ -56,7 +53,7 @@ section
   display: block;
 }
 .section_padding {
-  padding: 80px 60px;
+  padding: 25px 0px;
 }
 
 .container {
@@ -426,130 +423,17 @@ button:hover a
 
 /*TODO  re1160  */
 @media (max-width: 1160px) {
-  // .social_icon {
-  //   right: 10px;
-  //   position: fixed;
-  // }
 
-  .port_cls {
-    padding: 80px 10px;
-  }
 
-  .port_cls .port_item {
-    flex: 0 0 38%;
-    max-width: 38%;
-  }
 }
 
-/*TODO  re85  */
-
+//?  re85  */
 @media (max-width: 895px) {
-  .section_padding {
-    padding: 30px 40px;
-  }
-
-  /*?------------ Navbar ------------------ */
-  navbar {
-    /* background-color: red; */
-    padding: 12px 17px;
-  }
-
-  .sticky {
-    padding: 8px 20px;
-  }
-
-
-
-  
-
- 
-
-
-
-
-  /*?------------ Navbar -e  ------------------ */
-
-  // .social_icon {
-  //   display: none;
-  //   right: 90%;
-  //   position: absolute;
-  //   z-index: 999;
-  // }
-
-
-  /*? -------------------------------------- */
-
-  .about_cls .about_img {
-    display: none;
-  }
-
-  .about_cls .about_box {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .about_cls .section_title {
-    text-align: center;
-  }
-
-  /*?------------------------------- */
-
-  
 
 }
 
-/*?  re76  */
-
-@media (max-width: 767px) {
-  // .social_icon {
-  //   display: none;
-  //   right: 85%;
-  // }
 
 
-  /* ?---------- blob -------------- */
 
-  @-webkit-keyframes move {
-    from {
-      transform: translate(-100px, -100px) rotate(-190deg);
-      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    }
 
-    to {
-      transform: translate(350px, 700px) rotate(-10deg);
-      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-    }
-  }
 
-  @keyframes move {
-    from {
-      transform: translate(-100px, -100px) rotate(-90deg);
-      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    }
-
-    to {
-      transform: translate(250px, 700px) rotate(-10deg);
-      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-    }
-  }
-}
-
-/*? re60 */
-@media (max-width: 655px) {
-  
-
- 
-}
-
-@media (max-width: 480px) {
- 
-}
-
-/* ? re3  */
-@media (max-width: 390px) {
-  .tab_links {
-    margin-right: 15px;
-  }
-}
-
-/* ! -----------------++++++ re1: Responsive -s ++++++------------------- */

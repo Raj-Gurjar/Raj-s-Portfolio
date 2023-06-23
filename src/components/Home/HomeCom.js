@@ -32,8 +32,8 @@ const HomeCom = () => {
       <div className="home-banner overlay">
         <div className="hb-typo txt_align">
           <h6 data-aos="fade-up" data-aos-delay="0" className="greeting">Good {Greetings()}, I'm</h6>
-          <h1 data-aos="fade-up" data-aos-delay="200">Raj <span>Chhalotre</span></h1>
-          <h3 data-aos="fade-up" data-aos-delay="400">
+          <h1 data-aos="fade-up" data-aos-delay="100">Raj <span>Chhalotre</span></h1>
+          <h3 data-aos="fade-up" data-aos-delay="200">
             <div className="prof">Web Developer</div>
           </h3>
         </div>

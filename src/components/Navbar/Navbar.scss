@@ -2,7 +2,6 @@
 
 .navbar {
     position: fixed;
-
     z-index: 999;
     width: 100%;
     padding: 10px 25px;
@@ -117,8 +116,13 @@
             margin: 2px 0;
             transition: 0.4s;
         }
+        .bar1
+        {
+            width: 10px;
+        }
 
         &.open .bar1 {
+            width: 20px;
             transform: translate(0, 5.5px) rotate(-45deg);
         }
 

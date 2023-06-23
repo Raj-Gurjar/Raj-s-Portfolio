@@ -3,6 +3,8 @@
 .home_cls {
     // max-height: 100vh;
     // background-image: url("../../assets/Background-imgs/bg3-bw.jpg");
+
+    background-color: grey;
 }
 
 .home-banner {
@@ -11,31 +13,31 @@
     justify-content: center;
     align-items: center;
 
-    background-image: url("../../assets/Background-imgs/bg3.jpg");
+   
 
     width: 100%;
     height: 100vh;
 
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
+    // background-position: 50%;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // overflow: hidden;
+    // position: relative;
 }
 
-.overlay:before {
-    background-color: rgba(0, 0, 0, 0.3);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-.overlay > div {
-    position: relative;
-    z-index: 5;
-}
+// .overlay:before {
+//     background-color: rgba(0, 0, 0, 0.3);
+//     content: "";
+//     height: 100%;
+//     left: 0;
+//     position: absolute;
+//     top: 0;
+//     width: 100%;
+// }
+// .overlay > div {
+//     position: relative;
+//     z-index: 5;
+// }
 
 
 .hb-typo {

@@ -66,7 +66,7 @@ const ProjectCom = () => {
                                             {subTitle}
                                             <span>
                                                 <button onClick={() => toggleDetails(id)}>
-                                                    {isExpanded ? 'Hide Info' : 'View Info'}
+                                                    {isExpanded ? 'Hide Info' : 'More Info'}
                                                 </button>
                                             </span>
                                         </h6>
