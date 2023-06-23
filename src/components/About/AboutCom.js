@@ -14,7 +14,7 @@ const AboutCom = () => {
     }
 
     return (
-        <section className="about_cls section_padding">
+        <section className="about_cls section_padding after_bg_col">
             <div className="container">
                 <div className="row justify_content_cntr">
                     <div className="about_img"> {/* Apply fade-right animation */}

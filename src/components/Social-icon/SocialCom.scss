@@ -2,64 +2,57 @@
 
 // !/* ----------- social media -s ----------- */
 
-
 .social-icons {
     position: fixed;
     top: 50%;
     right: -50px;
     transform: translateY(-50%);
     z-index: 100;
-    transition: all .3s ease-in-out;
-  
+    transition: all 0.3s ease-in-out;
+
     &.show {
-      right: 10px;
-  
-      .social-toggle::before {
-        content: '\f054'; /* Change the content to the new arrow icon */
-        
-      }
+        right: 10px;
+
+        .social-toggle::before {
+            content: "\f054"; /* Change the content to the new arrow icon */
+            font-weight: 900;
+            font-size: 1.6rem;
+        }
     }
-  
+
     .social-toggle {
-      position: absolute;
-      z-index: 999;
-      top: 50%;
-      right: 50px;
-      transform: translateY(-50%);
-      width: 40px;
-      height: 40px;
-      background-color: rgba(255, 255, 255, 0.782);
-      border: 1.5px solid white;
-      border-radius: 50%;
-      display: flex;
-      color: $accent-color;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      animation: glowing 1s infinite;
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        right: 55px;
+        transform: translateY(-50%);
 
+        display: flex;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
 
+        background-color: rgba(255, 255, 255, 0);
+        border: 2.5px solid $accent-color;
+        border-radius: 50%;
+        color: $accent-color;
+        cursor: pointer;
+        animation: glowing 1.5s infinite;
 
-  
-      &::before {
-        content: '\f086';
-        font-family: 'fontAwesome';
-        font-weight: 900;
-        font-size: 1.3rem;
-
-
-      }
+        &::before {
+            content: "\f086";
+            font-family: "fontAwesome";
+            font-weight: 900;
+            font-size: 1.3rem;
+        }
     }
-  
-    
-  
-
 
     .social-box {
-        background-color: rgba(178, 36, 36, 0.801);
-  
+        background-color: rgba(215, 215, 215, 0.514);
+
         width: 100%;
-        border: 1.5px solid white;
+        border: 3px solid $accent-color;
         padding: 4px;
         border-radius: 10px;
         gap: 5px;
@@ -72,50 +65,42 @@
         font-size: 1.3rem;
         color: $white-1000;
         padding: 4px;
-        margin:3px;
+        margin: 3px;
         border-radius: 100%;
         transition: all 0.3s ease-in-out;
-        
+
         &:hover {
             transform: scale(1.2);
             border-radius: 100%;
         }
-        
+
         &:nth-child(1):hover {
             //linkedin
             background-color: $linkedin;
         }
         &:nth-child(2):hover {
             //github
-            background-color:$github;
+            background-color: $github;
         }
 
         &:nth-child(3):hover {
             //instagram
-            background:$instagram;
+            background: $instagram;
         }
-     
+
         &:nth-child(4):hover {
             //whatsapp
             background-color: $whatsapp;
         }
 
-
         &:active {
             color: $black-400;
             transform: scale(0.8);
         }
-     
     }
 }
-
 
 @media only screen and (max-width: 768px) {
-    .social-icons {
-        // display: none;
-        // position: absolute;
-    }
 }
-
 
 /*? --------------   social media -e ---------------*/

@@ -2,10 +2,12 @@
 
 /*!----------------######## ab1: About section starts #######------------------- */
 
-.about_cls {
-  background-color: $bg-main;
-  z-index: 2;
+.about_cls{
+  // background-color: $bg-main;
+
 }
+
+
 
 .about_img,
 .about_box {
@@ -76,11 +78,12 @@
         margin-top: 12px;
         justify-content: space-between;
         gap: 5px;
+        
 
         .tab_links {
           flex: 0 0 30%;
-          font-size: 18px;
-          font-weight: 500;
+          font-size: 20px;
+          font-weight: 900;
           cursor: pointer;
           position: relative;
 
@@ -141,7 +144,7 @@
 /*!----------------######## ab1: About 
 n ends #######------------------- */
 
-@media (max-width: 1020px) {
+@media (max-width: 960px) {
   .about_img,
   .about_box {
     flex: 0 0 100%;

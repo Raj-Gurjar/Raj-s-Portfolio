@@ -1,0 +1,52 @@
+@import "../../variables";
+
+.scroll_sec {
+  
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    &.visible {
+        opacity: 1;
+    }
+
+    .scroll_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+
+        font-size: 20px;
+        height: 35px;
+        width: 35px;
+
+        background-color: $white-1000;
+        border-radius: 6px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+        color: $accent-color;
+        cursor: pointer;
+
+        transition: all 0.3s ease-in-out;
+
+        .up_icon {
+            margin-top: 5px;
+            transition: all 0.1s ease-in-out;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+            background-color: $accent-color;
+
+            color: $white-1000;
+
+            .up_icon {
+                margin-top: 2px;
+            }
+        }
+    }
+
+   
+}

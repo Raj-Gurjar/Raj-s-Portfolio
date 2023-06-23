@@ -9,8 +9,7 @@
 /* ?------------------- filter button  -e -------------------- */
 
 .port_filter {
-  flex: 0 0 100%;
-  max-width: 100%;
+  display: flex;
   padding: 20px 0px;
   text-align: center;
   margin-bottom: 10px;
@@ -20,11 +19,15 @@
     text-transform: uppercase;
     padding: 3px 6px;
     margin: 10px;
+    border-radius: 5px;
+    // box-sizing: border-box;
+
   }
 
   .activeTab {
     background: #03e9f4;
-    border: solid #ffffff;
+    // box-sizing: border-box;
+    outline: 2px solid $white-1000;
   }
 }
 
