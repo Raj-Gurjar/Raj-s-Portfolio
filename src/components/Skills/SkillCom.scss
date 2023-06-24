@@ -6,45 +6,38 @@
   background-color: $skill-bg;
 }
 
-
-.heading {
-  z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-
-  .skill-type-icon {
-    color: $accent-color;
-    font-size: 2.5rem;
-    margin-right: 10px;
-    align-items: center;
-    display: flex;
-    transition: all 0.5s ease-in-out;
-  }
-
-  h3 {
-    color: $accent-color;
-    float: right;
-    font-size: 1.5rem;
-    font-weight: 800;
-    /* line-height: 2rem; */
-    transition: all 0.5s ease-in-out;
-  }
-
-  h3::after {
-    display: block;
-    background: $white-1000;
-    bottom: 0;
-    content: "";
-    height: 3px;
-    left: 0;
-    width: 30px;
-    border-radius: 10px;
-  }
-}
-
 .card {
+  
+
+  .heading {
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+    h3 {
+      color: $accent-color;
+      float: right;
+      font-size: 1.5rem;
+      font-weight: 800;
+      transition: all 0.5s ease-in-out;
+    }
+
+    h3::after {
+      display: block;
+      background: $accent-color;
+      bottom: 0;
+      content: "";
+      height: 3px;
+      left: 0;
+      width: 50px;
+      border-radius: 10px;
+      transition: all .7s cubic-bezier(0.06, 0.21, 0.93, 0.04);
+
+    }
+  }
+
   p {
     margin: 15px 0;
     transition: all 0.5s ease-in-out;
@@ -65,47 +58,73 @@
 
     & > * {
       margin: 5px;
-      flex: 1 1 20%;
-      border: 1px solid black;
+      flex: 1 1 5%;
+      // border: 1px solid black;
     }
+
     .skill-icon {
       padding: 2px;
       font-size: 27px;
       text-align: center;
       transition: all 0.5s ease-in-out;
-    }
+      transform-style: preserve-3d; /* Apply 3D transformation to child elements */
 
-    h5 {
-      margin-top: -5px;
-      font-size: 8px;
-      font-weight: 600;
-      color: $text-low;
-      transition: all 0.5s ease-in-out;
+      img,svg{
+        width: 40px;
+        height: 40px;
+        transform: translateZ(25px); /* Move the image towards the viewer */
+        transition: transform 0.5s ease-in-out;
+      }
+
+      h5 {
+        margin-top: -5px;
+        font-size: 10px;
+        font-weight: 600;
+        color: $white-1000;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:hover {
+        transform: rotateX(20deg) rotateY(20deg); /* Apply 3D rotation on hover */
+      }
+
+      &:hover img {
+        transform: translateZ(0); /* Reset the image translation on hover */
+      }
     }
   }
 }
 
 .card:hover {
-  color: $white-1000;
-  // transform:scale(1.03);
+  .heading {
+    h3 {
+      transform: scale(1.1);
+      color: $white-1000;
+      margin-left: 4px;
+    }
 
-  .skill-icons-box {
-    background-color: $white-1000;
-  }
-  .skill-icon,
-  h5 {
-    color: $accent-color;
-    transform: scale(1.1);
-  }
-  .skill-type-icon,
-  h3 {
-    transform: scale(1.1);
-    color: $white-1000;
+    h3::after {
+      background: $white-1000;
+    }
+
+    
   }
   p,
   h4 {
     transform: scale(0.95);
   }
+
+  .skill-icons-box {
+    background-color: $white-1000;
+  }
+  .skill-icon {
+    transform: scale(1.1);
+
+    h5 {
+      color: $black-400;
+      transform: scale(1.1);
+    }
+  }
+
+
 }
-
-

@@ -1,39 +1,106 @@
-const Skills =  [
+import { FaAddressBook } from "react-icons/fa";
+
+export const Languages = [
+      {
+        name: "Cpp",
+        img:"Images/Skill-Icons/cpp.svg"
+      
+    },
     {
         name: "HTML",
-        img: "https://img.icons8.com/color/48/000000/html-5--v1.png"
+        img: "Images/Skill-Icons/html.svg"
     },
     {
         name: "CSS",
-        img: "https://img.icons8.com/color/48/000000/css3.png"
+        img: "Images/Skill-Icons/css.svg"
+       
     },
     {
         name: "JS",
-        img: "https://img.icons8.com/color/48/000000/javascript--v1.png"
+        img: "Images/Skill-Icons/js.svg"
+       
     },
-    {
-        name: "Cpp",
-        img: "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
-    },
+ 
     {
         name: "Python",
-        img: "https://img.icons8.com/color/48/000000/python--v1.png"
+        img: "Images/Skill-Icons/python.svg"
+       
+        
     },
+ 
+];
+
+export const WebFrameWorks = [
+
     {
-        name: "React",
-        img: "https://img.icons8.com/color/48/000000/react-native.png"
+        name: "Reactjs",
+        img: "Images/Skill-Icons/react.svg"
+       
     },
     {
         name: "Bootstrap",
-        img: "https://img.icons8.com/color/48/000000/bootstrap.png"
+        img: "Images/Skill-Icons/bootstrap.svg"
+      
     },
     {
         name: "Tailwind",
-        img: "https://img.icons8.com/color/48/000000/nodejs.png"
+        img: "Images/Skill-Icons/tailwind.svg"
+
+    },
+    
+    {
+        name: "Scss",
+        img: "Images/Skill-Icons/sass.svg"
+        
+    },
+    {   
+        name: "Nodejs",
+        img: "Images/Skill-Icons/node.svg"
+        
+    },
+    {   
+        name: "Nextjs",
+        img: "Images/Skill-Icons/next.svg"
+        
+    },
+    {   
+        name: "MongoDB",
+        img: "Images/Skill-Icons/mongo.svg"
+        
+    },
+    {   
+        name: "Expressjs",
+        img: "Images/Skill-Icons/express.svg"
+        
+    },
+
+]
+
+export const Others = [
+
+    {
+        name: "GitHub",
+        img: "Images/Skill-Icons/github.svg"
+
     },
     {
-        name: "Nextjs",
-        img: "https://img.icons8.com/color/48/000000/nodejs.png"
+        name: "ML",
+        img: "Images/Skill-Icons/ml.svg"
+
+    },
+    {
+        name: "VScode",
+        img: "Images/Skill-Icons/vsc.svg"
+
+    },
+    {
+        name: "Firebase",
+        img: "Images/Skill-Icons/firebase.svg"
+
+    },
+    {
+        name: "Clean Code",
+        img: "Images/Skill-Icons/cleancode.svg"
     }
- 
-];
+
+]
