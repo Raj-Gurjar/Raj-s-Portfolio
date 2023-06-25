@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './SocialCom.scss';
+// import socialImg from 'Images/socialM.png';
 import { FaLinkedinIn, FaGithub, FaInstagram, FaWhatsapp,FaComment } from "react-icons/fa";
 // import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
@@ -13,6 +14,7 @@ const SocialCom = () => {
     return (
         <div className={`social-icons ${showIcons ? 'show' : ''}`}>
             <div className="social-toggle" onClick={handleToggle} >
+                <img src='Images/socialM.png' alt="social" />
             </div>
 
             <div className="social-box">

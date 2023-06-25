@@ -31,7 +31,7 @@ body {
   position: relative;
 }
 
-.after_bg_col:after
+body:after
 {
   background: $left-bg;
   bottom: 0;
@@ -45,7 +45,7 @@ body {
 
 @media (max-width: 960px) {
  
-  .after_bg_col:after
+  body:after
   {
      display: none;
   }

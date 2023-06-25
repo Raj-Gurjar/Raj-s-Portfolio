@@ -2,7 +2,6 @@
 /*!----------------######## Contact section starts #######------------------- */
 
 .contact_cls {
-
   &.section_padding {
     padding: 30px 20px;
   }
@@ -42,12 +41,6 @@
     overflow: hidden;
     padding: 20px;
     position: relative;
-
-    input,
-    textarea {
-      color: $white-1000;
-      padding: 10px;
-    }
   }
 }
 
@@ -61,7 +54,6 @@
   padding: 0;
 
   textarea {
-    font-family: inherit;
     resize: vertical;
     min-height: 70px;
   }
@@ -79,17 +71,67 @@
   margin-bottom: 10px;
   position: relative;
 
-  .form-control {
-    //   background-color: red;
-    border-color: $accent-color;
-    border: 1px solid $accent-color;
+  input,
+  textarea {
+    color: $white-1000;
+
+    border: 1px solid #d88135ad;
     background-color: $black-1000;
+
     font-size: 14px;
+    font-family: inherit;
     height: 35px;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
+
+    // transition: all 0.35s ease;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:not(:placeholder-shown) ~ .form-label , &:focus ~ .form-label {
+      background-color: $black-1000;
+      border: 1px solid $accent-color;
+      border-radius: 30px;
+      font-size: 11px;
+      left: 10px;
+      top: -10px;
+    }
+
+    &:hover,&:focus{
+      border: 1.5px solid #d88135;
+      background-color: rgb(29, 29, 29);
+    }
+
+    &::selection
+    {
+      background-color: rgb(120, 120, 120);
+    }
+
+  
+
+
+  }
+
+  label {
+    background: rgba(0, 0, 0, 0);
+    color: $text-low;
+
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    left: 2px;
+    margin: 0;
+    padding: 0 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 7px;
+    transition: all 0.35s ease;
   }
 }
+
+
 
 .contact-info {
   // background-color: rgb(52, 83, 52);
@@ -100,7 +142,7 @@
     display: flex !important;
 
     color: $text-low;
-    margin-top: 20px;
+    margin-top: 25px;
     // background-color: rgb(76, 76, 145);
 
     .icon {
@@ -113,18 +155,34 @@
       height: 50px;
       justify-content: center;
       width: 50px;
+      transition: all 0.3s ease-in-out;
     }
 
     .media-txt {
       // background-color: rgb(127, 80, 80);
       justify-content: center;
-      margin-left: 5px;
+      margin-left: 10px;
       flex: 1 1;
       font-size: 14px;
+      transition: all 0.3s ease-in-out;
 
       span1 {
         color: $white-1000;
         font-weight: 900;
+      }
+    }
+
+    &:hover {
+      // color: $white-1000;
+
+      .icon {
+        transform: scale(0.8);
+        background-color: $accent-color;
+        color: $white-1000;
+      }
+      .media-txt {
+        transform: translateY(-5px) scale(1.1);
+        margin-left: 15px;
       }
     }
   }
@@ -143,7 +201,6 @@
 
 @media (max-width: 970px) {
   .contact_cls {
-  
     &.section_padding {
       padding: 20px 0px;
     }

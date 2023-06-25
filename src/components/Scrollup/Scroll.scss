@@ -26,8 +26,8 @@
         background-color: $white-1000;
         border-radius: 6px;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-        border: 2px solid $accent800;
-        color: $accent800;
+        border: 2px solid $accent1000;
+        color: $accent1000;
         cursor: pointer;
 
         transition: all 0.3s ease-in-out;
@@ -39,7 +39,7 @@
 
         &:hover {
             transform: translateY(-5px);
-            background-color: $accent800;
+            background-color: $accent1000;
 
             color: $white-1000;
 

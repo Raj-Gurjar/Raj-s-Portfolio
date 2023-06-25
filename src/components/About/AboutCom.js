@@ -23,21 +23,21 @@ const AboutCom = () => {
     }
 
     return (
-        <section className="about_cls section_padding after_bg_col">
+        <section className="about_cls section_padding">
             <div className="container">
                 <div className="row justify_content_cntr">
+
                     <div className="about_img" data-aos="fade-up"> {/* Apply fade-right animation */}
-                        <div className="img_box frame">
+                    
+                        <div className="img_box frame"> 
                             <div className="frame">
                                 <img src={about_img} alt="" />
                             </div>
-                            <div className="abt_btn_box" data-aos="fade-up">
-                                <button className='res_btn'><a href={resume} target='_blank' rel="noreferrer" data-aos="fade-up" data-aos-delay="500"> View Resume</a></button>
-                                <button className='res_btn'><a href='https://www.linkedin.com/in/raj-chhalotre-29jul01/' target='_blank' rel="noreferrer" data-aos="fade-up" data-aos-delay="500">Linkedin</a></button>
+                            <div className="abt_btn_box">
+                                <button className='res_btn'><a href={resume} target='_blank' rel="noreferrer"> View Resume</a></button>
+                                <button className='res_btn'><a href='https://www.linkedin.com/in/raj-chhalotre-29jul01/' target='_blank' rel="noreferrer">Linkedin</a></button>
                             </div>
                         </div>
-
-
 
                     </div>
 
@@ -46,7 +46,6 @@ const AboutCom = () => {
                             <h3 className="main_title">About</h3>
                             <h5 className="sub_title">Let's Know Me</h5>
                             <div className="line" />
-
                         </div>
 
                         <div className="about_content">
