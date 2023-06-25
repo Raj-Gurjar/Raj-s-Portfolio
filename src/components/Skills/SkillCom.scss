@@ -72,7 +72,7 @@
       img,svg{
         width: 40px;
         height: 40px;
-        transform: translateZ(25px); /* Move the image towards the viewer */
+        transform: translateZ(75px); /* Move the image towards the viewer */
         transition: transform 0.5s ease-in-out;
       }
 
@@ -85,7 +85,8 @@
       }
 
       &:hover {
-        transform: rotateX(20deg) rotateY(20deg); /* Apply 3D rotation on hover */
+        transform: rotateX(-10deg) rotateY(20deg); /* Apply 3D rotation on hover */
+        
       }
 
       &:hover img {
