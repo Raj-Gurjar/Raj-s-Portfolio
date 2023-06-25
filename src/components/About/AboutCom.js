@@ -1,10 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import "./AboutCom.scss";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import about_img from "../../assets/Background-imgs/bg1.png";
-import "./AboutCom.scss";
+import resume from '../../assets/Other/Resume (Raj).pdf';
 
 const AboutCom = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Set the animation duration to 1200ms (1.2 seconds)
+        });
+      }, []);
+    
     const [activeTab, setActiveTab] = useState('skillss');
 
 
@@ -17,14 +26,14 @@ const AboutCom = () => {
         <section className="about_cls section_padding after_bg_col">
             <div className="container">
                 <div className="row justify_content_cntr">
-                    <div className="about_img"> {/* Apply fade-right animation */}
+                    <div className="about_img" data-aos="fade-up"> {/* Apply fade-right animation */}
                         <div className="img_box frame">
                             <div className="frame">
                                 <img src={about_img} alt="" />
                             </div>
-                            <div className="abt_btn_box">
-                                <button className='res_btn'>View Resume</button>
-                                <button className='res_btn'>LinkedIn</button>
+                            <div className="abt_btn_box" data-aos="fade-up">
+                                <button className='res_btn'><a href={resume} target='_blank' rel="noreferrer" data-aos="fade-up" data-aos-delay="500"> View Resume</a></button>
+                                <button className='res_btn'><a href='https://www.linkedin.com/in/raj-chhalotre-29jul01/' target='_blank' rel="noreferrer" data-aos="fade-up" data-aos-delay="500">Linkedin</a></button>
                             </div>
                         </div>
 
@@ -32,7 +41,7 @@ const AboutCom = () => {
 
                     </div>
 
-                    <div className="about_box" id="text">
+                    <div className="about_box" id="text" data-aos="fade-up">
                         <div className="section_title">
                             <h3 className="main_title">About</h3>
                             <h5 className="sub_title">Let's Know Me</h5>

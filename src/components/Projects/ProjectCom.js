@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect} from 'react';
 import './ProjectCom.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import ProjData from './Proj-Data';
 
 const ProjectCom = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Set the animation duration to 1200ms (1.2 seconds)
+        });
+      }, []);
+    
     const [items, setItems] = useState(ProjData);
     const [activeFilter, setActiveFilter] = useState('All');
 
