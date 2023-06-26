@@ -21,7 +21,6 @@
     margin: 10px;
     border-radius: 5px;
     // box-sizing: border-box;
-
   }
 
   .activeTab {
@@ -42,18 +41,20 @@
 
     h4 {
       display: inline;
-      font-size: 16px;
+      font-size: 1.25rem;
     }
     h6 {
       display: block;
       font-size: 14px;
+      width: 70%;
     }
+
     span {
       z-index: 11;
       float: right;
-      // display: inline;
-
-      button {
+      display: block;
+      margin-top: -20px;
+      .proj_info_btn {
         padding: 1px 5px;
       }
     }
@@ -78,6 +79,32 @@
   }
 }
 
+// ----Hover Effect----
+
+.port_cls {
+  .card {
+    &:hover {
+      .proj-title {
+        h4,
+        h6:not(span) {
+          -webkit-animation: slideTop 0.7s ease-in-out 0s 1 normal none running !important;
+          animation: slideTop 0.7s ease-in-out 0s 1 normal none running !important;
+          color: #fff;
+        }
+        h4 {
+          color: $accent-color;
+        }
+      }
+
+      .btn-box {
+        -webkit-animation: slideTop 0.7s ease-in-out 0s 1 normal none running !important;
+        animation: slideTop 0.7s ease-in-out 0s 1 normal none running !important;
+        color: #fff;
+      }
+    }
+  }
+}
+// --------------------------
 .details {
   display: block;
   position: absolute;
@@ -89,16 +116,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
   p {
-   
     color: $white-1000;
     font-weight: 600;
   }
 
   &.show {
-    top: 16%;
+    top: 17%;
   }
 }
 
@@ -106,10 +132,22 @@
 
 @media (max-width: 430px) {
   .port_filter {
-
     button {
       margin: 7px;
     }
-   
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }

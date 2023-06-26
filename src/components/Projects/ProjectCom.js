@@ -1,4 +1,4 @@
-import React, { useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProjectCom.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -8,10 +8,10 @@ const ProjectCom = () => {
 
     useEffect(() => {
         AOS.init({
-          duration: 1000, // Set the animation duration to 1200ms (1.2 seconds)
+            duration: 1000, // Set the animation duration to 1200ms (1.2 seconds)
         });
-      }, []);
-    
+    }, []);
+
     const [items, setItems] = useState(ProjData);
     const [activeFilter, setActiveFilter] = useState('All');
 
@@ -73,12 +73,13 @@ const ProjectCom = () => {
                                         <h4>{title}</h4>
                                         <h6>
                                             {subTitle}
-                                            <span>
-                                                <button onClick={() => toggleDetails(id)}>
-                                                    {isExpanded ? 'Hide Info' : 'More Info'}
-                                                </button>
-                                            </span>
+
                                         </h6>
+                                        <span>
+                                            <button onClick={() => toggleDetails(id)} className='proj_info_btn'>
+                                                {isExpanded ? 'Hide Info' : 'More Info'}
+                                            </button>
+                                        </span>
                                     </div>
                                     <img src={image} alt="proj-img" />
                                     <div className="btn-box">

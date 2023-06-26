@@ -2,12 +2,12 @@
 
 /*!----------------######## ab1: About section starts #######------------------- */
 
-.about_cls{
+.about_cls {
   // background-color: $bg-main;
-
+  &.section_padding {
+    padding: 40px 15px;
+  }
 }
-
-
 
 .about_img,
 .about_box {
@@ -24,7 +24,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
+  
   .img_box {
     position: relative;
     overflow: hidden;
@@ -35,11 +35,10 @@
       // width: 300px;
       position: relative;
       max-width: 400px;
-      height: 400px;
+      height: 420px;
       z-index: 1;
       vertical-align: middle;
       border: 10px solid $black-900;
-
     }
   }
 }
@@ -64,7 +63,7 @@
       color: $text-low;
 
       p {
-        line-height: 20px;
+        line-height: 1.7rem;
 
         span {
           color: $accent-color;
@@ -74,18 +73,17 @@
     }
 
     .title_box {
+      
       .titles {
         display: flex;
-        margin-top: 12px;
+        margin-top: 1.8rem;
         justify-content: space-between;
         gap: 5px;
-        
 
         .tab_links {
           flex: 0 0 30%;
           // background-color: red;
-         
-      
+
           font-size: 18px;
           font-weight: 800;
           cursor: pointer;
@@ -103,7 +101,7 @@
           }
 
           &.active_link::after {
-            width: 60%;
+            width: 40%;
             border-radius: 30px;
           }
         }
@@ -111,6 +109,8 @@
     }
 
     .tab_contents {
+    // background-color: red;
+     height: 24vh;
       flex: 60%;
       padding-top: 10px;
       font-size: 12px;
@@ -118,7 +118,8 @@
 
       ul {
         li {
-          margin: 10px 0;
+          margin: 1rem 0;
+          line-height: 1.3rem;
 
           a {
             color: $accent-color;
@@ -131,6 +132,7 @@
             margin-right: 10px;
             font-size: 15px;
           }
+        
         }
       }
     }

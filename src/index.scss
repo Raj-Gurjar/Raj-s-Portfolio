@@ -29,6 +29,7 @@ body {
   background:$bg-main;
   z-index: 1;
   position: relative;
+
 }
 
 body:after
@@ -66,12 +67,12 @@ section {
   display: block;
 }
 .section_padding {
-  padding: 25px 0px;
+  padding: 30px 15px;
 }
 
 .container {
   max-width: 1140px;
-  margin: 40px;
+  margin: 40px auto;
 }
 
 .row {
@@ -436,4 +437,9 @@ button:hover a {
 
 //?  re85  */
 @media (max-width: 895px) {
+
+  .section_padding
+  {
+    padding: 40px 30px;
+  }
 }
