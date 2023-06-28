@@ -17,7 +17,7 @@ const ProjData = [
         title:"Movie System",
         subTitle:"NLP",
         image: "Images/gif-movie-rec.gif",
-        category:"AI",
+        category:"ML",
         discription:"This is a Movie Recommendation System made using NLP.",
         liveLink: "https://leetcode.com/Raj_Gurjar/",
         gitLink: "https://github.com/Raj-Gurjar"

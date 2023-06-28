@@ -30,11 +30,12 @@
     overflow: hidden;
     padding: 10px;
     position: relative;
+    // width: 450px;/
 
     img {
       // width: 300px;
       position: relative;
-      max-width: 400px;
+      width: 400px;
       height: 420px;
       z-index: 1;
       vertical-align: middle;

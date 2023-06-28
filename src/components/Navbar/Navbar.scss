@@ -27,22 +27,37 @@
 
         li {
             // background-color: pink;
-            font-size: 15px;
-            font-weight: 900;
+            // font-size: 15px;
+            // font-weight: 900;
             padding: 8px 16px;
-            text-transform: capitalize;
-            font-family: sans-serif;
+            // text-transform: capitalize;
+            // font-family: sans-serif;
 
             cursor: pointer;
-            color: rgba(255, 255, 255, 0.823);
+
+            color: hsla(0,0%,100%,.9);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: .05rem;
+            text-transform: uppercase;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: $text-low;
+                transform: scale(1.1);
+            }
+
+       
 
             .nav_item {
                 // background-color: rgb(24, 234, 66);
+
+                &.active_Sec {
+                    color: $accent-color;
+                    transform: scale(11.1);
+                }
             }
-            .active_Sec {
-                color: $accent-color;
-                transform: scale(11.1);
-            }
+           
         }
     }
 }

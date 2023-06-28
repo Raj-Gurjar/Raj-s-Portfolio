@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
@@ -27,6 +27,22 @@ const HomeCom = () => {
     return greet;
   };
 
+  const [currentProf, setCurrentProf] = useState('Web Developer');
+
+  useEffect(() => {
+    const professions = ['Web Developer', 'Frontend Aficionado', 'A.I. Acolyte'];
+    let currentIndex = 0;
+
+    const interval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % professions.length;
+      setCurrentProf(professions[currentIndex]);
+    }, 1500);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <section className="home_cls">
       <div className="home-banner overlay">
@@ -34,12 +50,12 @@ const HomeCom = () => {
           <h6 data-aos="fade-up" data-aos-delay="0" className="greeting">Good {Greetings()}, I'm</h6>
           <h1 data-aos="fade-up" data-aos-delay="100">Raj <span>Chhalotre</span></h1>
           <h3 data-aos="fade-up" data-aos-delay="200">
-            <div className="prof">Web Developer</div>
+            <div className="prof prof_act">{currentProf}</div>
           </h3>
         </div>
       </div>
       <div className="quote_box">
-        <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, quos."</p>
+        <p>"Crafting digital experiences with code: The art of a web developer."</p>
       </div>
     </section>
   );

@@ -39,7 +39,7 @@ const ProjectCom = () => {
 
                 <div className="row justify_content_cntr">
                     <div className="port_filter" data-aos="fade-up">
-                        {['All', 'DSA', 'WebDev', 'AI', 'Others'].map((category) => (
+                        {['All', 'DSA', 'WebDev', 'ML', 'Others'].map((category) => (
                             <button
                                 key={category}
                                 className={activeFilter === category ? 'activeTab' : ''}
