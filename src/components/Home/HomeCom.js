@@ -45,6 +45,7 @@ const HomeCom = () => {
 
   return (
     <section className="home_cls">
+
       <div className="home-banner overlay">
         <div className="hb-typo txt_align">
           <h6 data-aos="fade-up" data-aos-delay="0" className="greeting">Good {Greetings()}, I'm</h6>

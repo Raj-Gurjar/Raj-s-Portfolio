@@ -48,7 +48,8 @@
   .skill-icons-box {
     display: flex;
     flex-wrap: wrap;
-    background-color: $accent-color;
+    background-color: $black-400;
+  
     border-radius: 5px;
     padding: 5px;
     transition: all 0.5s ease-in-out;
@@ -84,6 +85,7 @@
         box-shadow: 4px 4px 10px 4px lightgrey;
         border-radius: 50%;
         vertical-align: middle;
+
       }
 
       h5 {
@@ -126,7 +128,7 @@
   }
 
   .skill-icons-box {
-    background-color: $white-1000;
+    background-color: $white-700;
   }
   .skill-icon {
     // transform: scale(1.1);
