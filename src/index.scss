@@ -32,17 +32,17 @@ body {
 
 }
 
-// body:after
-// {
-//   background: $left-bg;
-//   bottom: 0;
-//   content: "";
-//   left: 0;
-//   position: absolute;
-//   top: 0;
-//   width: 32%;
-//   z-index: -1;
-// }
+body:after
+{
+  background: $left-bg;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 32%;
+  z-index: -1;
+}
 
 @media (max-width: 960px) {
  
