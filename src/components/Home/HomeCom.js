@@ -8,6 +8,7 @@ import home_img from '../../assets/My-imgs/PicsArt_05-24-06.05.09.png';
 import poly from "../../assets/Polygon 2.png"
 import rainbow from "../../assets/Rainbow.svg";
 import spiral from "../../assets/Spiral.svg";
+import Typed from 'typed.js';
 
 import './HomeCom.scss';
 import '../../index.scss';
@@ -31,48 +32,45 @@ const HomeCom = () => {
     return greet;
   };
 
-  const [currentProf, setCurrentProf] = useState('Web Developer');
-
   useEffect(() => {
-    const professions = ['Web Developer', 'Frontend Aficionado', 'A.I. Acolyte'];
-    let currentIndex = 0;
+    const options = {
+      strings: ["Web Developer", "DSA learner", "AI Enthusiast"],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 60,
+      backDelay: 1400,
+    };
 
-    const interval = setInterval(() => {
-      currentIndex = (currentIndex + 1) % professions.length;
-      setCurrentProf(professions[currentIndex]);
-    }, 1500);
+    const typed = new Typed(".prof", options);
 
     return () => {
-      clearInterval(interval);
+      typed.destroy();
     };
   }, []);
-
-
 
   return (
     <section className="home_cls">
       <div className="home_cntr">
         <div className="grid_box">
 
-          <img src={rainbow} class="rainbow" alt="" />
-          <img src={spiral} class="spiral" alt="" />
+          <img src={rainbow} className="rainbow" alt="" />
+          <img src={spiral} className="spiral" alt="" />
 
           <div className="home_txt">
             <h3 className="greeting">Good {Greetings()}<span>👋</span>,I'm</h3>
             <h1>Raj Chhalotre</h1>
+            <h2><span className='prof'></span></h2>
           </div>
 
           <div className="resume_btn">
-            
             <a href={resume} className="rnd_txt" target='_blank' rel="noreferrer" >
               {['v', 'i', 'e', 'w', ' ', 'R', 'e', 's', 'u', 'm', 'e'].map((letter, index) => (
-                 <li key={index} style={{ '--tm': index + 1 }}>{letter}</li>
-              ))}</a>
+                <li key={index} style={{ '--tm': index + 1 }}>{letter}</li>
+              ))}
+            </a>
           </div>
         </div>
       </div>
-
-
     </section>
   );
 };

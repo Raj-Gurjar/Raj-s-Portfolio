@@ -52,7 +52,7 @@
     .home_txt {
         padding-top: 60px;
         // background-color: red;
-        line-height: 3rem;
+        line-height: 4rem;
 
         h3 {
             font-size: 25px;
@@ -72,6 +72,13 @@
             text-transform: uppercase;
             font-family: sans-serif;
             font-weight: 900;
+        }
+
+        h2
+        {
+            margin-top: 10px;
+            font-size: 25px;
+            
         }
     }
 
