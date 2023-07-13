@@ -13,7 +13,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        
+        
         position: fixed;
         bottom: 20px;
         right: 20px;
@@ -24,9 +25,9 @@
         width: 35px;
 
         background-color: $white-1000;
-        border-radius: 6px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-        border: 2px solid $accent1000;
+        border-radius: 50%;
+        box-shadow: $new-box-shadow-low;
+        border: 2px solid black;
         color: $accent1000;
         cursor: pointer;
 

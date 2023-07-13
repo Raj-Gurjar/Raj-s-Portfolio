@@ -28,7 +28,7 @@ function App() {
         <div id="skills">
           <SkillCom />
         </div>
-        <div id="projects">
+        <div id="portfolio">
           <ProjectCom />
         </div>
         <div id="contact">

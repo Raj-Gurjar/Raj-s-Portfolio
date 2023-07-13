@@ -3,18 +3,18 @@ import "./AboutCom.scss";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import about_img from "../../assets/Background-imgs/bg1.png";
+import about_img from "../../assets/My-imgs/PicsArt_05-24-06.05.09.png";
 import resume from '../../assets/Other/Resume (Raj).pdf';
 
 const AboutCom = () => {
 
     useEffect(() => {
         AOS.init({
-          duration: 1000, // Set the animation duration to 1200ms (1.2 seconds)
+            duration: 1000, // Set the animation duration to 1200ms (1.2 seconds)
         });
-      }, []);
-    
-    const [activeTab, setActiveTab] = useState('skillss');
+    }, []);
+
+    const [activeTab, setActiveTab] = useState('education');
 
 
 
@@ -25,46 +25,42 @@ const AboutCom = () => {
     return (
         <section className="about_cls section_padding">
             <div className="container">
+
                 <div className="row justify_content_cntr">
 
                     <div className="about_img" data-aos="fade-up"> {/* Apply fade-right animation */}
-                    
-                        <div className="img_box frame"> 
+
+                        <div className="img_box frame">
                             <div className="frame">
                                 <img src={about_img} alt="" />
                             </div>
-                            <div className="abt_btn_box">
+                            {/* <div className="abt_btn_box">
                                 <button className='res_btn'><a href={resume} target='_blank' rel="noreferrer"> View Resume</a></button>
                                 <button className='res_btn'><a href='https://www.linkedin.com/in/raj-chhalotre-29jul01/' target='_blank' rel="noreferrer">Linkedin</a></button>
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>
 
                     <div className="about_box" id="text" data-aos="fade-up">
                         <div className="section_title">
-                            <h3 className="main_title">About</h3>
-                            <h5 className="sub_title">Let's Know Me</h5>
+                            <h2>About Me</h2>
+                            <h4>Let's Know Me</h4>
                             <div className="line" />
                         </div>
 
                         <div className="about_content">
                             <div className="about_txt">
                                 <p>
-                                    From Thinking Out of the Box in <span>DSA</span> questions to Reshaping the Box in{' '}
-                                    <span>Web Development</span> and Using the power of <span>AI</span> to predict what's inside the box is my
+                                    From Thinking Out of the Box in <span>DSA</span><box1>😊</box1> questions to Reshaping the Box in{' '}
+                                    <span>Web Development</span><box2>👇</box2> and Using the power of <span>AI</span><box3>🔥</box3> to predict what's inside the box is my
                                     Journey to Programming and Development.
                                 </p>
                             </div>
 
                             <div className="title_box">
                                 <div className="titles">
-                                    <p
-                                        className={`tab_links ${activeTab === 'skillss' ? 'active_link' : ''}`}
-                                        onClick={() => opentab('skillss')}
-                                    >
-                                        Major Skills
-                                    </p>
+                                
                                     <p
                                         className={`tab_links ${activeTab === 'education' ? 'active_link' : ''}`}
                                         onClick={() => opentab('education')}
@@ -79,33 +75,7 @@ const AboutCom = () => {
                                     </p>
                                 </div>
                             </div>
-
-                            <div className={`tab_contents ${activeTab === 'skillss' ? 'active_tab' : ''}`} id="skillss">
-                                <ul>
-                                    <li>
-                                        <span>Front-End Web Developer</span>
-                                        <p>UI/UX, Reactjs</p>
-
-                                    </li>
-
-                                    <li>
-                                        <span>Data Structures and Algorithms</span>
-                                        <p>
-                                            Competitive Programming, Logical Thinking <br />
-                                            Solved 600+ ques. on different coding platforms.</p>
-
-                                    </li>
-
-                                    <li>
-                                        <span>AI</span>
-                                        <p>
-                                            Python, ML
-                                        </p>
-                                    </li>
-
-                                </ul>
-                            </div>
-
+                            
                             <div className={`tab_contents ${activeTab === 'education' ? 'active_tab' : ''}`} id="education">
                                 <ul>
                                     <li>

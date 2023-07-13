@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 import Social from '../Social-icon/SocialCom';
 import resume from '../../assets/Other/Resume (Raj).pdf';
 import home_img from '../../assets/My-imgs/PicsArt_05-24-06.05.09.png';
+import poly from "../../assets/Polygon 2.png"
+import rainbow from "../../assets/Rainbow.svg";
+import spiral from "../../assets/Spiral.svg";
+
 import './HomeCom.scss';
 import '../../index.scss';
 
@@ -43,21 +47,32 @@ const HomeCom = () => {
     };
   }, []);
 
+
+
   return (
     <section className="home_cls">
+      <div className="home_cntr">
+        <div className="grid_box">
 
-      <div className="home-banner overlay">
-        <div className="hb-typo txt_align">
-          <h6 data-aos="fade-up" data-aos-delay="0" className="greeting">Good {Greetings()}, I'm</h6>
-          <h1 data-aos="fade-up" data-aos-delay="100">Raj <span>Chhalotre</span></h1>
-          <h3 data-aos="fade-up" data-aos-delay="200">
-            <div className="prof prof_act">{currentProf}</div>
-          </h3>
+          <img src={rainbow} class="rainbow" alt="" />
+          <img src={spiral} class="spiral" alt="" />
+
+          <div className="home_txt">
+            <h3 className="greeting">Good {Greetings()}<span>👋</span>,I'm</h3>
+            <h1>Raj Chhalotre</h1>
+          </div>
+
+          <div className="resume_btn">
+            
+            <a href={resume} className="rnd_txt" target='_blank' rel="noreferrer" >
+              {['v', 'i', 'e', 'w', ' ', 'R', 'e', 's', 'u', 'm', 'e'].map((letter, index) => (
+                 <li key={index} style={{ '--tm': index + 1 }}>{letter}</li>
+              ))}</a>
+          </div>
         </div>
       </div>
-      <div className="quote_box">
-        <p>"Crafting digital experiences with code: The art of a web developer."</p>
-      </div>
+
+
     </section>
   );
 };

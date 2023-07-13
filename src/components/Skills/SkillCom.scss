@@ -1,141 +1,146 @@
+// /*!----------------######## sk1: Skill section starts #######------------------- */
+// @import "../../variables";
+// @import "../../index.scss";
+
+// @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap");
+
+// .skill_cls {
+//   background-color: #f9f5f2;
+//   color: black;
+
+//   .card1 {
+//     display: flex;
+//     // flex-direction: column;
+//     // flex: 0 0 30.5%;
+//     gap: 10px;
+//     flex-wrap: wrap;
+//     max-height: 70vh;
+//     // justify-content: center;
+
+//     background-color: #fff;
+//     border: 1px solid #282825;
+//     border-radius: 20px;
+//     padding: 20px;
+//     box-shadow: 3px 3px #282825;
+
+//     transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1),
+//       box-shadow 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+//     // height: inherit;
+
+//     .skill_heading {
+//       // z-index: 2;
+//       // display: flex;
+//       // flex-wrap: wrap;
+//       // align-items: center;
+//       // transition: all 0.3s ease-in-out;
+
+//       h3 {
+//         // color: $accent-color;
+//         background-color: red;
+//         float: right;
+//         font-size: 1.5rem;
+//         font-weight: 800;
+//         transition: all 0.5s ease-in-out;
+//       }
+//     }
+
+//     p {
+//       background-color: rgb(0, 255, 183);
+//     }
+//   }
+
+//   .card11 {
+
+//   }
+// }
+
+// @media (max-width: 630px) {
+//   .grid {
+//     grid-template-areas:
+//       "h h h"
+//       "m m  m"
+//       "ma ma  ma";
+//   }
+// }
+
 /*!----------------######## sk1: Skill section starts #######------------------- */
 @import "../../variables";
 @import "../../index.scss";
 
 .skill_cls {
-  background-color: $skill-bg;
+  // background-color: $skill-bg;
+  background-color: #ffffff;
+  color: black;
 }
 
-.card {
-  .heading {
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.skill_cls .card {
+padding: 0px;
+  // flex: 5;
+  // flex: 0 0 30.5%;
+  .skill_heading {
     transition: all 0.3s ease-in-out;
-
+    //  background-color: red;
+     padding: 20px;
     h3 {
-      color: $accent-color;
-      float: right;
       font-size: 1.5rem;
       font-weight: 800;
+      margin-bottom: 10px;
       transition: all 0.5s ease-in-out;
     }
 
-    h3::after {
-      display: block;
-      background: $accent-color;
-      bottom: 0;
-      content: "";
-      height: 3px;
-      left: 0;
-      width: 50px;
-      border-radius: 10px;
-      transition: all 0.7s cubic-bezier(0.06, 0.21, 0.93, 0.04);
+    p {
+      // background-color: rgb(0, 255, 183);
+      margin-bottom: 15px;
     }
   }
 
-  p {
-    margin: 15px 0;
-    transition: all 0.5s ease-in-out;
-  }
+  // h4 {
+  //   font-size: 15px;
+  //   transition: all 0.5s ease-in-out;
+  // }
 
-  h4 {
-    font-size: 15px;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .skill-icons-box {
+  .skill_box {
     display: flex;
     flex-wrap: wrap;
-    background-color: $black-400;
-  
+    // background-color: $black-400;
+    justify-content: center;
+
     border-radius: 5px;
-    padding: 5px;
+    // padding: 20px;
+    // line-height: rem;
     transition: all 0.5s ease-in-out;
 
     & > * {
-      margin: 5px;
-      flex: 1 1 5%;
+      margin: 11px;
+      // flex: 0 0 15%;
       // border: 1px solid black;
     }
 
-    .skill-icon {
-      padding: 2px;
-      font-size: 27px;
-      text-align: center;
-      transition: all 0.5s ease-in-out;
-      transform-style: preserve-3d; /* Apply 3D transformation to child elements */
+    .skill_item {
+      // display:inline-block;
+      // justify-content: center;
+      // justify-content: center;
+      // background-color: rgb(94, 154, 167);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
 
-      img,
-      svg {
-        // width: 50px;
-        // height: 50px;
-        // transform: translateZ(75px); /* Move the image towards the viewer */
-        transition: transform 2.5s ease-in-out;
-        // max-width: 100%;
-        display: block;
-        width: 70px;
-        height: 70px;
-        // padding: 5px;
-        object-fit: fill;
-        margin-inline: auto;
-        margin-bottom: 15px;
-        outline: 5px solid white;
-        box-shadow: 4px 4px 10px 4px lightgrey;
-        border-radius: 50%;
-        vertical-align: middle;
-
+      img {
+        height: 60px;
+        width: 60px;
+        // fill: #e44f26;
+        stroke-width: 2px;
+        stroke: #000;
+        filter: drop-shadow(5px 5px 1px #0000005f);
       }
-
       h5 {
-        margin-top: -5px;
-        font-size: 10px;
-        font-weight: 600;
-        color: $white-1000;
-        transition: all 0.5s ease-in-out;
-      }
-
-      &:hover {
-        img {
-          transform: rotate(360deg);
-          box-shadow: $box-shadow-high;
-        }
-        h5
-        {
-          color: $accent-color;
-        }
+        margin: auto;
+        // text-align: center;
       }
     }
   }
 }
 
 .card:hover {
-  .heading {
-    h3 {
-      transform: scale(1.1);
-      color: $white-1000;
-      margin-left: 4px;
-    }
-
-    h3::after {
-      background: $white-1000;
-    }
-  }
-  p,
-  h4 {
-    transform: scale(0.95);
-  }
-
-  .skill-icons-box {
-    background-color: $white-700;
-  }
-  .skill-icon {
-    // transform: scale(1.1);
-
-    h5 {
-      color: $black-400;
-      transform: scale(1.1);
-    }
-  }
 }

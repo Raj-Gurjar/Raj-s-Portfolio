@@ -3,7 +3,7 @@
 
 // Background Colors
 $bg-light: #232323;
-$bg-main: #131416;
+$bg-main: #2B2E37;
 $left-bg: #646675;
 $home-bg:#000000;
 $skill-bg: #262835;
@@ -12,10 +12,10 @@ $navbar-bg: #1c1d2434;
 $stk-nav-bg: #1c1d24;;
 $navbar-border:#513030;
 
-
+$newbw:#F9F5F2;
 
 //text Colors
-$accent-color:#d88135;
+$accent-color:#3F91F9;
 $accent1000:#ff7802;
 $accent400:rgba(220, 150, 90, 0.1);
 $text-low: rgba(255, 255, 255, 0.721);
@@ -26,7 +26,13 @@ $grad-main:linear-gradient(to left, orange, tomato);
 $box-shadow-low: 0 5px 15px rgba(0, 0, 0, 0.3);
 $box-shadow-high: 0 10px 10px rgba(111, 108, 108, 0.5);
 
+$new-box-shadow-low: 3px 5px rgb(0, 0, 0);
+$new-box-shadow-high: 5px 10px rgb(0, 0, 0);
 
+//border radius
+$bor-1:1px solid black;
+$bor-15:1.5px solid black;
+$bor-2:2px solid black;
 
 //Shades
 $white-1000: #fff;

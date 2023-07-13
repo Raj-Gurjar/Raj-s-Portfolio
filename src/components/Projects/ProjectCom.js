@@ -29,12 +29,11 @@ const ProjectCom = () => {
     return (
         <section className="port_cls section_padding">
             <div className="container">
-                <div className="row justify_content_cntr">
-                    <div className="section_title txt_align">
-                        <h3 className="main_title">Projects</h3>
-                        <h5 className="sub_title">Works I Did</h5>
-                        <div className="line" />
-                    </div>
+
+                <div className="section_title txt_align">
+                    <h2>Portfolio</h2>
+                    <h4>Works I Did</h4>
+                    <div className="line" />
                 </div>
 
                 <div className="row justify_content_cntr">

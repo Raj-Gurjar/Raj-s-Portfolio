@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap');
 @import "variables";
 
 /*!----------------#### Global Declarations ####-----------------------  */
@@ -19,36 +19,32 @@ html {
 }
 
 body {
-
   font-size: 13px;
   font-weight: 400;
   color: $white-1000;
   overflow-x: hidden;
-  font-family: "Nunito", serif;
+  font-family: "Work Sans", sans-serif;
 
-  background:$bg-main;
+  background: $bg-main;
   z-index: 1;
   position: relative;
-
 }
 
-body:after
-{
-  background: $left-bg;
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 32%;
-  z-index: -1;
-}
+// body:after
+// {
+//   background: $left-bg;
+//   bottom: 0;
+//   content: "";
+//   left: 0;
+//   position: absolute;
+//   top: 0;
+//   width: 32%;
+//   z-index: -1;
+// }
 
 @media (max-width: 960px) {
- 
-  body:after
-  {
-     display: none;
+  body:after {
+    display: none;
   }
 }
 
@@ -67,7 +63,7 @@ section {
   display: block;
 }
 .section_padding {
-  padding: 30px 15px;
+  padding: 25px 15px;
 }
 
 .container {
@@ -116,6 +112,10 @@ button {
   padding: auto;
   z-index: 1;
   transition: all 0.25s ease;
+  
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: auto;
 
   a {
     color: $bg-light;
@@ -140,42 +140,43 @@ button:hover a {
   display: inline-block;
   cursor: pointer;
   user-select: none;
+
+  .popuptext {
+    visibility: hidden;
+    font-size: 10px;
+    display: flex;
+    width: 100%;
+
+    text-align: center;
+    justify-content: center;
+
+    background-color: #555;
+    color: #fff;
+    border-radius: 6px;
+    padding: 3px;
+
+    position: absolute;
+
+    z-index: 11;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -20px;
+  }
+
+  /* Popup arrow */
+  .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
 }
 
 /* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  font-size: 10px;
-  display: flex;
-  width: 100%;
-
-  text-align: center;
-  justify-content: center;
-
-  background-color: #555;
-  color: #fff;
-  border-radius: 6px;
-  padding: 3px;
-
-  position: absolute;
-
-  z-index: 11;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -20px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
 
 .popup:hover .popuptext {
   visibility: visible;
@@ -187,34 +188,39 @@ button:hover a {
 /*?------------------- Section Title -s -------------------- */
 
 .section_title {
-  margin-bottom: 20px;
-}
-.main_title {
-  // font-family: 'Nunito', serif;
-  color: $white-1000;
-  font-size: 40px;
-  font-weight: 800;
-  margin-top: 5px;
-  line-height: 54px;
-  letter-spacing: 3px;
+  h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
 
-  text-shadow: 0px 0px 4px rgba(202, 228, 225, 0.492), 0 0 4px rgba(202, 228, 225, 0.209);
-}
+  h4 {
+    color: #52514e;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
 
-.sub_title {
-  font-size: 15px;
-  font-weight: 400;
-  color: $text-low;
-}
+  h3 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
 
-.line {
-  display: inline-block;
-  background-color: $accent-color;
-  border-radius: 50px;
-  width: 33px;
-  height: 3px;
-}
+  .line {
+    display: inline-block;
+    background-color: $accent-color;
+    border: 0.1px solid black;
+    border-radius: 50px;
+    box-shadow: 0.7px 1.5px rgba(0, 0, 0, 0.501);
+    width: 50px;
+    height: 5px;
+    font-weight: 900;
+    margin-bottom: 16px;
 
+  }
+}
 /*?------------------- Section Title -s -------------------- */
 
 /* ?---------------  Scroll Bar -s    ------------------- */
@@ -241,41 +247,21 @@ button:hover a {
 /*? ---------------- Scroll Bar -e------------------- */
 
 /*? ------------ GLobal card box -s ---------------*/
-
-.card {
+.card
+{
   position: relative;
   flex: 0 0 29%;
-  // max-width: 29%;
-  // height: 200px;
+
+  border: 1px solid black;
+  box-shadow: 3px 5px black;
+  border-radius: 10px;
   padding: 20px;
   margin: 20px;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
 
-  background: $black-900;
   box-sizing: border-box;
-  box-shadow: $box-shadow-high;
-
-  .content {
-    z-index: 2;
-    position: relative;
-  }
-  .layer {
-    z-index: 1;
-    position: absolute;
-    top: calc(100% - 3px);
-    height: 100%;
-    width: 100%;
-    left: 0;
-    background: $grad-main;
-    transition: 0.5s;
-  }
-
-  &:hover .layer {
-    top: 0;
-  }
 }
-
 /* Responsive card */
 @media (max-width: 1122px) {
   .card {
@@ -312,7 +298,6 @@ button:hover a {
   to {
     opacity: 1;
     transform: scale(0.9);
-
   }
 }
 
@@ -440,9 +425,7 @@ button:hover a {
 
 //?  re85  */
 @media (max-width: 895px) {
-
-  .section_padding
-  {
+  .section_padding {
     padding: 40px 30px;
   }
 }

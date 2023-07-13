@@ -3,15 +3,18 @@
 /*!----------------######## Portfolio section ends #######------------------- */
 
 .port_cls {
-  background-color: $proj-bg;
+  background-color: $newbw;
+  color: black;
 }
 
 /* ?------------------- filter button  -e -------------------- */
 
 .port_filter {
   display: flex;
+  flex-wrap: wrap;
   padding: 20px 0px;
   text-align: center;
+  justify-content: center;
   margin-bottom: 10px;
   z-index: 1;
 
@@ -37,6 +40,8 @@
   .proj-title {
     margin-bottom: 10px;
     z-index: 11;
+    border-bottom: 1px solid black;
+
 
     h4 {
       display: inline;
@@ -61,6 +66,8 @@
 
   img {
     display: block;
+    border: 1px solid black;
+    border-radius: 10px;
     width: 100%;
     height: 250px;
     margin-bottom: 10px;
@@ -82,6 +89,7 @@
 
 .port_cls {
   .card {
+    
     &:hover {
       .proj-title {
         h4,

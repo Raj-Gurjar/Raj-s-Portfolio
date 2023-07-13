@@ -1,7 +1,10 @@
 @import "../../variables";
+
 /*!----------------######## Contact section starts #######------------------- */
 
 .contact_cls {
+  background-color: rgba(255, 255, 255, 0.904);
+  color: #090908;
   &.section_padding {
     padding: 35px 40px;
   }
@@ -18,6 +21,7 @@
 
 .contact_cls .section_title .main_title {
   font-size: 1.4rem;
+  color: black;
   letter-spacing: normal;
   margin-bottom: -20px;
 }
@@ -33,14 +37,12 @@
 
 .contact_cls .col-cont-form {
   // background-color: rgb(75, 182, 91);
-
+  .card
+  {
+    margin: 0px;
+  }
   .contact-form {
-    background-color: $black-800;
-    display: block;
-    box-shadow: $box-shadow-high;
-    overflow: hidden;
-    padding: 20px;
-    position: relative;
+    background-color: rgb(71, 179, 98);
   }
 }
 
@@ -52,11 +54,6 @@
   flex: 0 0 auto;
   width: 100%;
   padding: 0;
-
-  textarea {
-    resize: vertical;
-    min-height: 70px;
-  }
 
   .btn-bar {
     // background-color: rgb(52, 206, 35);
@@ -72,59 +69,70 @@
   margin-bottom: 10px;
   position: relative;
 
+  input {
+    border-radius: 50px;
+  }
   input,
   textarea {
-    color: $white-1000;
-
-    border: 1px solid #d88135ad;
-    background-color: $black-1000;
-
-    font-size: 14px;
     font-family: inherit;
     height: 35px;
     width: 100%;
-    padding: 10px;
 
-    // transition: all 0.35s ease;
+    color: #090908;
+    // text-align: left;
+    border: 1px solid #282825;
+    // border-radius: 50px;
+    border-radius: 50px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 20px 10px;
+    font-size: 18px;
+    transition: box-shadow 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    box-shadow: 3px 3px #282825;
 
     &::placeholder {
       color: transparent;
     }
 
-    &:not(:placeholder-shown) ~ .form-label , &:focus ~ .form-label {
-      background-color: $black-1000;
+    &:not(:placeholder-shown) ~ .form-label,
+    &:focus ~ .form-label {
+      background-color: $white-1000;
       border: 1px solid $accent-color;
       border-radius: 30px;
       font-size: 11px;
-      left: 10px;
+      left: 20px;
       top: -10px;
     }
 
-    &:hover,&:focus{
-      border: 1.5px solid #d88135;
-      background-color: rgb(29, 29, 29);
+    &:hover,
+    &:focus {
+      // border: 1.5px solid #d88135;
+      background-color: rgba(245, 240, 240, 0.399);
     }
 
-    &::selection
-    {
-      background-color: rgb(120, 120, 120);
+    &::selection {
+      background-color: rgb(166, 49, 49);
     }
+  }
 
-  
-
-
+  textarea {
+    resize: vertical;
+    min-height: 90px;
+    border-radius: 20px;
+    // padding: 10px;
   }
 
   label {
-    background: rgba(0, 0, 0, 0);
-    color: $text-low;
+    // background: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.384);
 
     display: inline-block;
     font-size: 14px;
     font-weight: 400;
-    left: 2px;
-    margin: 0;
-    padding: 0 10px;
+    left: 12px;
+    margin: 2px;
+    padding: 1px 10px;
     pointer-events: none;
     position: absolute;
     top: 7px;
@@ -132,24 +140,34 @@
   }
 }
 
-
-
 .contact-info {
   // background-color: rgb(52, 83, 52);
-
+  color: black;
   padding: 20px;
+
+  .section_title {
+    p {
+      max-width: 500px;
+      color: #0d0c22;
+      font-size: 18px;
+      // line-height: 30px;
+    }
+  }
   .media {
+    // background-color: #a7896f86;
     align-items: flex-start;
     display: flex !important;
 
-    color: $text-low;
-    margin-top: 25px;
+    color: rgb(221, 0, 0);
+    margin-top: 28px;
     // background-color: rgb(76, 76, 145);
 
     .icon {
       align-items: center;
-      background: rgba(220, 150, 90, 0.1);
+      background: rgba(162, 255, 12, 0.1);
       border-radius: 50%;
+      border: 1px solid black;
+      box-shadow: 2px 3px black;
       color: $accent-color;
       display: inline-flex;
       font-size: 24px;
@@ -163,13 +181,30 @@
       // background-color: rgb(127, 80, 80);
       justify-content: center;
       margin-left: 10px;
+      margin-top: 8px;
       flex: 1 1;
       font-size: 14px;
       transition: all 0.3s ease-in-out;
 
+      a {
+        color: #0d0c22;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+         
+      .redirect-icon
+      {
+        transition: all .3s ease-in-out;
+      }
       span1 {
-        color: $white-1000;
-        font-weight: 900;
+        // color: $white-1000;
+        font-weight: 500;
+
+        color: #7e7d7dd2;
+        // margin-top: 60px;
+        // padding-bottom: 2px;
+        font-size: 16px;
+        line-height: 20px;
       }
     }
 
@@ -183,7 +218,16 @@
       }
       .media-txt {
         transform: translateY(-5px) scale(1.1);
-        margin-left: 15px;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+      a
+      {
+        text-decoration: underline;
+      }
+      .redirect-icon
+      {
+        transform: scale(1.15);
       }
     }
   }
@@ -219,5 +263,101 @@
 @media (max-width: 700px) {
   .col-1 {
     flex-basis: 100%;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  .popup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+
+    .popup-content {
+      text-align: center;
+
+      h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}
+
+.btn-bar {
+  // ...
+
+  button[type="submit"] {
+    // Customize the submit button styles as needed
+    // ...
+
+    &.loading {
+      position: relative;
+      overflow: hidden;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #007bff;
+        border-top-color: transparent;
+        animation: spin 1s linear infinite;
+      }
+    }
+
+    .loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      border: 4px solid #fff;
+      border-top: 4px solid #007bff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      z-index: 2;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
