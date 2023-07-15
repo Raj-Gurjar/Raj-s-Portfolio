@@ -2,16 +2,13 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
-import Social from '../Social-icon/SocialCom';
 import resume from '../../assets/Other/Resume (Raj).pdf';
-import home_img from '../../assets/My-imgs/PicsArt_05-24-06.05.09.png';
-import poly from "../../assets/Polygon 2.png"
 import rainbow from "../../assets/Rainbow.svg";
 import spiral from "../../assets/Spiral.svg";
 import Typed from 'typed.js';
 
 import './HomeCom.scss';
-import '../../index.scss';
+
 
 const HomeCom = () => {
   useEffect(() => {
@@ -68,6 +65,10 @@ const HomeCom = () => {
                 <li key={index} style={{ '--tm': index + 1 }}>{letter}</li>
               ))}
             </a>
+          </div>
+
+          <div className="quote_box">
+            <p>"Crafting digital experiences with code: The art of a web developer."</p>
           </div>
         </div>
       </div>

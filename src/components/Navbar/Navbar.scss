@@ -4,11 +4,11 @@
     position: fixed;
     z-index: 999;
     width: 100%;
-    padding: 10px 25px;
+    padding: 8px 25px;
     transition: all 0.5s ease;
     margin: 0 auto;
-    background: $navbar-bg;
-
+    // background: $navbar-bg;
+    color: black;
     .logo {
         display: flex;
         align-items: center;
@@ -19,47 +19,91 @@
         }
     }
 
+
     ul {
         display: flex;
         column-gap: 10px;
         z-index: 34;
         transition: all 1s ease;
-
+   
         li {
             // background-color: pink;
             // font-size: 15px;
             // font-weight: 900;
-            padding: 8px 16px;
+            padding: 10px 12px;
             // text-transform: capitalize;
             // font-family: sans-serif;
 
             cursor: pointer;
 
-            color: hsla(0,0%,100%,.9);
-            font-size: 14px;
+            color: hsla(87, 65%, 42%, 0.997);
+            font-size: 16px;
             font-weight: 600;
             letter-spacing: .05rem;
-            text-transform: uppercase;
+            // text-transform: uppercase;
             transition: all .3s ease-in-out;
 
             &:hover {
-                color: $text-low;
+                // color: $text-low;
                 transform: scale(1.1);
+                text-decoration: underline;
+
+                &:nth-child(5) {
+                //   transform: none;
+                  text-decoration: none;
+                //   box-shadow: $new-box-shadow-high;
+                  transform: translate(-4px,-4px);
+                  box-shadow: 6px 6px #282825;
+                }
             }
 
-       
+            &:nth-child(5)
+            {
+                margin-bottom: 2px;
+               background-color: red;
+               border: $bor-15;
+               border-radius: $br-20;
+               box-shadow: $new-box-shadow-low;
+               padding: 8px 12px;
+               align-items: center;
+               text-align: center;
+               justify-content: center;
+               display: flex;
+
+               &:active
+               {
+                     transform: translate(0, 0px);
+                     box-shadow: 1px 2px black;
+               }
+
+               &::after
+               {
+                // padding: 2px;
+                margin-left:6px ;
+                font-family: "Font Awesome 5 Free";
+                content: "\f14d";
+                color: rgb(127, 202, 51);
+                // background-color: gray;
+                // border-radius: 50%;
+                // font-size: 15px;
+                text-decoration: none;
+               }
+            }
 
             .nav_item {
                 // background-color: rgb(24, 234, 66);
 
                 &.active_Sec {
                     color: $accent-color;
-                    transform: scale(11.1);
+                    text-decoration: underline;
+                   
                 }
             }
            
         }
     }
+    
+    
 }
 
 .sticky {

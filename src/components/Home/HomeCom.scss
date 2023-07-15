@@ -91,7 +91,7 @@
     width: 80px;
     border-radius: 100%;
     position: absolute;
-    bottom: calc(100% - 83vh);
+    bottom: calc(100% - 89vh);
     right: 80px;
 
     display: flex;
@@ -137,5 +137,20 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+
+.quote_box {
+    position: absolute;
+    bottom: calc(100% - 90vh);
+    left: 50px;
+    padding: 10px;
+    z-index: 5;
+    // padding-bottom: 60px;
+
+    p {
+        font-size: 0.9rem;
+        font-weight: 400;
     }
 }

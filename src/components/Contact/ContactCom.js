@@ -3,8 +3,10 @@ import React, { useState, useEffect } from 'react';
 import './ContactCom.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {FaMailBulk, FaPhone, FaMap } from 'react-icons/fa';
+import { FaMailBulk, FaPhone, FaMap } from 'react-icons/fa';
 import { BiLinkExternal } from "react-icons/bi";
+import { FaLinkedinIn, FaGithub, FaInstagram, FaWhatsapp, FaComment } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const ContactCom = () => {
   useEffect(() => {
@@ -63,25 +65,25 @@ const ContactCom = () => {
                 <div className="row">
                   <div className="col-1">
                     <div className="form-group" data-aos="fade-up" data-aos-delay="0">
-                      <input type="text" placeholder="Name" name="name" required/>
+                      <input type="text" placeholder="Name" name="name" required />
                       <label className="form-label">Full Name*</label>
                     </div>
                   </div>
                   <div className="col-1">
                     <div className="form-group" data-aos="fade-up" data-aos-delay="25">
-                      <input type="email" placeholder="Email" name="email" required/>
+                      <input type="email" placeholder="Email" name="email" required />
                       <label className="form-label">Email*</label>
                     </div>
                   </div>
                   <div className="col-2" data-aos="fade-up" data-aos-delay="50">
                     <div className="form-group">
-                      <input type="text" placeholder="Subject" name="subject" required/>
+                      <input type="text" placeholder="Subject" name="subject" required />
                       <label className="form-label">Subject*</label>
                     </div>
                   </div>
                   <div className="col-2" data-aos="fade-up" data-aos-delay="100">
                     <div className="form-group">
-                      <textarea placeholder="Type comment" name="comment" required/>
+                      <textarea placeholder="Type comment" name="comment" required />
                       <label className="form-label">Comment*</label>
                     </div>
                   </div>
@@ -123,7 +125,7 @@ const ContactCom = () => {
                   <span1>Address</span1>
                   <br />
                   <a href="https://goo.gl/maps/haiWM5xbmb6VNEkN7" target="_blank" rel="noreferrer">
-                    Indore, Madhya Pradesh, IND <BiLinkExternal className='redirect-icon'/>
+                    Indore, Madhya Pradesh, IND <BiLinkExternal className='redirect-icon' />
                   </a>
                 </span>
               </div>
@@ -135,7 +137,7 @@ const ContactCom = () => {
                   <span1>Email</span1>
                   <br />
                   <a href="mailto:rajchhalotre14@gmail.com" target="_blank" rel="noreferrer">
-                    rajchhalotre14@gmail.com <BiLinkExternal className='redirect-icon'/>
+                    rajchhalotre14@gmail.com <BiLinkExternal className='redirect-icon' />
                   </a>
                 </span>
               </div>
@@ -147,13 +149,36 @@ const ContactCom = () => {
                   <span1>Contact No.</span1>
                   <br />
                   <a href="tel:+919174510107" target="_blank" rel="noreferrer">
-                    +91 9174510107 <BiLinkExternal className='redirect-icon'/>
+                    +91 9174510107 <BiLinkExternal className='redirect-icon' />
                   </a>
                 </span>
+              </div>
+
+              <div className="social-box">
+
+                <h3>Follow On:</h3>
+                <a href="https://www.facebook.com/" rel="noreferrer" target="_blank">
+                  <FaLinkedinIn />
+                </a>
+                <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
+                  <FaGithub />
+                </a>
+                <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
+                  <FaInstagram />
+                </a>
+                <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
+                  <FaWhatsapp />
+                </a>
+                <a href="https://leetcode.com/Raj_Gurjar/" rel="noreferrer" target="_blank">
+                  <SiLeetcode />
+                </a>
               </div>
             </div>
           </div>
         </div>
+
+
+
       </div>
     </section>
   );

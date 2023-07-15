@@ -8,7 +8,6 @@ import AboutCom from './components/About/AboutCom';
 import SkillCom from './components/Skills/SkillCom';
 import ProjectCom from './components/Projects/ProjectCom';
 import ContactCom from './components/Contact/ContactCom';
-import SocialCom from './components/Social-icon/SocialCom';
 import FooterCom from "./components/Footer/FooterCom";
 import ScrollCom from "./components/Scrollup/ScrollCom";
 
@@ -17,7 +16,6 @@ function App() {
     <>
       <Navbar />
       <main className="mainCom">
-        <SocialCom />
         <ScrollCom />
         <div id="home">
           <HomeCom />

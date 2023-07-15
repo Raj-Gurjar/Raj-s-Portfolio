@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import logo from '../../assets/mylogo2.png';
 import './Navbar.scss';
+import { FaShare} from "react-icons/fa";
+
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -58,21 +60,25 @@ const Navbar = () => {
           </Link> */}
                 </div>
 
-                <ul className={`menu ${menuOpen ? 'active' : ''}`}>
-                    {menuItems.map(({ name, to }) => (
-                        <li key={name}>
-                            <Link
-                                to={to}
-                                className={`nav_item ${activeSection === to ? 'active_Sec' : ''}`}
-                                smooth={true}
-                                duration={0}
-                                onClick={handleLinkClick}
-                            >
+                <div className="main_menu">
+
+                    <ul className={`menu ${menuOpen ? 'active' : ''}`}>
+                        {menuItems.map(({ name, to }) => (
+                            <li key={name}>
+                                <Link
+                                    to={to}
+                                    className={`nav_item ${activeSection === to ? 'active_Sec' : ''}`}
+                                    smooth={true}
+                                    duration={0}
+                                    onClick={handleLinkClick}
+                                >
                                 {name}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
 
                 <div className={`menu_btn ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                     <div className="bar1"></div>

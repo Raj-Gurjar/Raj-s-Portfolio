@@ -4,7 +4,11 @@ import "./AboutCom.scss";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import about_img from "../../assets/My-imgs/PicsArt_05-24-06.05.09.png";
+import outBox from "../../assets/outBox.png";
+import inside from "../../assets/inside.png";
+import reshape from "../../assets/reshape.svg";
 import resume from '../../assets/Other/Resume (Raj).pdf';
+
 
 const AboutCom = () => {
 
@@ -52,9 +56,10 @@ const AboutCom = () => {
                         <div className="about_content">
                             <div className="about_txt">
                                 <p>
-                                    From Thinking Out of the Box in <span>DSA</span><box1>😊</box1> questions to Reshaping the Box in{' '}
-                                    <span>Web Development</span><box2>👇</box2> and Using the power of <span>AI</span><box3>🔥</box3> to predict what's inside the box is my
-                                    Journey to Programming and Development.
+                                    From Thinking Out of the Box <box1><img src={outBox} alt='outBox'></img></box1> in <span>DSA</span> questions 
+                                    to Reshaping the Box <box2><img src={reshape} alt='outBox'></img> </box2> in <span>Web Development</span> and
+                                    Using the power of <span>AI</span> to predict what's inside the box <box3><img src={inside} alt='outBox'></img></box3> is
+                                    my Journey to Programming and Development.
                                 </p>
                             </div>
 

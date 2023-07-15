@@ -31,15 +31,14 @@
 }
 
 .my-3 {
-  margin-bottom: 1rem !important;
-  margin-top: 1rem !important;
+  margin-bottom: 1rem 0px !important;
 }
 
 .contact_cls .col-cont-form {
   // background-color: rgb(75, 182, 91);
-  .card
-  {
+  .card {
     margin: 0px;
+    padding: 30px;
   }
   .contact-form {
     background-color: rgb(71, 179, 98);
@@ -83,10 +82,10 @@
     border: 1px solid #282825;
     // border-radius: 50px;
     border-radius: 50px;
-    margin-bottom: 2px;
+    margin-bottom: 15px;
     margin-left: auto;
     margin-right: 0;
-    padding: 20px 10px;
+    padding: 21px 10px;
     font-size: 18px;
     transition: box-shadow 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     box-shadow: 3px 3px #282825;
@@ -143,7 +142,8 @@
 .contact-info {
   // background-color: rgb(52, 83, 52);
   color: black;
-  padding: 20px;
+  padding: 20px 10px;
+  margin-left: -20px;
 
   .section_title {
     p {
@@ -191,10 +191,9 @@
         font-weight: 600;
         transition: 0.3s;
       }
-         
-      .redirect-icon
-      {
-        transition: all .3s ease-in-out;
+
+      .redirect-icon {
+        transition: all 0.3s ease-in-out;
       }
       span1 {
         // color: $white-1000;
@@ -221,12 +220,10 @@
         margin-left: 20px;
         margin-top: 10px;
       }
-      a
-      {
+      a {
         text-decoration: underline;
       }
-      .redirect-icon
-      {
+      .redirect-icon {
         transform: scale(1.15);
       }
     }
@@ -256,6 +253,7 @@
   }
   .col-cont-info {
     flex: 0 0 auto;
+    padding: 20px 10px;
     width: 100%;
   }
 }
@@ -359,5 +357,65 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.social-box {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  // background-color: red;
+
+  margin-top: 30px;
+  // width: %;
+
+  h3 {
+    font-weight: 500;
+    color: rgba(126, 125, 125, 0.8235294118);
+    font-size: 1.2rem;
+    line-height: 20px;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.8rem;
+    color: $white-1000;
+    padding: 5px;
+    margin: 0px 10px;
+    border-radius: 100%;
+
+    border: 1px solid black;
+    box-shadow: $new-box-shadow-low;
+    transition: all 0.2s ease-in-out;
+
+    &:nth-child(2) {
+      //linkedin
+      background-color: $linkedin;
+    }
+    &:nth-child(3) {
+      //github
+      background-color: $github;
+    }
+
+    &:nth-child(4) {
+      //instagram
+      background: $instagram;
+    }
+
+    &:nth-child(5) {
+      //whatsapp
+      background-color: $whatsapp;
+    }
+
+    &:nth-child(6) {
+      //leetCode
+      background-color: $black-1000;
+    }
+
+    &:active {
+      color: $black-400;
+      transform: scale(0.8);
+    }
   }
 }
