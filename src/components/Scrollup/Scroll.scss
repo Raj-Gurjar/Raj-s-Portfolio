@@ -28,7 +28,7 @@
         border-radius: 50%;
         box-shadow: $new-box-shadow-low;
         border: 2px solid black;
-        color: $accent1000;
+        color: $accent-color;
         cursor: pointer;
 
         transition: all 0.3s ease-in-out;
@@ -40,7 +40,7 @@
 
         &:hover {
             transform: translateY(-5px);
-            background-color: $accent1000;
+            background-color: $accent-color;
 
             color: $white-1000;
 

@@ -30,7 +30,7 @@ const AboutCom = () => {
         <section className="about_cls section_padding">
             <div className="container">
 
-                <div className="row justify_content_cntr">
+                 <div className="row justify_content_cntr">
 
                     <div className="about_img" data-aos="fade-up"> {/* Apply fade-right animation */}
 

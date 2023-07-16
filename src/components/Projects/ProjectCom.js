@@ -66,7 +66,7 @@ const ProjectCom = () => {
                         const isExpanded = expandedCardId === id;
 
                         return (
-                            <div className="card" key={id} data-aos="fade-right">
+                            <div className="card" key={id} >
                                 <div className="imgBox">
                                     <div className="proj-title">
                                         <h4>{title}</h4>
@@ -83,10 +83,10 @@ const ProjectCom = () => {
                                     <img src={image} alt="proj-img" />
                                     <div className="btn-box">
                                         <button>
-                                            <a href={gitLink}>View Code</a>
+                                            <a href={gitLink} target='_blank' rel="noreferrer">View Code</a>
                                         </button>
                                         <button>
-                                            <a href={liveLink}>Live Demo</a>
+                                            <a href={liveLink} target='_blank' rel="noreferrer">Live Demo</a>
                                         </button>
                                     </div>
                                 </div>

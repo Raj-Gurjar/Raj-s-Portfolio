@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap");
 @import "variables";
 
 /*!----------------#### Global Declarations ####-----------------------  */
@@ -20,39 +20,17 @@ html {
 
 body {
   font-size: 13px;
-  font-weight: 400;
-  color: $white-1000;
+  color: $black-1000;
   overflow-x: hidden;
   font-family: "Work Sans", sans-serif;
 
-  background: $bg-main;
+  background: $bg-light;
   z-index: 1;
   position: relative;
 }
 
-// body:after
-// {
-//   background: $left-bg;
-//   bottom: 0;
-//   content: "";
-//   left: 0;
-//   position: absolute;
-//   top: 0;
-//   width: 32%;
-//   z-index: -1;
-// }
-
-@media (max-width: 960px) {
-  body:after {
-    display: none;
-  }
-}
-
 /*? -------------------Body -e----------------------- */
 
-@mixin flex-prop {
-  display: flex;
-}
 /*?------------------- Adjustments -s-------------------- */
 
 ul {
@@ -75,10 +53,6 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
-// .row > *
-// {
-//   flex: 1 1 33%;
-// }
 
 .justify_content_cntr {
   justify-content: center;
@@ -101,89 +75,41 @@ section {
 /*?-------------------   Buttons -s   -------------------- */
 
 button {
-  background-color: $accent-color;
-  border: none;
-  box-shadow: $box-shadow-low;
+  background-color: $yellow-1000;
+  color: $black-1000;
   cursor: pointer !important;
   display: inline-block;
+  z-index: 1;
+
   font-size: 13px;
   font-weight: 600;
-  overflow: hidden;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+
   padding: auto;
-  z-index: 1;
-  transition: all 0.25s ease;
-  
-  border: 1px solid black;
-  border-radius: 20px;
-  box-shadow: auto;
+
+  border: $bor-1;
+  border-radius: $br-20;
+  box-shadow: $btn-box-shadow-low;
+
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
   a {
-    color: $bg-light;
+    color: $black-1000;
   }
-}
 
-button:hover {
-  box-shadow: $box-shadow-high;
-  background-color: $bg-light;
-  color: $accent-color;
-}
-button:hover a {
-  color: $accent-color;
+  &:hover {
+    box-shadow: $btn-box-shadow-high;
+    transform: translate(-4px, -4px);
+  }
+
+  &:active {
+    box-shadow: $btn-box-shadow-low;
+    transform: translate(0px, 0px);
+  }
 }
 
 /*?-------------------   Buttons -e   -------------------- */
-
-/*?-------------------   popup -s   -------------------- */
-
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  user-select: none;
-
-  .popuptext {
-    visibility: hidden;
-    font-size: 10px;
-    display: flex;
-    width: 100%;
-
-    text-align: center;
-    justify-content: center;
-
-    background-color: #555;
-    color: #fff;
-    border-radius: 6px;
-    padding: 3px;
-
-    position: absolute;
-
-    z-index: 11;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -20px;
-  }
-
-  /* Popup arrow */
-  .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-}
-
-/* The actual popup */
-
-.popup:hover .popuptext {
-  visibility: visible;
-  animation: fadeIn 0.5s;
-}
-
-/*?-------------------   popup -e   -------------------- */
 
 /*?------------------- Section Title -s -------------------- */
 
@@ -218,7 +144,6 @@ button:hover a {
     height: 5px;
     font-weight: 900;
     margin-bottom: 16px;
-
   }
 }
 /*?------------------- Section Title -s -------------------- */
@@ -247,20 +172,30 @@ button:hover a {
 /*? ---------------- Scroll Bar -e------------------- */
 
 /*? ------------ GLobal card box -s ---------------*/
-.card
-{
+.card {
   position: relative;
   flex: 0 0 29%;
 
-  border: 1px solid black;
-  box-shadow: 3px 5px black;
-  border-radius: 10px;
-  padding: 20px;
+  border: $bor-1;
+  box-shadow: $card-box-shadow-low;
+  border-radius: $br-10;
+  // padding: 20px;
   margin: 20px;
   overflow: hidden;
-  transition: all 0.4s ease-in-out;
+  // transition: all 0.4s ease-in-out;
 
   box-sizing: border-box;
+
+ 
+  padding: 32px 24px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+
+  &:hover {
+    box-shadow: $card-box-shadow-high;
+    transform: translate(-6px, -6px);
+    background-color: $accent-color;
+  }
 }
 /* Responsive card */
 @media (max-width: 1122px) {

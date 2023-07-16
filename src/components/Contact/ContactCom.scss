@@ -12,7 +12,7 @@
 
 .contact_cls .contact-form .row {
   // background-color: #c02f2f;
-  gap: 10px;
+  gap: 15px;
 
   & > * {
     // background-color: #2fafc0;
@@ -38,10 +38,10 @@
   // background-color: rgb(75, 182, 91);
   .card {
     margin: 0px;
-    padding: 30px;
+    padding: 30px 20px;
   }
   .contact-form {
-    background-color: rgb(71, 179, 98);
+    background-color: $accent-color;
   }
 }
 
@@ -56,9 +56,10 @@
 
   .btn-bar {
     // background-color: rgb(52, 206, 35);
-    .btn2 {
-      padding: 10px 20px;
-      cursor: pointer;
+    .sub_btn {
+      padding: 10px 30px;
+      font-size: 15px;
+      background-color: $yellow-1000;
     }
   }
 }
@@ -77,9 +78,9 @@
     height: 35px;
     width: 100%;
 
-    color: #090908;
+    color:$black-1000;
     // text-align: left;
-    border: 1px solid #282825;
+    border: $bor-1;
     // border-radius: 50px;
     border-radius: 50px;
     margin-bottom: 15px;
@@ -87,9 +88,9 @@
     margin-right: 0;
     padding: 21px 10px;
     font-size: 18px;
-    transition: box-shadow 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    box-shadow: 3px 3px #282825;
+    box-shadow: $new-box-shadow-low;
 
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     &::placeholder {
       color: transparent;
     }
@@ -97,7 +98,7 @@
     &:not(:placeholder-shown) ~ .form-label,
     &:focus ~ .form-label {
       background-color: $white-1000;
-      border: 1px solid $accent-color;
+      border: 1px solid black;
       border-radius: 30px;
       font-size: 11px;
       left: 20px;
@@ -107,11 +108,13 @@
     &:hover,
     &:focus {
       // border: 1.5px solid #d88135;
-      background-color: rgba(245, 240, 240, 0.399);
+      background-color: rgba(255, 255, 255, 0.908);
+      box-shadow: $new-box-shadow-high;
+      transform: translate(4px,-4px);
     }
 
     &::selection {
-      background-color: rgb(166, 49, 49);
+      background-color: rgba(166, 49, 49, 0.516);
     }
   }
 

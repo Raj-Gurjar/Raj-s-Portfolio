@@ -2,32 +2,36 @@
 //! --------------- Colors ---------------
 
 // Background Colors
-$bg-light: #232323;
-$bg-main: #2B2E37;
-$left-bg: #646675;
+$bg-light: #f9f5f2;
 $home-bg:#000000;
+$about-bg:#1C1D24;
 $skill-bg: #262835;
 $proj-bg:#1C1D24;
+$contact-bg:rgb(225, 225, 225);
 $navbar-bg: #1c1d2434;
 $stk-nav-bg: #1c1d24;;
 $navbar-border:#513030;
 
-$newbw:#f9f5f2;
 
 //text Colors
 $accent-color:#3F91F9;
-$accent1000:#ff7802;
 $accent400:rgba(220, 150, 90, 0.1);
 $text-low: rgba(255, 255, 255, 0.721);
-$main1: #404bc7;
-$grad-main:linear-gradient(to left, orange, tomato);
+
+$grad-main:rgb(159, 128, 70);
 
 //Shadows
 $box-shadow-low: 0 5px 15px rgba(0, 0, 0, 0.3);
 $box-shadow-high: 0 10px 10px rgba(111, 108, 108, 0.5);
 
-$new-box-shadow-low: 3px 5px rgb(0, 0, 0);
-$new-box-shadow-high: 5px 10px rgb(0, 0, 0);
+$card-box-shadow-low:5px 7px black; 
+$card-box-shadow-high: 9px 12px black;
+
+$btn-box-shadow-low:3px 3px black;
+$btn-box-shadow-high: 5px 5px black;
+
+$new-box-shadow-low: 3px 3px rgb(0, 0, 0);
+$new-box-shadow-high: 5px 5px rgb(0, 0, 0);
 
 //border radius
 $bor-1:1px solid black;
@@ -44,7 +48,7 @@ $black-400: #656f87;
 $black-200: rgba(93, 72, 72, 0.166);
 $black-100: #f7f7f7;
 $black-alpha-100: rgba(0, 0, 0, 0.5);
-
+$yellow-1000:#F7CB45;
 //Social-icons
 $linkedin: #0a66c2;
 $github: #171515;
@@ -57,10 +61,8 @@ $whatsapp: rgb(4, 239, 4);
 
 
 //Border Radius
-$br-5:5px;
 $br-10:10px;
 $br-15:15px;
 $br-20:20px;
-$br-25:25px;
-$br-30:30px;
+$br-100:100%;
 

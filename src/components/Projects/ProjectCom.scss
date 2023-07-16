@@ -3,7 +3,7 @@
 /*!----------------######## Portfolio section ends #######------------------- */
 
 .port_cls {
-  background-color: $newbw;
+  background-color: $bg-light;
   color: black;
 }
 
@@ -28,7 +28,7 @@
 
   .activeTab {
     background: $white-1000;
-    box-shadow: $box-shadow-low;
+    box-shadow: $box-shadow-low, $new-box-shadow-low;
   }
 }
 
@@ -36,21 +36,25 @@
 
 .imgBox {
   position: relative;
+  transition: all 0.3s ease-in-out;
 
   .proj-title {
-    margin-bottom: 10px;
+    // margin-bottom: 17px;
     z-index: 11;
+    position: relative;
+    // padding: 20px;
     border-bottom: 1px solid black;
-
 
     h4 {
       display: inline;
       font-size: 1.25rem;
+      z-index: 11;
     }
     h6 {
       display: block;
       font-size: 14px;
       width: 70%;
+      z-index: 11;
     }
 
     span {
@@ -66,12 +70,14 @@
 
   img {
     display: block;
-    border: 1px solid black;
+    border: 1.5px solid black;
     border-radius: 10px;
     width: 100%;
     height: 250px;
-    margin-bottom: 10px;
+    margin: 15px 0px;
     z-index: 1;
+    // padding: 5px;
+    transition: all 0.3s ease-in-out;
   }
 
   .btn-box {
@@ -87,38 +93,38 @@
 
 // ----Hover Effect----
 
-.port_cls {
-  .card {
-    
-    &:hover {
-      .proj-title {
-        h4,
-        h6:not(span) {
-          -webkit-animation: slideTop 0.7s ease-in-out 0s 1 normal none running !important;
-          animation: slideTop 0.7s ease-in-out 0s 1 normal none running !important;
-          color: #fff;
-        }
-        h4 {
-          color: $accent-color;
-        }
-      }
+.port_cls .card {
+  transition: all 0.2s ease;
+  padding: 20px 10px;
+  // transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-      .btn-box {
+  &:hover {
+    .imgBox img {
+      transform: scale(1.02);
+      // padding: 5px;
+    }
+    .proj-title {
+      h4,
+      h6:not(span) {
         -webkit-animation: slideTop 0.7s ease-in-out 0s 1 normal none running !important;
         animation: slideTop 0.7s ease-in-out 0s 1 normal none running !important;
-        color: #fff;
+        // color: #fff;
+      }
+      h4 {
+        color: $white-1000;
       }
     }
   }
 }
+
 // --------------------------
 .details {
   display: block;
   position: absolute;
   padding: 10px;
-  background: $grad-main;
-  margin-top: 10px;
-  top: calc(100% - 13px);
+  background: $accent-color;
+
+  top: 100%;
 
   left: 0;
   width: 100%;
@@ -128,10 +134,11 @@
   p {
     color: $white-1000;
     font-weight: 600;
+    // margin-top: 100px;
   }
 
   &.show {
-    top: 17%;
+    top: 16%;
   }
 }
 

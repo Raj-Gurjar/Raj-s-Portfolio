@@ -8,6 +8,7 @@ import spiral from "../../assets/Spiral.svg";
 import Typed from 'typed.js';
 
 import './HomeCom.scss';
+import { FaLandmark } from 'react-icons/fa';
 
 
 const HomeCom = () => {
@@ -31,11 +32,11 @@ const HomeCom = () => {
 
   useEffect(() => {
     const options = {
-      strings: ["Web Developer", "DSA learner", "AI Enthusiast"],
+      strings: [`MERN Stack Developer`, 'Frontend Aficionado', 'A.I. Acolyte'],
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 60,
-      backDelay: 1400,
+      typeSpeed: 60,
+      backSpeed: 50,
+      backDelay: 700,
     };
 
     const typed = new Typed(".prof", options);
@@ -48,28 +49,26 @@ const HomeCom = () => {
   return (
     <section className="home_cls">
       <div className="home_cntr">
-        <div className="grid_box">
 
-          <img src={rainbow} className="rainbow" alt="" />
-          <img src={spiral} className="spiral" alt="" />
+        <img src={rainbow} className="rainbow" alt="" />
+        <img src={spiral} className="spiral" alt="" />
 
-          <div className="home_txt">
-            <h3 className="greeting">Good {Greetings()}<span>👋</span>,I'm</h3>
-            <h1>Raj Chhalotre</h1>
-            <h2><span className='prof'></span></h2>
-          </div>
+        <div className="home_txt">
+          <h3 className="greeting">Good {Greetings()}<span>👋</span>,I'm</h3>
+          <h1>Raj Chhalotre</h1>
+          <h2><span className='prof'></span></h2>
+        </div>
 
-          <div className="resume_btn">
-            <a href={resume} className="rnd_txt" target='_blank' rel="noreferrer" >
-              {['v', 'i', 'e', 'w', ' ', 'R', 'e', 's', 'u', 'm', 'e'].map((letter, index) => (
-                <li key={index} style={{ '--tm': index + 1 }}>{letter}</li>
-              ))}
-            </a>
-          </div>
+        <div className="resume_btn">
+          <a href={resume} className="rnd_txt" target='_blank' rel="noreferrer" >
+            {['v', 'i', 'e', 'w', ' ', 'R', 'e', 's', 'u', 'm', 'e'].map((letter, index) => (
+              <li key={index} style={{ '--tm': index + 1 }}>{letter}</li>
+            ))}
+          </a>
+        </div>
 
-          <div className="quote_box">
-            <p>"Crafting digital experiences with code: The art of a web developer."</p>
-          </div>
+        <div className="quote_box">
+          <p>"Crafting digital experiences with code: The art of a web developer."</p>
         </div>
       </div>
     </section>

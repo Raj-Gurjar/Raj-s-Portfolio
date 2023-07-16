@@ -1,11 +1,9 @@
 @import "../../variables";
 
 .home_cls {
-
     background-color: #f9f5f2;
-    // min-height: 150vh;
+    min-height: 100vh;
     color: black;
-
 }
 
 .spiral {
@@ -32,57 +30,35 @@
     }
 }
 
-.grid_box {
-    background-color: #eeff7c;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 5px 6px black;
+.home_txt {
+    padding-top: 60px;
+    // background-color: red;
+    line-height: 4rem;
 
-    height: 80vh;
-    width: 96%;
-    display: flex;
-    // align-items: flex-end;
-    justify-content: center;
+    h3 {
+        font-size: 25px;
 
-    // background: #333;
-    background-image: linear-gradient(rgba(14, 14, 14, 0.04) 0.1em, transparent 0.1em),
-        linear-gradient(90deg, rgba(0, 0, 0, 0.04) 0.1em, transparent 0.1em);
-    background-size: 2em 2em;
-
-    .home_txt {
-        padding-top: 60px;
-        // background-color: red;
-        line-height: 4rem;
-
-        h3 {
-            font-size: 25px;
-
-            span {
-                font-size: 35px;
-                box-shadow: 10px 10px 10px solid black;
-            }
-        }
-
-        h1 {
-            color: #ff5a34;
-            text-shadow: 2px 3px black;
-            font-size: 50px;
-            letter-spacing: 2px;
-            -webkit-text-stroke: 1px rgb(151, 80, 80);
-            text-transform: uppercase;
-            font-family: sans-serif;
-            font-weight: 900;
-        }
-
-        h2
-        {
-            margin-top: 10px;
-            font-size: 25px;
-            
+        span {
+            font-size: 35px;
+            box-shadow: 10px 10px 10px solid black;
         }
     }
 
-    
+    h1 {
+        color: #ff5a34;
+        text-shadow: 2px 3px black;
+        font-size: 50px;
+        letter-spacing: 2px;
+        -webkit-text-stroke: 1px rgb(151, 80, 80);
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: 900;
+    }
+
+    h2 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
 }
 
 .resume_btn {
@@ -91,7 +67,7 @@
     width: 80px;
     border-radius: 100%;
     position: absolute;
-    bottom: calc(100% - 89vh);
+    bottom: calc(100% - 83vh);
     right: 80px;
 
     display: flex;
@@ -103,20 +79,17 @@
     font-weight: 600;
     animation: rotate 5s linear infinite;
 
-    &::after{
+    &::after {
         font-family: "Font Awesome 5 Free";
         content: "\f178";
         font-size: 19px;
-     
 
         // content: "";
         height: 40px;
         width: 40px;
-        background-color:#eeff7c;
+        background-color: #eeff7c;
         border-radius: 50%;
         position: absolute;
-
-      
     }
 
     li {
@@ -127,9 +100,7 @@
         inset: 1px;
         color: white;
     }
-
 }
-
 
 @keyframes rotate {
     0% {
@@ -139,7 +110,6 @@
         transform: rotate(360deg);
     }
 }
-
 
 .quote_box {
     position: absolute;

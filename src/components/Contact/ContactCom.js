@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
 import './ContactCom.scss';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 import { FaMailBulk, FaPhone, FaMap } from 'react-icons/fa';
 import { BiLinkExternal } from "react-icons/bi";
 import { FaLinkedinIn, FaGithub, FaInstagram, FaWhatsapp, FaComment } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 const ContactCom = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzRwP6dZ7hR2eTL93jfc0OBYpe6cHIGR89xyV5M6nykOrapPYijfMR2niWaj05pO1J7/exec';
 
@@ -88,11 +86,11 @@ const ContactCom = () => {
                     </div>
                   </div>
                   <div className="col-2">
-                    <div className="btn-bar" data-aos="fade-up" data-aos-delay="125">
+                    <div className="btn-bar" data-aos="fade-up" data-aos-delay="100">
                       <button
                         type="submit"
                         id="submit"
-                        className={`btn2 ${isLoading ? 'loading' : ''}`}
+                        className={`sub_btn ${isLoading ? 'loading' : ''}`}
                         disabled={isLoading}
                       >
                         {isLoading ? (
