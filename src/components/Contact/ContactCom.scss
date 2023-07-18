@@ -78,7 +78,7 @@
     height: 35px;
     width: 100%;
 
-    color:$black-1000;
+    color: $black-1000;
     // text-align: left;
     border: $bor-1;
     // border-radius: 50px;
@@ -110,7 +110,7 @@
       // border: 1.5px solid #d88135;
       background-color: rgba(255, 255, 255, 0.908);
       box-shadow: $new-box-shadow-high;
-      transform: translate(4px,-4px);
+      transform: translate(4px, -4px);
     }
 
     &::selection {
@@ -364,61 +364,75 @@
 }
 
 .social-box {
-  display: flex;
-  // justify-content: center;
-  align-items: center;
-  // background-color: red;
-
-  margin-top: 30px;
   // width: %;
+  // background-color: red;
+  margin-top: 30px;
 
-  h3 {
-    font-weight: 500;
+  .social-tag {
+    font-weight: 400;
     color: rgba(126, 125, 125, 0.8235294118);
-    font-size: 1.2rem;
-    line-height: 20px;
+    font-size: 1rem;
+    // background-color: #007bff;
+    margin-bottom: 12px;
   }
-  a {
+
+  .social-icons {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    // justify-content: s;
+    align-items: center;
+    // background-color: gray;
+    gap: 20px;
 
-    font-size: 1.8rem;
-    color: $white-1000;
-    padding: 5px;
-    margin: 0px 10px;
-    border-radius: 100%;
+    a {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
 
-    border: 1px solid black;
-    box-shadow: $new-box-shadow-low;
-    transition: all 0.2s ease-in-out;
+      font-size: 1.8rem;
+      color: $white-1000;
+      padding: 5px;
+      // margin: 0px 10px;
+      border-radius: 100%;
 
-    &:nth-child(2) {
-      //linkedin
-      background-color: $linkedin;
-    }
-    &:nth-child(3) {
-      //github
-      background-color: $github;
-    }
+      border: 1px solid black;
+      box-shadow: $new-box-shadow-low;
+      transition: all 0.2s ease-in-out;
 
-    &:nth-child(4) {
-      //instagram
-      background: $instagram;
-    }
+      &:hover {
+        box-shadow: $new-box-shadow-high;
+        transform: translate(-3px, -3px);
+      }
 
-    &:nth-child(5) {
-      //whatsapp
-      background-color: $whatsapp;
-    }
+      &:nth-child(1) {
+        //linkedin
+        background-color: $linkedin;
+      }
+      &:nth-child(2) {
+        //github
+        background-color: $github;
+      }
 
-    &:nth-child(6) {
-      //leetCode
-      background-color: $black-1000;
-    }
+      &:nth-child(3) {
+        //instagram
+        background: $instagram;
+      }
 
-    &:active {
-      color: $black-400;
-      transform: scale(0.8);
+      &:nth-child(4) {
+        //whatsapp
+        background-color: $whatsapp;
+      }
+
+      &:nth-child(5) {
+        //leetCode
+        background-color: $black-1000;
+      }
+
+      &:active {
+        color: $black-400;
+        transform: scale(0.8);
+      }
     }
   }
 }

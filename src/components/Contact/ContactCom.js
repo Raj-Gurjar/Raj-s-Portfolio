@@ -153,23 +153,28 @@ const ContactCom = () => {
               </div>
 
               <div className="social-box">
+                <div className='social-tag'>
+                  <h3>Follow On:</h3>
+                </div>
+                <div className='social-icons'>
+                  <a href="https://www.facebook.com/" rel="noreferrer" target="_blank">
+                    <FaLinkedinIn />
+                  </a>
+                  <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
+                    <FaGithub />
+                  </a>
+                  <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
+                    <FaInstagram />
+                  </a>
+                  <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
+                    <FaWhatsapp />
+                  </a>
+                  <a href="https://leetcode.com/Raj_Gurjar/" rel="noreferrer" target="_blank">
+                    <SiLeetcode />
+                  </a>
+                </div>
 
-                <h3>Follow On:</h3>
-                <a href="https://www.facebook.com/" rel="noreferrer" target="_blank">
-                  <FaLinkedinIn />
-                </a>
-                <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
-                  <FaGithub />
-                </a>
-                <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
-                  <FaInstagram />
-                </a>
-                <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
-                  <FaWhatsapp />
-                </a>
-                <a href="https://leetcode.com/Raj_Gurjar/" rel="noreferrer" target="_blank">
-                  <SiLeetcode />
-                </a>
+
               </div>
             </div>
           </div>

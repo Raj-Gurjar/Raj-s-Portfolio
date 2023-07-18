@@ -2,20 +2,45 @@
 @import "../../index.scss";
 
 .skill_cls {
-
   background-color: $bg-light;
   // color: bl;
+}
+
+.c1 {
+  grid-area: c1;
+}
+.c2 {
+  grid-area: c2;
+
+  background-color: $yellow-1000;
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+.c3 {
+  grid-area: c3;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "c1 c2 c2"
+    "c1 c3 c3";
+  gap: 0px;
+  grid-template-columns: 1.1fr 1fr 1fr; /* Adjust the column widths here */
 
 }
 
 .skill_cls .card {
-padding: 0px;
-// transition: all 3s ease-in-out;
-  
+  padding: 0px 0px;
+
+  // transition: all 3s ease-in-out;
+
   .skill_heading {
     transition: all 0.3s ease-in-out;
     //  background-color: red;
-     padding: 20px;
+    padding: 20px;
     h3 {
       font-size: 1.5rem;
       font-weight: 800;
@@ -24,20 +49,15 @@ padding: 0px;
     }
 
     p {
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
+      transition: all 0.5s ease-in-out;
     }
-  }
-
-  h4 {
-    font-size: 15px;
-    transition: all 0.5s ease-in-out;
   }
 
   .skill_box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-
+    justify-content: space-evenly;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
 
@@ -46,29 +66,51 @@ padding: 0px;
     }
 
     .skill_item {
-   
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 7px;
 
       img {
         height: 60px;
         width: 60px;
- 
-        stroke-width: 2px;
-        stroke: #000;
+
         filter: drop-shadow(5px 5px 1px #0000005f);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          filter: drop-shadow(10px 10px 3px #0000009d);
+          transform: translate(-3px, -3px) scale(1.08);
+        }
+        &:active {
+          filter: drop-shadow(5px 5px 1px #0000005f);
+          transform: translate(0px, 0px) scale(0.8);
+        }
       }
       h5 {
         margin: auto;
+      }
+    }
+  }
 
+  &:hover {
+    .skill_heading {
+      h3 {
+        color: $white-1000;
+        transition: all 0.5s ease-in-out;
+      }
+
+      p {
+        color: $bg-light;
       }
     }
   }
 }
 
-// .skill_cls .card:hover {
-//   box-shadow:$card-box-shadow-high;
-//   transform: translate(-6px,-6px);
-//   background-color: $accent-color;
-// }
+@media (max-width: 768px) {
+  .grid {
+    grid-template-areas:
+      "c1 c1 c1"
+      "c2 c2 c2"
+      "c3 c3 c3";
+  }
+}
