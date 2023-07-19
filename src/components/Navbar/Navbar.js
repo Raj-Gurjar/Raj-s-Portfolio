@@ -30,7 +30,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const offset = window.innerHeight * 0.3; // 30vh as offset
+            const offset = window.innerHeight * 0.03; // 30vh as offset
 
             const currentSection = menuItems.find(({ to }, index) => {
                 const element = document.getElementById(to);

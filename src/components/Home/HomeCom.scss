@@ -81,9 +81,9 @@
 
     &::after {
         font-family: "Font Awesome 5 Free";
-        content: "\f178";
+        content: "";
         font-size: 19px;
-
+        z-index: 1;
         // content: "";
         height: 40px;
         width: 40px;
