@@ -9,6 +9,8 @@ import inside from "../../assets/inside.png";
 import reshape from "../../assets/reshape.svg";
 import resume from '../../assets/Other/Resume (Raj).pdf';
 
+import { FaGithub, FaArrowRight } from 'react-icons/fa';
+
 
 const AboutCom = () => {
 
@@ -30,7 +32,7 @@ const AboutCom = () => {
         <section className="about_cls section_padding">
             <div className="container">
 
-                 <div className="row justify_content_cntr">
+                <div className="row justify_content_cntr">
 
                     <div className="about_img" data-aos="fade-up"> {/* Apply fade-right animation */}
 
@@ -52,86 +54,57 @@ const AboutCom = () => {
                             <h4>Let's Know Me</h4>
                             <div className="line" />
                         </div>
-
+                        <div className="abt_txt">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, excepturi.</p>
+                        </div>
                         <div className="about_content">
-                            <div className="about_txt">
-                                <p>
-                                    From Thinking Out of the Box <box1><img src={outBox} alt='outBox'></img></box1> in <span>DSA</span> questions 
-                                    to Reshaping the Box <box2><img src={reshape} alt='outBox'></img> </box2> in <span>Web Development</span> and
-                                    Using the power of <span>AI</span> to predict what's inside the box <box3><img src={inside} alt='outBox'></img></box3> is
-                                    my Journey to Programming and Development.
-                                </p>
-                            </div>
 
-                            <div className="title_box">
-                                <div className="titles">
-                                
-                                    <p
-                                        className={`tab_links ${activeTab === 'education' ? 'active_link' : ''}`}
-                                        onClick={() => opentab('education')}
-                                    >
-                                        Education
-                                    </p>
-                                    <p
-                                        className={`tab_links ${activeTab === 'other' ? 'active_link' : ''}`}
-                                        onClick={() => opentab('other')}
-                                    >
-                                        Other
-                                    </p>
+                            <div className="card2">
+                                <div className="abt_logo">
+                                    <FaGithub />
+                                </div>
+                                <h3>College</h3>
+                                <div className='degree'>
+                                    <p>B.tech in Information Technology, 2020-24</p>
+                                    <p>Madhav Institue of Technology and Science,Gwl,Ind</p>
+                                    <p>Specialization in AI and Robotics</p>
+
+
                                 </div>
                             </div>
-                            
-                            <div className={`tab_contents ${activeTab === 'education' ? 'active_tab' : ''}`} id="education">
-                                <ul>
-                                    <li>
-                                        <span>B.Tech in IT &ensp;&ensp; (2020-24)</span>
-                                        <br />
-                                        Specialization in AI and Robotics
-                                        <br />
-                                        MITS,Gwalior(M.P.)
-                                        <br />
-                                        current CGPA: 8.4
-                                    </li>
-                                    <li>
-                                        <span>Certificate of Excellence in DSA</span>
-                                        <br />
-                                        Got Certificate of Excellence in DSA from Coding Ninjas
-                                        <br />{' '}
-                                        <a href="https://certificate.codingninjas.com/verify/ab974c889cb236b1" target="_blank" rel="noreferrer">
-                                            View Certificate
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div className="card2">
+                                <div className="abt_logo">
+                                    <FaGithub />
+                                </div>
+                                <h3>Data Structures</h3>
+                                <p>Learnt Data Structures and Algo. which helps in logic building in Programming
+                                    and also helps in solving real life problems.</p>
+
+                                <a href='https://www.hackerrank.com/certificates/4b3b3b0b0b1d' target='_blank' rel="noreferrer">View Certificate</a>
+
+
+                            </div>
+                            <div className="card2">
+                                <div className="abt_logo">
+                                    <FaGithub />
+                                </div>
+                                <h3>AI and ML</h3>
+                                <p>As I am doing Specialization in AI in my College degree,
+                                    I have learnt about how AI works and How to use it for real world Problems</p>
+                            </div>
+                            <div className="card2">
+                                <div className="abt_logo">
+                                    <FaGithub />
+                                </div>
+                                <h3>Web Developement</h3>
+                                <p>I have explored different field in Tech. and Web Dev. is the one that I want to pursue as my Profession</p>
                             </div>
 
-                            <div className={`tab_contents ${activeTab === 'other' ? 'active_tab' : ''}`} id="other">
-                                <ul>
-                                    <li>
-                                        <span>
-                                            <s1 id="cnt"></s1> Days Coding Streak
-                                        </span>
-                                        <br />
-                                        Maintaining the Streak of <s1 id="cnt"></s1> days on Leetcode and ongoing.
-                                        <br />
-                                        #CodingWithConsistency
-                                    </li>
-                                    <li>
-                                        <span>Team Leader</span>
-                                        <br />
-                                        Managed a team in a Major Tech Event of College.
-                                    </li>
-                                    <li>
-                                        <span>Languages</span>
-                                        <br />
-                                        English, Hindi.
-                                    </li>
-                                </ul>
-                            </div>
 
-                            {/* <button>ff</button> */}
+
 
                         </div>
-                        {/* <button>ff</button> */}
+
 
                     </div>
 

@@ -8,6 +8,44 @@
   &.section_padding {
     padding: 35px 40px;
   }
+  // overflow: hidden;
+  position: relative;
+
+  .section_title .main_title {
+    font-size: 1.4rem;
+    color: black;
+    letter-spacing: normal;
+    margin-bottom: -20px;
+  }
+}
+
+.contact_down-arrow {
+ overflow: hidden;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top:-1%;
+  bottom: auto;
+  right: 0%;
+  left: auto;
+  transform: scaleX(-1);
+}
+
+.contact_down-curl {
+ overflow: hidden;
+  // width: 6rem;
+  height: 5rem;
+  position: absolute;
+
+  // background-color: red;
+  filter: saturate(33);
+
+  width: 6rem;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 10%;
+  right: auto;
 }
 
 .contact_cls .contact-form .row {
@@ -17,13 +55,6 @@
   & > * {
     // background-color: #2fafc0;
   }
-}
-
-.contact_cls .section_title .main_title {
-  font-size: 1.4rem;
-  color: black;
-  letter-spacing: normal;
-  margin-bottom: -20px;
 }
 
 .ml-auto {
@@ -108,9 +139,9 @@
     &:hover,
     &:focus {
       // border: 1.5px solid #d88135;
-      background-color: rgba(255, 255, 255, 0.908);
+      background-color: rgb(238, 238, 238);
       box-shadow: $new-box-shadow-high;
-      transform: translate(4px, -4px);
+      transform: translate(-3px, -3px);
     }
 
     &::selection {
@@ -396,14 +427,9 @@
       // margin: 0px 10px;
       border-radius: 100%;
 
-      border: 1px solid black;
+      border: 1px solid transparent;
       box-shadow: $new-box-shadow-low;
-      transition: all 0.2s ease-in-out;
-
-      &:hover {
-        box-shadow: $new-box-shadow-high;
-        transform: translate(-3px, -3px);
-      }
+      transition: all 0.3s ease-in-out;
 
       &:nth-child(1) {
         //linkedin
@@ -427,6 +453,14 @@
       &:nth-child(5) {
         //leetCode
         background-color: $black-1000;
+      }
+
+      &:hover {
+        box-shadow: $new-box-shadow-high;
+        transform: translate(-2px, -2px);
+        background-color: transparent;
+        border-color: black;
+        color: black;
       }
 
       &:active {

@@ -7,6 +7,8 @@ import { FaMailBulk, FaPhone, FaMap } from 'react-icons/fa';
 import { BiLinkExternal } from "react-icons/bi";
 import { FaLinkedinIn, FaGithub, FaInstagram, FaWhatsapp, FaComment } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import contact_down_arrow from "../../assets/proj_down-arrow.svg";
+import contact_down_curl from "../../assets/contact_btm.svg";
 
 const ContactCom = () => {
 
@@ -40,6 +42,10 @@ const ContactCom = () => {
 
   return (
     <section className="contact_cls section_padding">
+      <img className="contact_down-arrow" src={contact_down_arrow} alt="" />
+      <img className="contact_down-curl" src={contact_down_curl} alt="" />
+      
+
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup-container">
@@ -87,21 +93,24 @@ const ContactCom = () => {
                   </div>
                   <div className="col-2">
                     <div className="btn-bar" data-aos="fade-up" data-aos-delay="100">
-                      <button
-                        type="submit"
-                        id="submit"
-                        className={`sub_btn ${isLoading ? 'loading' : ''}`}
-                        disabled={isLoading}
-                      >
-                        {isLoading ? (
-                          <>
-                            Loading...
-                            <div className="loader" />
-                          </>
-                        ) : (
-                          'Submit'
-                        )}
-                      </button>
+                 
+                        <button
+                          type="submit"
+                          id="submit"
+                          className={`sub_btn ${isLoading ? 'loading' : ''}`}
+                          disabled={isLoading}
+                        >
+                          {isLoading ? (
+                            <>
+                              Loading...
+                              <div className="loader" />
+                            </>
+                          ) : (
+                            'Submit'
+                          )}
+                        </button>
+               
+
                     </div>
                   </div>
                 </div>

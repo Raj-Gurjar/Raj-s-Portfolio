@@ -40,6 +40,26 @@ export const WebFrameWorks = [
 
     },
     {
+        name: "Nodejs",
+        img: "Images/Skill-Icons/node.svg"
+
+    },
+    {
+        name: "MongoDB",
+        img: "Images/Skill-Icons/mongo.svg"
+
+    },
+    {
+        name: "Nextjs",
+        img: "Images/Skill-Icons/next.svg"
+
+    },
+    {
+        name: "Expressjs",
+        img: "Images/Skill-Icons/express.svg"
+
+    },
+    {
         name: "Bootstrap",
         img: "Images/Skill-Icons/bootstrap.svg"
 
@@ -54,27 +74,10 @@ export const WebFrameWorks = [
         name: "Scss",
         img: "Images/Skill-Icons/sass.svg"
 
-    },
-    {
-        name: "Nodejs",
-        img: "Images/Skill-Icons/node.svg"
+    }
+  
+  
 
-    },
-    {
-        name: "Nextjs",
-        img: "Images/Skill-Icons/next.svg"
-
-    },
-    {
-        name: "MongoDB",
-        img: "Images/Skill-Icons/mongo.svg"
-
-    },
-    {
-        name: "Expressjs",
-        img: "Images/Skill-Icons/express.svg"
-
-    },
 
 ];
 

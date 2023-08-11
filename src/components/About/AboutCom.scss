@@ -4,20 +4,13 @@
 
 .about_cls {
   // background-color: $bg-main;
-  background-color: $bg-light;
+  background-color: $white-1000;
   // min-height: 150vh;
   color: black;
-
+  margin-top: 200px;
 }
 
-.about_img,
 .about_box {
-  flex: 0 0 40%;
-  max-width: 100%;
-  padding: 10px;
-}
-.about_box
-{
   flex: 60%;
 }
 
@@ -29,6 +22,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex: 40%;
 
   .img_box {
     position: relative;
@@ -52,124 +46,54 @@
   }
 }
 
-
 /*? ------------About_box -s --------------- */
 .about_box {
   z-index: 1;
 
+  .abt_txt
+  {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    // text-align: center;
+  }
   .about_content {
-    .about_txt {
-      font-size: 16px;
-      // color: $text-low;
+    // background-color: red;
+    
+    padding: 20px;
+    display: grid;
+    gap: 3rem;
 
-      p {
-        line-height: 2rem;
-        font-size:18px;
+    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    
+    
+    .card2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .abt_logo {
+        color: $accent-color;
+        font-size: 30px;
+      }
+
+      h3 {
+        font-size: 1.3rem;
         font-weight: 600;
-
-        span {
-          color: $accent-color;
-          font-weight: 900;
-        }
-
-        img
-        {
-          width: 50px;
-          height: 50px;
-          // background-color: red;
-          // margin-top: -10px;
-          margin-bottom: -15px;
-         
-          padding: 3px;
-        }
-        box1
-        {
-          // font-size: 44px;
-          // border: 2px  black;
-        }
-        box2
-        {
-          // font-size: 44px;
-        }
-        box3
-        {
-          // font-size: 44px;
-
-        }
+        margin-bottom: 10px;
       }
-    }
 
-    .title_box {
-      .titles {
-        display: flex;
-        margin-top: 1.8rem;
-        justify-content: space-between;
-        gap: 5px;
-
-        .tab_links {
-          flex: 0 0 50%;
-          // background-color: red;
-
-          font-size: 18px;
-          font-weight: 800;
-          cursor: pointer;
-          position: relative;
-
-          &::after {
-            content: "";
-            width: 0;
-            height: 3px;
-            background: $accent-color;
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            transition: 0.7s;
-          }
-
-          &.active_link::after {
-            width: 20%;
-            border-radius: 30px;
-          }
-        }
-      }
-    }
-
-    .tab_contents {
-      // background-color: red;
-      height: 24vh;
-      flex: 60%;
-      padding-top: 10px;
-      font-size: 12px;
-      // color: $text-low;
-
-      ul {
-        li {
-          margin: 1rem 0;
-          line-height: 1.3rem;
-
-          a {
-            // color: $accent-color;
-            font-size: 12px;
-          }
-          span {
-            /* color: red; */
-            // color: $white-1000;
-            font-weight: 600;
-            margin-right: 10px;
-            font-size: 15px;
-          }
-        }
+      p 
+      {
+        text-align: center;
+        font-size: 13px;
       }
     }
   }
-}
-
-.tab_contents {
-  display: none;
-}
-
-.tab_contents.active_tab {
-  display: flex;
 }
 
 /*!----------------######## ab1: About 
@@ -198,6 +122,14 @@ n ends #######------------------- */
         height: 320px;
         z-index: 1;
       }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .about_box {
+    .about_content {
+      grid-template-columns: 1fr;
     }
   }
 }
