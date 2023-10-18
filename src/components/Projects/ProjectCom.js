@@ -10,13 +10,17 @@ import proj_curls from "../../assets/proj_curls.svg";
 
 import { FaGithub, FaArrowRight } from 'react-icons/fa';
 import { BsArrowRight } from "react-icons/bs";
+import { SiLeetcode } from "react-icons/si";
+import { SiGeeksforgeeks } from "react-icons/si";
+import { transform } from 'framer-motion';
+
 
 const ProjectCom = () => {
     return (
         <section className="port_cls section_padding">
             <img className="proj_sq" src={proj_sq} alt="" />
             <img className="proj_curls" src={proj_curls} alt="" />
-        
+
 
 
 
@@ -55,9 +59,33 @@ const ProjectCom = () => {
                                 </div>
 
                                 <div className="proj_links">
-                                    <a href={project.liveLink} target='_blank'><FaArrowRight/></a>
 
-                                    <a href={project.gitLink} target='_blank'><FaGithub /></a>
+                                    {project.id === 4 ? (
+
+                                        // Use a different icon for the project with id: 4 ("DSA Profiles")
+                                        <>
+                                            <a href={project.liveLink} className='leetcode' target="_blank" style={{transform : "none"}}>
+                                                <SiLeetcode />
+                                            </a>
+
+                                            <a href={project.liveLink} className="gfg" target="_blank">
+                                                <SiGeeksforgeeks />
+                                            </a>
+                                        </>
+                                    ) : (
+                                        // Use the default FaArrowRight icon for other projects
+                                        <>
+                                            <a href={project.liveLink} target="_blank">
+                                                <FaArrowRight />
+                                            </a>
+
+                                            <a href={project.gitLink} target="_blank">
+                                                <FaGithub />
+                                            </a>
+                                        </>
+                                    )}
+
+
                                 </div>
                             </div>
                         </div>

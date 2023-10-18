@@ -15,27 +15,27 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="mainCom">
-        <ScrollCom />
-        <div id="home">
-          <HomeCom />
-        </div>
-        <div id="about">
-          <AboutCom />
-        </div>
-        <div id="skills">
-          <SkillCom />
-        </div>
-        <div id="portfolio">
-          <ProjectCom />
-        </div>
-        <div id="contact">
-          <ContactCom />
-        </div>
-        <div id="footer">
-          <FooterCom />
-        </div>
-      </main>
+
+      <ScrollCom />
+      <div id="home">
+        <HomeCom />
+      </div>
+      <div id="about">
+        <AboutCom />
+      </div>
+      <div id="skills">
+        <SkillCom />
+      </div>
+      <div id="portfolio">
+        <ProjectCom />
+      </div>
+      <div id="contact">
+        <ContactCom />
+      </div>
+      <div id="footer">
+        <FooterCom />
+      </div>
+
     </>
   );
 }

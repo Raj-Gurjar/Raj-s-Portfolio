@@ -8,16 +8,6 @@ const SkillCom = () => {
     AOS.init({ duration: 1000, offset: 100, once: true });
   }, []);
 
-  const skills = [
-    { name: 'HTML', icon: 'html.svg' },
-    { name: 'CSS', icon: 'css.svg' },
-    { name: 'JavaScript', icon: 'javascript.svg' },
-    { name: 'JavaScript', icon: 'javascript.svg' },
-    { name: 'JavaScript', icon: 'javascript.svg' },
-    { name: 'JavaScript', icon: 'javascript.svg' },
-  ];
-
-
   return (
     <section className="skill_cls section_padding">
       <div className="container">
@@ -27,15 +17,27 @@ const SkillCom = () => {
             <h4>Why Hire Me?</h4>
             <div className="line" />
           </div>
-
-          
- 
-          
         </div>
 
-      
+        <div className="row justify_content_cntr">
+          {sections.map((section, sectionIndex) => (
+            <div className='card' key={sectionIndex}>
+              <div className="skill_heading">
+                <h3>{section.title}</h3>
+                {/* <p>{section.description}</p> */}
+              </div>
 
-
+              <div className="skill_box">
+                {section.data.map((item, index) => (
+                  <div className="skill_item" key={index}>
+                    <img src={item.img} />
+                    <h5>{item.name}</h5>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

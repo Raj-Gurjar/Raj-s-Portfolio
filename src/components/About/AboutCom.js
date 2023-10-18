@@ -55,7 +55,12 @@ const AboutCom = () => {
                             <div className="line" />
                         </div>
                         <div className="abt_txt">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, excepturi.</p>
+                            <p>
+                                From Thinking Out of the Box <box1></box1> in <span>DSA</span> questions
+                                to Reshaping the Box <box2></box2> in <span>Web Development</span> and
+                                Using the power of <span>AI</span> to predict what's inside the box <box3></box3> is
+                                my Journey to Programming and Development.
+                            </p>
                         </div>
                         <div className="about_content">
 
@@ -76,7 +81,7 @@ const AboutCom = () => {
                                 <div className="abt_logo">
                                     <FaGithub />
                                 </div>
-                                <h3>Data Structures</h3>
+                                <h3>Problem Solving</h3>
                                 <p>Learnt Data Structures and Algo. which helps in logic building in Programming
                                     and also helps in solving real life problems.</p>
 

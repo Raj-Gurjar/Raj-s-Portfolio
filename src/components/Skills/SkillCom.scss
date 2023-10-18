@@ -7,82 +7,144 @@
   // z-index: -1;
 
   z-index: 1;
-  
 }
 
-// .skill_cls .card {
-//   padding: 0px 0px;
 
+.skill_cls .card {
+  padding: 0px 0px;
+  
 
-//   .skill_heading {
-//     transition: all 0.3s ease-in-out;
-//     //  background-color: red;
-//     padding: 20px;
-//     h3 {
-//       font-size: 1.5rem;
-//       font-weight: 800;
-//       margin-bottom: 10px;
-//       transition: all 0.5s ease-in-out;
-//     }
+  // transition: all 3s ease-in-out;
 
-//     p {
-//       // margin-bottom: 15px;
-//       transition: all 0.5s ease-in-out;
-//     }
-//   }
+  .skill_heading {
+    transition: all 0.3s ease-in-out;
+    //  background-color: red;
+    padding: 20px;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      // margin-bottom: 10px;
+      transition: all 0.5s ease-in-out;
+    }
 
-//   .skill_box {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-evenly;
-//     border-radius: 5px;
-//     transition: all 0.5s ease-in-out;
+    p {
+      // margin-bottom: 15px;
+      transition: all 0.5s ease-in-out;
+    }
+  }
 
-//     & > * {
-//       margin: 11px;
-//     }
+  .skill_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
 
-//     .skill_item {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 7px;
+    & > * {
+      margin: 11px;
+    }
 
-//       img {
-//         height: 60px;
-//         width: 60px;
+    .skill_item {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
 
-//         filter: drop-shadow(5px 5px 1px #0000005f);
-//         transition: all 0.2s ease-in-out;
+      img {
+        height: 65px;
+        width: 65px;
 
-//         &:hover {
-//           filter: drop-shadow(10px 10px 3px #0000009d);
-//           transform: translate(-3px, -3px) scale(1.08);
-//         }
-//         &:active {
-//           filter: drop-shadow(5px 5px 1px #0000005f);
-//           transform: translate(0px, 0px) scale(0.8);
-//         }
-//       }
-//       h5 {
-//         margin: auto;
-//       }
-//     }
-//   }
+        filter: drop-shadow(5px 5px 1px #0000008a);
+        transition: all 0.2s ease-in-out;
 
-//   &:hover {
-//     .skill_heading {
-//       h3 {
-//         color: $white-1000;
-//         transition: all 0.5s ease-in-out;
-//       }
+        &:hover {
+          filter: drop-shadow(10px 10px 3px #0000009d);
+          transform: translate(-3px, -3px) scale(1.08);
+        }
+        &:active {
+          filter: drop-shadow(5px 5px 1px #0000005f);
+          transform: translate(0px, 0px) scale(0.8);
+        }
+      }
+      h5 {
+        margin: auto;
+      }
+    }
+  }
 
-//       p {
-//         color: $bg-light;
-//       }
-//     }
-//   }
-// }
+  &:hover {
+    .skill_heading {
+      h3 {
+        color: $white-1000;
+        transition: all 0.5s ease-in-out;
+      }
+
+      p {
+        color: $bg-light;
+      }
+    }
+  }
+}
 
 @media (max-width: 768px) {
+  .grid {
+    grid-template-areas:
+      "c1 c1 c1"
+      "c2 c2 c2"
+      "c3 c3 c3";
+  }
+}
 
+.curvy-road {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px; /* Adjust the height as needed */
+  background-color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+
+  .road {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto;
+    background-color: #ebebeb;
+    border-radius: 50px; /* This creates the curvy road effect */
+    padding: 20px; /* Adjust padding as needed */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
+
+    .skill-icon {
+      width: 60px; /* Adjust icon size as needed */
+      height: 60px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add some shadow for icons */
+
+      img {
+        width: 40px; /* Adjust icon size as needed */
+        height: 40px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 20px; /* Space between icons */
+      }
+    }
+  }
+
+  // Add the curvy road effect
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: -20px; /* Adjust the curvature by changing this value */
+    background: #f0f0f0;
+    border-radius: 50%;
+  }
 }
