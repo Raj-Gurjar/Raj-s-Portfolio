@@ -12,10 +12,14 @@
     .logo {
         display: flex;
         align-items: center;
+        transition: all 1s ease-out;
+       
 
-        h2 {
-            font-size: 1.7rem;
-            font-family: "Times New Roman", Times, serif;
+        img
+        {
+            height: 70px;
+            width: 100px;
+            transition: all 0.6s ease-out;
         }
     }
 
@@ -104,10 +108,27 @@
 }
 
 .sticky {
-    padding: 5px 15px;
+    padding-top: 5px;
+    padding: 1px 15px;
     box-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.3);
-
+    
     opacity: 1;
+
+    transition: all 0.6s ease-out;
+    // background-color: green;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        // background-color: red;
+        
+       
+        img
+        {
+            height: 40px;
+            width: 60px;
+        }
+    }
 }
 
 .navbar .menu_btn {
@@ -120,7 +141,7 @@
 @media (max-width: 895px) {
     .navbar {
         // background-color: red;
-        padding: 12px 17px;
+        padding: 3px 17px;
 
         ul {
             li {
@@ -179,6 +200,8 @@
     .navbar .menu_btn {
         display: inline-block;
         z-index: 999;
+        // background-color: red;
+        margin-top: 5px;
 
         .bar1,
         .bar2,
@@ -186,7 +209,7 @@
             width: 25px;
             height: 4px;
             background-color: $black-1000;
-            margin: 2px 0;
+            margin: 2.2px 0;
             transition: 0.4s;
         }
 

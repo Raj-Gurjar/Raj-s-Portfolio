@@ -17,6 +17,13 @@ const AboutCom = () => {
     useEffect(() => {
         AOS.init({
             duration: 1000, // Set the animation duration to 1200ms (1.2 seconds)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+          
         });
     }, []);
 
@@ -34,9 +41,9 @@ const AboutCom = () => {
 
                 <div className="row justify_content_cntr">
 
-                    <div className="about_img" data-aos="fade-up"> {/* Apply fade-right animation */}
+                    <div className="about_img" > {/* Apply fade-right animation */}
 
-                        <div className="img_box frame">
+                        <div className="img_box frame" data-aos="fade-right">
                             <div className="frame">
                                 <img src={about_img} alt="" />
                             </div>
@@ -62,7 +69,7 @@ const AboutCom = () => {
                                 my Journey to Programming and Development.
                             </p>
                         </div>
-                        <div className="about_content">
+                        <div className="about_content" data-aos="zoom-in">
 
                             <div className="card2">
                                 <div className="abt_logo">

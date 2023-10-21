@@ -12,7 +12,10 @@ import FooterCom from "./components/Footer/FooterCom";
 import ScrollCom from "./components/Scrollup/ScrollCom";
 
 function App() {
+
+  
   return (
+    
     <>
       <Navbar />
 

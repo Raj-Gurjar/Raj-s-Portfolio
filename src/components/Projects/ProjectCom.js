@@ -16,10 +16,13 @@ import { transform } from 'framer-motion';
 
 
 const ProjectCom = () => {
+
+
+   
     return (
         <section className="port_cls section_padding">
-            <img className="proj_sq" src={proj_sq} alt="" />
-            <img className="proj_curls" src={proj_curls} alt="" />
+            <img className="proj_sq"  src={proj_sq} alt="" />
+            <img className="proj_curls" data-aos="fade-right" src={proj_curls} alt="" />
 
 
 
@@ -48,7 +51,7 @@ const ProjectCom = () => {
                             </div>
                             <div className="proj_content">
                                 <div className="proj_text">
-                                    <div className="proj_title">
+                                    <div className="proj_title" data-aos="fade-right" >
                                         <h3>
                                             {project.title}
                                         </h3>

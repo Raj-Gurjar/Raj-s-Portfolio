@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import logo from '../../assets/mylogo2.png';
+import logo from '../../assets/myLogo22.svg';
 import './Navbar.scss';
-import { FaShare} from "react-icons/fa";
+import { FaShare } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -51,13 +51,13 @@ const Navbar = () => {
     }, [menuItems, activeSection]);
 
     return (
-        <navbar className={`navbar ${isSticky ? 'sticky' : ''}`}>
+        <navbar className={`navbar ${isSticky ? 'sticky' : ''}`} data-aos="zoom-in-down">
             <div className="row space_btw">
-                <div className="logo">
-                    <h2>Raj..</h2>
-                    {/* <Link to="home" smooth={true} duration={500}>
-            <img src={logo} alt="Logo" />
-          </Link> */}
+                <div className="logo" >
+                    {/* <h2>Raj..</h2> */}
+                    <Link to="home" smooth={true} duration={500}>
+                        <img src={logo} alt="Logo" />
+                    </Link>
                 </div>
 
                 <div className="main_menu">
@@ -72,7 +72,7 @@ const Navbar = () => {
                                     duration={0}
                                     onClick={handleLinkClick}
                                 >
-                                {name}
+                                    {name}
                                 </Link>
                             </li>
                         ))}

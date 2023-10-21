@@ -42,8 +42,10 @@ const ContactCom = () => {
 
   return (
     <section className="contact_cls section_padding">
-      <img className="contact_down-arrow" src={contact_down_arrow} alt="" />
-      <img className="contact_down-curl" src={contact_down_curl} alt="" />
+      <img className="contact_down-arrow" src={contact_down_arrow} data-aos="fade-down"
+      alt="" />
+      <img className="contact_down-curl" src={contact_down_curl} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" alt="" />
       
 
       {showPopup && (

@@ -4,9 +4,6 @@ import AOS from "aos";
 import { sections } from "./skill-Item";
 
 const SkillCom = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, offset: 100, once: true });
-  }, []);
 
   return (
     <section className="skill_cls section_padding">
@@ -21,7 +18,7 @@ const SkillCom = () => {
 
         <div className="row justify_content_cntr">
           {sections.map((section, sectionIndex) => (
-            <div className='card' key={sectionIndex}>
+            <div className='card' key={sectionIndex} data-aos="fade-right">
               <div className="skill_heading">
                 <h3>{section.title}</h3>
                 {/* <p>{section.description}</p> */}

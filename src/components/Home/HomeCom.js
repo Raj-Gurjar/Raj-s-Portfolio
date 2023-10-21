@@ -28,9 +28,17 @@ import reshape from "../../assets/reshape.svg";
 
 
 const HomeCom = () => {
+
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Set the animation duration to 1200ms (1.2 seconds)
+      duration: 900, // Set the animation duration to 1200ms (1.2 seconds)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: true, // whether elements should animate out while scrolling past them
+
     });
   }, []);
 
@@ -116,10 +124,10 @@ const HomeCom = () => {
 
       <img src={star_img} alt="" class="star_icon1" />
       <img src={star_img} alt="" class="star_icon2" />
-      <img src={curl_Arrow} alt="" class="curl_Arrow" />
+      <img src={curl_Arrow} alt="" class="curl_Arrow" data-aos="fade-right" />
 
       {/* <div className="curve_bg_cntnr"> */}
-        {/* <div className="curve_bg_text">
+      {/* <div className="curve_bg_text">
           <p>
             From Thinking Out of the Box <box1><img src={outBox} alt='outBox'></img></box1> in <span>DSA</span> questions
             to Reshaping the Box <box2><img src={reshape} alt='outBox'></img> </box2> in <span>Web Development</span> and
@@ -127,8 +135,8 @@ const HomeCom = () => {
             my Journey to Programming and Development.
           </p>
         </div> */}
-        {/* <img src={} className="curve_bg_img"></img> */}
-        <div className="curve_bg_img"></div>
+      {/* <img src={} className="curve_bg_img"></img> */}
+      <div className="curve_bg_img"></div>
       {/* </div> */}
 
 
