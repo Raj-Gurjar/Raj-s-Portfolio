@@ -2,19 +2,52 @@
 @import "../../index.scss";
 
 .skill_cls {
-  background-color: $skill-bg;
+  // background-color: $skill-bg;
+  background-color: #fff7ee;
+  position: relative;
   // color: bl;
   // z-index: -1;
 
   z-index: 1;
 }
 
-
 .skill_cls .card {
   padding: 0px 0px;
   border: none;
   box-shadow: none;
-  
+  border: $bor-1;
+  box-shadow: $card-box-shadow-low;
+  border-radius: $br-10;
+
+  &::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    padding: 5px;
+    border: $bor-1;
+    box-shadow: $card-box-shadow-low;
+    border-radius: $br-10;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    border-radius: 10px;
+
+    transition: transform 0.5s ease;
+  }
 
   // transition: all 3s ease-in-out;
 
@@ -87,6 +120,24 @@
   }
 }
 
+.bread {
+  width: 6rem;
+  position: absolute;
+  top: -8%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+.proj_sq {
+  z-index: 2;
+  width: 8rem;
+  position: absolute;
+  top: auto;
+  bottom: -10%;
+  left: auto;
+  right: 0%;
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-areas:
@@ -94,59 +145,22 @@
       "c2 c2 c2"
       "c3 c3 c3";
   }
-}
 
-.curvy-road {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 400px; /* Adjust the height as needed */
-  background-color: #f0f0f0;
-  position: relative;
-  overflow: hidden;
-
-  .road {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    width: 80%; /* Adjust the width as needed */
-    margin: 0 auto;
-    background-color: #ebebeb;
-    border-radius: 50px; /* This creates the curvy road effect */
-    padding: 20px; /* Adjust padding as needed */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
-
-    .skill-icon {
-      width: 60px; /* Adjust icon size as needed */
-      height: 60px;
-      border-radius: 50%;
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add some shadow for icons */
-
-      img {
-        width: 40px; /* Adjust icon size as needed */
-        height: 40px;
-      }
-
-      &:not(:last-child) {
-        margin-right: 20px; /* Space between icons */
-      }
-    }
-  }
-
-  // Add the curvy road effect
-  &:before {
-    content: "";
+  .bread {
+    width: 5rem;
     position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    top: -20px; /* Adjust the curvature by changing this value */
-    background: #f0f0f0;
-    border-radius: 50%;
+    top: -4%;
+    bottom: auto;
+    left: 0%;
+    right: auto;
+  }
+  .proj_sq {
+    z-index: 2;
+    width: 6rem;
+    position: absolute;
+    top: auto;
+    bottom: -3%;
+    left: auto;
+    right: 0%;
   }
 }

@@ -15,7 +15,7 @@ const FooterCom = () => {
                     data-aos-offset="0">
                     {/* <h2>Raj..</h2> */}
                     Visualize Your Dreams With
-                    <Link to="home" smooth={true} duration={500}>
+                    <Link to="home" smooth={true} duration={300}>
                         <img src={logo} alt="Logo" />
                     </Link>
                 </div>

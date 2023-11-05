@@ -6,23 +6,13 @@
   color: rgb(255, 255, 255);
   // min-height: 200vh;
   z-index: 1;
+  
   background-color: #000;
   position: relative;
   overflow: hidden;
 }
 
-.proj_sq {
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-  z-index: 9;
-  width: 8rem;
-  position: absolute;
-  top: -6%;
-  bottom: auto;
-  left: auto;
-  right: 0%;
-}
+
 .proj_curls {
   width: 6rem;
   height: 8rem;
@@ -36,10 +26,12 @@
 
 
 .port_bg {
+  // display: none;
   z-index: -1;
   width: 100%;
   height: 100%;
-  filter: blur(180px);
+  filter: blur(150px);
+  opacity: 0.5;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -270,6 +262,23 @@
   }
 }
 
+.more
+{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+cursor:pointer;
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+
+  &:hover
+  {
+    text-decoration: underline;
+  }
+}
+
+
 @media (max-width: 991px) {
   .proj_card_comp {
     padding: 2px;
@@ -483,3 +492,32 @@
 //     transform: none;
 //   }
 // }
+
+
+main {
+  background: #111;
+  border: solid 1px #222;
+  padding: 2rem;
+  max-width: 100%;
+  width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+
+  > * {
+    grid-column: 1 / -1;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+
+
+/* --------------------------------- */
+

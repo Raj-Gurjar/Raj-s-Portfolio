@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import "./SkillCom.scss";
 import AOS from "aos";
 import { sections } from "./skill-Item";
+import bread from "../../assets/bread.svg";
+import proj_sq from "../../assets/proj_sqr.svg";
+
 
 const SkillCom = () => {
 
@@ -36,6 +39,9 @@ const SkillCom = () => {
           ))}
         </div>
       </div>
+
+      <img className="bread" src={bread} data-aos="fade-right"></img>
+      <img className="proj_sq" src={proj_sq} alt=""  data-aos="zoom-in-up"/>
     </section>
   );
 };

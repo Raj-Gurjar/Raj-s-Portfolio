@@ -55,7 +55,7 @@ const Navbar = () => {
             <div className="row space_btw">
                 <div className="logo" >
                     {/* <h2>Raj..</h2> */}
-                    <Link to="home" smooth={true} duration={500}>
+                    <Link to="home" smooth={true} duration={100}>
                         <img src={logo} alt="Logo" />
                     </Link>
                 </div>

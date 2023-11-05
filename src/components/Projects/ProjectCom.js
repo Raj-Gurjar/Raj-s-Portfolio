@@ -1,31 +1,27 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './ProjectCom.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ProjData from './Proj-Data';
-import reshape from "../../assets/reshape.svg";
-import proj_sq from "../../assets/proj_sqr.svg";
+import reshape from "../../assets/Skill-Icons/html.svg";
+
 import proj_curls from "../../assets/proj_curls.svg";
 
 
+ 
 import { FaGithub, FaArrowRight } from 'react-icons/fa';
 import { BsArrowRight } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
 import { transform } from 'framer-motion';
+import OtherProjects from './Other-Projects';
 
-
+const filteredProjects = ProjData.filter(project => project.id >= 1 && project.id <= 4);
 const ProjectCom = () => {
 
-
-   
     return (
         <section className="port_cls section_padding">
-            <img className="proj_sq"  src={proj_sq} alt="" />
-            <img className="proj_curls" data-aos="fade-right" src={proj_curls} alt="" />
-
-
-
 
             <div className="port_bg">
                 <img src={reshape} alt="" />
@@ -39,7 +35,9 @@ const ProjectCom = () => {
                 </div>
 
                 <div className="proj_card_comp">
-                    {ProjData.map((project, index) => (
+                    {filteredProjects.map((project, index) => (
+
+                        
                         <div className='card1' key={index}>
                             <div className="proj_img">
                                 <img src={project.image} alt="" />
@@ -51,7 +49,7 @@ const ProjectCom = () => {
                             </div>
                             <div className="proj_content">
                                 <div className="proj_text">
-                                    <div className="proj_title" data-aos="fade-right" >
+                                    <div className="proj_title" data-aos="fade-right" data-aos-offset= "129px" >
                                         <h3>
                                             {project.title}
                                         </h3>
@@ -67,11 +65,11 @@ const ProjectCom = () => {
 
                                         // Use a different icon for the project with id: 4 ("DSA Profiles")
                                         <>
-                                            <a href={project.liveLink} className='leetcode' target="_blank" style={{transform : "none"}}>
+                                            <a href={project.liveLink} className='leetcode' target="_blank" style={{ transform: "none" }}>
                                                 <SiLeetcode />
                                             </a>
 
-                                            <a href={project.liveLink} className="gfg" target="_blank">
+                                            <a href={project.gitLink} className="gfg" target="_blank">
                                                 <SiGeeksforgeeks />
                                             </a>
                                         </>
@@ -94,7 +92,15 @@ const ProjectCom = () => {
                         </div>
                     ))}
                 </div>
+
+                {/* <div className="more">
+                    <a href={OtherProjects} target="_blank">See More</a>
+                </div> */}
             </div>
+
+
+            <img className="proj_curls" data-aos="fade-right" src={proj_curls} alt="" />
+
         </section>
     );
 };

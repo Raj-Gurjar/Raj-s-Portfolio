@@ -6,7 +6,7 @@ import './ContactCom.scss';
 import { FaMailBulk, FaPhone, FaMap } from 'react-icons/fa';
 import { BiLinkExternal } from "react-icons/bi";
 import { FaLinkedinIn, FaGithub, FaInstagram, FaWhatsapp, FaComment } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 import contact_down_arrow from "../../assets/proj_down-arrow.svg";
 import contact_down_curl from "../../assets/contact_btm.svg";
 
@@ -168,20 +168,21 @@ const ContactCom = () => {
                   <h3>Follow On:</h3>
                 </div>
                 <div className='social-icons'>
-                  <a href="https://www.facebook.com/" rel="noreferrer" target="_blank">
+                  <a href="https://www.linkedin.com/in/raj-chhalotre-29jul01/" rel="noreferrer" target="_blank">
                     <FaLinkedinIn />
                   </a>
-                  <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
+                  <a href="https://github.com/Raj-Gurjar" rel="noreferrer" target="_blank">
                     <FaGithub />
                   </a>
-                  <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
-                    <FaInstagram />
-                  </a>
-                  <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
+             
+                  <a href="https://wa.me/qr/CMJOEEBOTPEHH1" rel="noreferrer" target="_blank">
                     <FaWhatsapp />
                   </a>
                   <a href="https://leetcode.com/Raj_Gurjar/" rel="noreferrer" target="_blank">
                     <SiLeetcode />
+                  </a>
+                  <a href="https://auth.geeksforgeeks.org/user/raj_gurjar/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" rel="noreferrer" target="_blank">
+                    <SiGeeksforgeeks />
                   </a>
                 </div>
 
