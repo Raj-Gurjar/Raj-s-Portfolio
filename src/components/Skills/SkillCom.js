@@ -30,7 +30,7 @@ const SkillCom = () => {
               <div className="skill_box">
                 {section.data.map((item, index) => (
                   <div className="skill_item" key={index}>
-                    <img src={item.img} />
+                    <img src={item.img} loading='lazy' alt="skill-icons" />
                     <h5>{item.name}</h5>
                   </div>
                 ))}

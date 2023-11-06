@@ -40,7 +40,7 @@ const ProjectCom = () => {
                         
                         <div className='card1' key={index}>
                             <div className="proj_img">
-                                <img src={project.image} alt="" />
+                                <img src={project.image} alt="proj-img" loading='lazy'/>
                                 <div className="proj_details">
                                     <p>
                                         {project.description}

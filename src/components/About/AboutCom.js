@@ -5,7 +5,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import about_img from "../../assets/My-imgs/Untitled design.png";
 
-import resume from '../../assets/Other/Resume (Raj).pdf';
 
 import { FaGithub, FaArrowRight, FaLightbulb, FaLaptopCode, } from 'react-icons/fa';
 import { IoSchool } from 'react-icons/io5';
@@ -47,7 +46,7 @@ const AboutCom = () => {
 
                         <div className="img_box" data-aos="fade-right">
                             <div className="frame">
-                                <img src={about_img} alt="" />
+                                <img src={about_img} alt="" loading='lazy' />
                             </div>
                         </div>
 

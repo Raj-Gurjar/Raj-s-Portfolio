@@ -8,7 +8,7 @@ import Typed from 'typed.js';
 
 import { Link } from 'react-router-dom';
 
-import resume from '../../assets/Other/Resume (Raj).pdf';
+import resume from '../../assets/Other/Resume(Raj).pdf';
 
 import star_img from "../../assets/star_icon.svg";
 
