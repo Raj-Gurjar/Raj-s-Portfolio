@@ -58,7 +58,7 @@ const HomeCom = () => {
         <div className="row">
 
           <div className="home_txt">
-            <h3 className="greeting">Good {Greetings()}<span>👋</span>, This is</h3>
+            <h3 className="greeting">Gooddd {Greetings()}<span>👋</span>, This is</h3>
 
             <div class="my-name">
               <div class="title1">
