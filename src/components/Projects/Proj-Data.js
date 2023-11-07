@@ -4,7 +4,7 @@ const ProjData = [
         id:1,
         title:"City Bank Website",
         subTitle:"Reactjs, Scss, Firebase",
-        image:"Images/Project/bankingSys.png",
+        image:"Images/Project/bankingSys.webp",
         category:"WebDev",
         description:
         '• This is an interactive and fully responsive (mobile friendly) demo website for bank employees.\
@@ -20,7 +20,7 @@ const ProjData = [
         id:2,
         title:"Movie Recommender",
         subTitle:"Python, Flask, ML, NLP, Html, CSS, JS",
-        image:"Images/Project/movieRec.png",
+        image:"Images/Project/movieRec.webp",
         
         category:"ML",
         description:"This Website recommends 7 similar movies to your search using the ML algorithm(NLP).\
@@ -51,7 +51,7 @@ Used basic + advanced React concepts like Hooks, Redux etc.\
         id:4,
         title:"Dsa Profiles",
         subTitle:"LeetCode and GFG Profiles",
-        image:"Images/Project/Dsa.jpg",
+        image:"Images/Project/Dsa.webp",
         category:"Others",
         description:"These are my DSA profiles.\
         600+ Data Structures and Algorithms questions solved on Leetcode, GFG, and Coding Ninjas’ DSA Course.\
@@ -65,7 +65,7 @@ Used basic + advanced React concepts like Hooks, Redux etc.\
         id:5,
         title:"Dsa Profiles",
         subTitle:"LeetCode and GFG Profiles",
-        image:"Images/Project/Dsa.jpg",
+        image:"Images/Project/Dsa.webp",
         category:"Others",
         description:"These are my DSA profiles.\
         600+ Data Structures and Algorithms questions solved on Leetcode, GFG, and Coding Ninjas’ DSA Course.\
@@ -79,7 +79,7 @@ Used basic + advanced React concepts like Hooks, Redux etc.\
         id:6,
         title:"Dsa Profiles",
         subTitle:"DSA",
-        image:"Images/Project/Dsa.jpg",
+        image:"Images/Project/Dsa.webp",
         category:"Others",
         description:"These are my DSA profiles.\
         600+ Data Structures and Algorithms questions solved on Leetcode, GFG, and Coding Ninjas’ DSA Course.\
@@ -93,7 +93,7 @@ Used basic + advanced React concepts like Hooks, Redux etc.\
         id:7,
         title:"Dsa Profiles",
         subTitle:"DSA",
-        image:"Images/Project/Dsa.jpg",
+        image:"Images/Project/Dsa.webp",
         category:"Others",
         description:"These are my DSA profiles.\
         600+ Data Structures and Algorithms questions solved on Leetcode, GFG, and Coding Ninjas’ DSA Course.\
