@@ -3,7 +3,7 @@ import "./AboutCom.scss";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import about_img from "../../assets/My-imgs/Untitled design.png";
+import about_img from "../../assets/My-imgs/my-img.webp";
 
 
 import { FaGithub, FaArrowRight, FaLightbulb, FaLaptopCode, } from 'react-icons/fa';

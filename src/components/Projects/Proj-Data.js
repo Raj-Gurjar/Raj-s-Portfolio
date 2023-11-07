@@ -35,7 +35,7 @@ const ProjData = [
         id:3,
         title:"E-commerce Website",
         subTitle:" Reactjs, Nodejs, Express, MongoDB",
-        image:"Images/Project/ecom-web.png",
+        image:"Images/Project/ecom-web.webp",
         category:"WebDev",
         description:"\
         This is a website where customers can purchase goods.\
