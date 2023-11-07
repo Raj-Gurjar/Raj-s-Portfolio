@@ -9,7 +9,7 @@ import reshape from "../../assets/Skill-Icons/html.svg";
 import proj_curls from "../../assets/proj_curls.svg";
 
 
- 
+
 import { FaGithub, FaArrowRight } from 'react-icons/fa';
 import { BsArrowRight } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
@@ -37,19 +37,24 @@ const ProjectCom = () => {
                 <div className="proj_card_comp">
                     {filteredProjects.map((project, index) => (
 
-                        
+
                         <div className='card1' key={index}>
                             <div className="proj_img">
-                                <img src={project.image} alt="proj-img" loading='lazy'/>
+                                <img src={project.image} alt="proj-img" loading='lazy' />
                                 <div className="proj_details">
                                     <p>
-                                        {project.description}
+                                        {project.description.split('.').map((sentence, index) => (
+                                            <span key={index}>
+                                                {sentence.trim()}{index < project.description.split('.').length - 1 ? '.' : null}
+                                                {index < project.description.split('.').length - 1 ? <br /> : null}
+                                            </span>
+                                        ))}
                                     </p>
                                 </div>
                             </div>
                             <div className="proj_content">
                                 <div className="proj_text">
-                                    <div className="proj_title" data-aos="fade-right" data-aos-offset= "129px" >
+                                    <div className="proj_title" data-aos="fade-right" data-aos-offset="129px" >
                                         <h3>
                                             {project.title}
                                         </h3>
