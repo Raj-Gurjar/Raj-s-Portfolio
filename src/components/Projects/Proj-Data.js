@@ -27,7 +27,7 @@ const ProjData = [
         • Uses CountVectorizer algo. for better efficiency and Flask as Backend.\
         • Made an Animated UI with HTML, CSS, and JS.\
         ",
-        liveLink: "https://www.youtube.com/watch?v=Xb7ZJJ34Po8&t=44s",
+        liveLink: "https://huggingface.co/spaces/hpratapsingh/moviee",
         gitLink: "https://github.com/Raj-Gurjar/Movie-Recommender",
         top:true
     },
