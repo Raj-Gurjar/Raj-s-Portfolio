@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import './ContactCom.scss';
 // import AOS from 'aos';
+
 // import 'aos/dist/aos.css';
 import { FaMailBulk, FaPhone, FaMap } from 'react-icons/fa';
 import { BiLinkExternal } from "react-icons/bi";
