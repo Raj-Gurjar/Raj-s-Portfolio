@@ -2,7 +2,7 @@
 This is my Portfolio Website.
 ### 🔗 Link : https://raj-portfolio101.netlify.app/
 
-## Tech Stack Used;
+### Tech Stack Used;
 - *Reactjs*
 - *Scss/Sass*
 
