@@ -17,7 +17,7 @@ import { SiGeeksforgeeks } from "react-icons/si";
 import { transform } from 'framer-motion';
 import OtherProjects from './Other-Projects';
 
-const filteredProjects = ProjData.filter(project => project.id >= 1 && project.id <= 4);
+const filteredProjects = ProjData.filter(project => project.id >= 1 && project.id <= 5);
 const ProjectCom = () => {
 
     return (
@@ -66,7 +66,7 @@ const ProjectCom = () => {
 
                                 <div className="proj_links">
 
-                                    {project.id === 4 ? (
+                                    {project.id === 5 ? (
 
                                         // Use a different icon for the project with id: 4 ("DSA Profiles")
                                         <>
