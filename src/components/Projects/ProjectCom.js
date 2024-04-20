@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+
 import './ProjectCom.scss';
-import AOS from 'aos';
+
 import 'aos/dist/aos.css';
 import ProjData from './Proj-Data';
 import reshape from "../../assets/Skill-Icons/html.svg";
@@ -11,11 +11,11 @@ import proj_curls from "../../assets/proj_curls.svg";
 
 
 import { FaGithub, FaArrowRight } from 'react-icons/fa';
-import { BsArrowRight } from "react-icons/bs";
+
 import { SiLeetcode } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
-import { transform } from 'framer-motion';
-import OtherProjects from './Other-Projects';
+
+
 
 const filteredProjects = ProjData.filter(project => project.id >= 1 && project.id <= 5);
 const ProjectCom = () => {
@@ -70,22 +70,22 @@ const ProjectCom = () => {
 
                                         // Use a different icon for the project with id: 4 ("DSA Profiles")
                                         <>
-                                            <a href={project.liveLink} className='leetcode' target="_blank" style={{ transform: "none" }}>
+                                            <a href={project.liveLink} className='leetcode' target="_blank" style={{ transform: "none" }} rel="noreferrer">
                                                 <SiLeetcode />
                                             </a>
 
-                                            <a href={project.gitLink} className="gfg" target="_blank">
+                                            <a href={project.gitLink} className="gfg" target="_blank" rel="noreferrer">
                                                 <SiGeeksforgeeks />
                                             </a>
                                         </>
                                     ) : (
                                         // Use the default FaArrowRight icon for other projects
                                         <>
-                                            <a href={project.liveLink} target="_blank">
+                                            <a href={project.liveLink} target="_blank" rel="noreferrer">
                                                 <FaArrowRight />
                                             </a>
 
-                                            <a href={project.gitLink} target="_blank">
+                                            <a href={project.gitLink} target="_blank" rel="noreferrer">
                                                 <FaGithub />
                                             </a>
                                         </>

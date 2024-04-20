@@ -179,7 +179,7 @@ const ContactCom = () => {
                   <a href="https://wa.me/qr/CMJOEEBOTPEHH1" rel="noreferrer" target="_blank">
                     <FaWhatsapp />
                   </a>
-                  <a href="https://leetcode.com/Raj_Gurjar/" rel="noreferrer" target="_blank">
+                  <a href="https://leetcode.com/Raj_Chhalotre" rel="noreferrer" target="_blank">
                     <SiLeetcode />
                   </a>
                   <a href="https://auth.geeksforgeeks.org/user/raj_gurjar/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" rel="noreferrer" target="_blank">
