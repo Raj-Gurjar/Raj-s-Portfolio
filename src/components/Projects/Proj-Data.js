@@ -2,7 +2,7 @@ const ProjData = [
   {
     id: 1,
     title: "Mini-Loan App",
-    subTitle: "Reactjs, Expressjs(Nodejs), MongoDB, TailwindCss",
+    subTitle: "ReactJs, ExpressJs, MongoDB, TailwindCss",
     image: "Images/Project/mini-loan.png",
     category: "WebDev",
     description:
@@ -17,13 +17,13 @@ const ProjData = [
   {
     id: 2,
     title: "City Bank Website",
-    subTitle: "Reactjs, Scss, Firebase",
+    subTitle: "ReactJs, Scss, Firebase",
     image: "Images/Project/bankingSys.webp",
     category: "WebDev",
     description:
       "• This is an interactive and fully responsive (mobile friendly) demo website for bank employees.\
          •  It can Add/Delete Customers, Money Transfer between two Customers, View Transaction History.\
-         •  Neat Reactjs Folder Structures, Used Firebase as a Backend with clean Database entries.",
+         •  Neat ReactJs Folder Structures, Used Firebase as a Backend with clean Database entries.",
     liveLink: "https://citybank-employee.netlify.app/",
     gitLink: "https://github.com/Raj-Gurjar/banking-system-app",
     top: true,
@@ -48,7 +48,7 @@ const ProjData = [
   {
     id: 4,
     title: "E-commerce Website",
-    subTitle: " Reactjs, Nodejs, Express, MongoDB",
+    subTitle: " ReactJs, Nodejs, Express, MongoDB",
     image: "Images/Project/ecom-web.webp",
     category: "WebDev",
     description:
