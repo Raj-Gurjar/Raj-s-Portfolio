@@ -18,7 +18,6 @@ html {
   outline: none;
 }
 
-
 body {
   font-size: 13px;
   color: $black-1000;
@@ -28,6 +27,13 @@ body {
   background: $bg-light;
   z-index: 1;
   position: relative;
+
+  max-width: 1980px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto; // Center the .App div horizontally
+  // padding: 0;
 }
 
 /*? -------------------Body -e----------------------- */
@@ -187,10 +193,8 @@ button {
 
   box-sizing: border-box;
 
- 
   padding: 32px 24px;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  
 
   &:hover {
     box-shadow: $card-box-shadow-high;
@@ -284,15 +288,24 @@ button {
 
 @keyframes glowing {
   0% {
-    box-shadow: 0 0 8px #f4c003, 0 0 8px #dab10e, 0 0 8px #f4e003;
+    box-shadow:
+      0 0 8px #f4c003,
+      0 0 8px #dab10e,
+      0 0 8px #f4e003;
   }
 
   50% {
-    box-shadow: 0 0 8px #b8ca54, 0 0 8px #747a09, 0 0 8px #363a07;
+    box-shadow:
+      0 0 8px #b8ca54,
+      0 0 8px #747a09,
+      0 0 8px #363a07;
   }
 
   100% {
-    box-shadow: 0 0 8px #f4c003, 0 0 8px #dab10e, 0 0 8px #f4e003;
+    box-shadow:
+      0 0 8px #f4c003,
+      0 0 8px #dab10e,
+      0 0 8px #f4e003;
   }
 }
 
