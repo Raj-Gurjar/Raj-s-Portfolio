@@ -3,7 +3,7 @@ const ProjData = [
     id: 1,
     title: "Mini-Loan App",
     subTitle: "ReactJs, ExpressJs, MongoDB, TailwindCss",
-    image: "Images/Project/mini-loan.png",
+    image: "Images/Project/mini-loan.webp",
     category: "WebDev",
     description:
       "• Created a MERN stack Mini-loan app with user authentication, loan management, and admin approval.\
@@ -16,6 +16,21 @@ const ProjData = [
   },
   {
     id: 2,
+    title: "Chiclets-UI",
+    subTitle: "ReactJs, TailwindCss, Scss, Routing",
+    image: "Images/Project/chiclets-img.webp",
+    category: "WebDev",
+    description:
+      "• Created a pixel-perfect Chiclets website using ReactJS, TailwindCSS, and SCSS.\
+            • Achieved high fidelity to the original UI with a responsive design. \
+            • Utilized TailwindCSS and SCSS for responsive design and clean UI, ensuring cross-device usability.",
+
+    liveLink: "https://chiclets-ui.netlify.app/",
+    gitLink: "https://github.com/Raj-Gurjar/Chiclets-UI-website.git",
+    top: true,
+  },
+  {
+    id: 3,
     title: "City Bank Website",
     subTitle: "ReactJs, Scss, Firebase",
     image: "Images/Project/bankingSys.webp",
@@ -30,7 +45,7 @@ const ProjData = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Movie Recommender",
     subTitle: "Python, Flask, ML, NLP, Html, CSS, JS",
     image: "Images/Project/movieRec.webp",
@@ -46,7 +61,7 @@ const ProjData = [
     top: true,
   },
   {
-    id: 4,
+    id: 5,
     title: "E-commerce Website",
     subTitle: " ReactJs, Nodejs, Express, MongoDB",
     image: "Images/Project/ecom-web.webp",
@@ -60,23 +75,6 @@ const ProjData = [
 ",
     liveLink: "https://dynamic-eclair-f42764.netlify.app/",
     gitLink: "https://github.com/Raj-Gurjar/E-Commerce-Website",
-  },
-
-  {
-    id: 5,
-    title: "Dsa Profiles",
-    subTitle: "LeetCode and GFG Profiles",
-    image: "Images/Project/Dsa.webp",
-    category: "Others",
-    description:
-      " • These are my DSA profiles.\
-        • 600+ Data Structures and Algorithms questions solved on Leetcode, GFG, and Coding Ninjas’ DSA Course.\
-        • Maintained a streak of 328 days on Leetcode. #CodingWithConsistency ",
-    liveLink: "https://leetcode.com/Raj_Chhalotre/",
-
-    gitLink:
-      "https://auth.geeksforgeeks.org/user/raj_gurjar/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user",
-    top: true,
   },
 ];
 
