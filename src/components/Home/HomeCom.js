@@ -4,9 +4,6 @@ import './HomeCom.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Typed from 'typed.js';
-
-import { Link } from 'react-router-dom';
 
 import resume from '../../assets/Other/Resume(Raj).pdf';
 
@@ -17,7 +14,6 @@ import eight_star from "../../assets/eight-pointed-black-star.svg";
 import curl_Arrow from "../../assets/curly-arrow.png";
 
 
-import react from "../../assets/Skill-Icons/react.svg";
 
 
 
@@ -27,12 +23,12 @@ const HomeCom = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 900, // Set the animation duration to 1200ms (1.2 seconds)
-      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      duration: 900, 
+      debounceDelay: 50, 
 
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      once: false, // whether animation should happen only once - while scrolling down
-      mirror: true, // whether elements should animate out while scrolling past them
+      
+      once: false, 
+      mirror: true, 
 
     });
   }, []);

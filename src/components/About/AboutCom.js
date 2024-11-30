@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import about_img from "../../assets/My-imgs/my-img.webp";
 
 
-import { FaGithub, FaArrowRight, FaLightbulb, FaLaptopCode, } from 'react-icons/fa';
+import {  FaLightbulb, FaLaptopCode, } from 'react-icons/fa';
 import { IoSchool } from 'react-icons/io5';
 import { CgWebsite } from "react-icons/cg";
 
@@ -17,24 +17,18 @@ const AboutCom = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Set the animation duration to 1200ms (1.2 seconds)
-            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            duration: 1000, 
+            debounceDelay: 50, 
 
 
-            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-            once: false, // whether animation should happen only once - while scrolling down
-            mirror: true, // whether elements should animate out while scrolling past them
+           
+            once: false, 
+            mirror: true, 
 
         });
     }, []);
 
-    const [activeTab, setActiveTab] = useState('education');
-
-
-
-    function opentab(tabname) {
-        setActiveTab(tabname);
-    }
+  
 
     return (
         <section className="about_cls section_padding">
@@ -42,7 +36,7 @@ const AboutCom = () => {
 
                 <div className="row justify_content_cntr">
 
-                    <div className="about_img" > {/* Apply fade-right animation */}
+                    {/* <div className="about_img" > 
 
                         <div className="img_box" data-aos="fade-right">
                             <div className="frame">
@@ -50,10 +44,10 @@ const AboutCom = () => {
                             </div>
                         </div>
 
-                    </div>
+                    </div> */}
 
                     <div className="about_box" id="text" data-aos="fade-up">
-                        <div className="section_title">
+                        <div className="section_title about-title">
                             <h2>About Me</h2>
                             <h4>Let's Know Me</h4>
                             <div className="line" />
